@@ -1,0 +1,379 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"dis",
+				"Discord Rich Presence: Reconnect to Discord"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 206.0,
+		"history":
+		[
+			"sublime.log_input(True)",
+			"sublime.log_commands(True)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Sites/kara/routes/web.php",
+		"/E/Sites/kara/resources/views/layouts/app.blade.php",
+		"/E/Sites/kara/resources/views/partials/head.blade.php",
+		"/E/Sites/kara/resources/views/index.blade.php",
+		"/E/Sites/kara/resources/views/partials/donations.blade.php",
+		"/E/Sites/kara/public/css/style.css",
+		"/E/Sites/kara/resources/views/partials/connect.blade.php",
+		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
+		"/E/Sites/kara/public/js/script.js",
+		"/E/Sites/kara/resources/views/partials/footer.blade.php",
+		"/E/Sites/kara/resources/views/partials/blog.blade.php",
+		"/E/Sites/kara/resources/views/partials/team.blade.php",
+		"/E/Sites/kara/resources/views/partials/about-sm.blade.php",
+		"/E/Sites/kara/resources/views/partials/services.blade.php",
+		"/E/Sites/kara/resources/views/partials/about.blade.php",
+		"/E/Sites/kara/resources/views/partials/hero.blade.php",
+		"/E/Sites/kara/resources/views/partials/preloader.blade.php",
+		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
+		"/E/Sites/kara/webpack.mix.js",
+		"/E/Sites/kara/.env",
+		"/E/Sites/kara/app/Providers/RouteServiceProvider.php",
+		"/E/Sites/kara/app/Http/Controllers/Auth/RegisterController.php",
+		"/E/Sites/kara/app/Models/User.php",
+		"/E/Sites/kara/config/auth.php",
+		"/E/Sites/kara/resources/views/user/dashboard.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
+		"/E/Sites/kara/config/purifier.php",
+		"/E/Sites/kara/config/app.php",
+		"/E/Sites/abbey/public/css/style.css",
+		"/E/Sites/abbey/resources/views/partials/app/navbar.blade.php",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Saved/Config/WindowsNoEditor/Game.ini",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Config/DefaultInput.ini",
+		"/E/Sites/abbey/resources/views/layouts/app.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/life.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/socialmedia.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/footer.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/programs.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/cta.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/about.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/hero.blade.php",
+		"/E/Sites/abbey/public/js/main.js",
+		"/E/Sites/abbey/resources/views/partials/app/team.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/services.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/faq.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/contact.blade.php",
+		"/E/Sites/abbey/routes/web.php",
+		"/E/Sites/abbey/resources/views/partials/app/head.blade.php",
+		"/E/Sites/abbey/resources/views/index.blade.php",
+		"/E/Sites/abbey/resources/views/partials/app/scripts.blade.php",
+		"/E/Sites/abbey/public/img/abbey/monks/monk1.jfif",
+		"/E/Sites/abbey/resources/partials/app/scripts.blade.php",
+		"/E/Sites/abbey/resources/layouts/app.blade.php",
+		"/E/Sites/abbey/resources/partials/app/head.blade.php",
+		"/E/Sites/abbey/.baker/portfolio-details.html",
+		"/E/Sites/abbey/.baker/forms/contact.php",
+		"/E/Sites/abbey/package.json",
+		"/E/Sites/abbey/.baker/index.html",
+		"/E/Sites/abbey/.env",
+		"/C/php/php.ini",
+		"/D/Sites/tarkov/resources/views/layouts/app.blade.php",
+		"/D/Sites/ninja/resources/views/layouts/app.blade.php",
+		"/D/Sites/tarkov/app/Http/Controllers/ProfileController.php",
+		"/D/Sites/tarkov/app/Providers/RouteServiceProvider.php",
+		"/D/Sites/tarkov/app/Http/Controllers/PagesController.php",
+		"/D/Sites/tarkov/resources/views/profile/dashboard.blade.php",
+		"/D/Sites/tarkov/resources/views/home.blade.php",
+		"/D/Sites/tarkov/resources/views/pages/index.blade.php",
+		"/D/Sites/tarkov/resources/views/welcome.blade.php",
+		"/D/Sites/tarkov/.env",
+		"/D/Sites/ninja/.env",
+		"/D/Sites/tarkov/.gitignore",
+		"/C/Users/Jonathan/Desktop/index.html",
+		"/D/Sites/ninja/resources/views/dashboard.blade.php",
+		"/D/Sites/ninja/resources/views/tickets/create-public.blade.php",
+		"/D/Sites/ninja/app/Http/Controllers/TicketsController.php",
+		"/D/Sites/ninja/resources/views/tickets/view.blade.php",
+		"/D/Sites/ninja/routes/web.php",
+		"/D/Sites/ninja/resources/views/partials/admin/_sidebar.blade.php",
+		"/D/Sites/ninja/resources/views/layouts/admin.blade.php",
+		"/D/Sites/ninja/resources/views/partials/global/_head.blade.php",
+		"/D/Sites/ninja/resources/views/partials/global/_scripts.blade.php",
+		"/D/Sites/ninja/resources/views/partials/global/_footer.blade.php",
+		"/D/Sites/ninja/resources/views/tickets/terms.blade.php",
+		"/D/Sites/ninja/app/Http/Controllers/PagesController.php",
+		"/D/Sites/ninja/resources/views/partials/global/_navbar.blade.php",
+		"/D/Sites/ninja/resources/views/tickets/create.blade.php",
+		"/D/Sites/ninja/app/Http/Controllers/ProfileController.php",
+		"/D/Sites/ninja/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php",
+		"/D/Sites/ninja/app/Http/Controllers/HomeController.php",
+		"/D/Sites/ninja/resources/views/components/debug/auth.blade.php",
+		"/D/Sites/ninja/app/Providers/RouteServiceProvider.php",
+		"/D/Sites/ninja/resources/views/partials/navbar.blade.php",
+		"/D/Sites/ninja/resources/views/pages/index.blade.php",
+		"/D/Discord Bots/Noobland/run.py",
+		"/D/Discord Bots/Noobland/.env",
+		"/D/Discord Bots/Noobland/cogs/admin.py",
+		"/D/Discord Bots/Noobland/cogs/banappeal.py",
+		"/D/Discord Bots/Noobland/utils/helpers.py",
+		"/D/Discord Bots/Noobland/json/admin_roles.json",
+		"/D/Discord Bots/Noobland/json/test.json",
+		"/D/Discord Bots/Noobland/files/id.csv",
+		"/D/Discord Bots/Noobland/cogs/help.py",
+		"/D/Discord Bots/Noobland/cogs/reactionembed.py",
+		"/D/Discord Bots/Noobland/lib/rlightfm.py",
+		"/D/Discord Bots/Noobland/listeners/message.py",
+		"/D/Discord Bots/Noobland/utils/aws.py",
+		"/D/Discord Bots/Noobland/loops/changestatus.py",
+		"/D/Discord Bots/Noobland/listeners/reactions.py",
+		"/D/Discord Bots/Noobland/README.md",
+		"/C/Users/Jonathan/Downloads/cache (2).csv",
+		"/C/Users/Jonathan/Downloads/id (1).csv",
+		"/C/Users/Jonathan/Downloads/activities.csv",
+		"/C/Users/Jonathan/Downloads/id.csv",
+		"/C/Users/Jonathan/Downloads/cache (1).csv",
+		"/C/Users/Jonathan/Downloads/cache.csv",
+		"/D/Discord Bots/Noobland/files/92262.csv",
+		"/D/Discord Bots/Noobland/.gitignore",
+		"/D/Discord Bots/Noobland/files/activities.csv",
+		"/D/Discord Bots/Noobland/files/cache.csv",
+		"/D/Discord Bots/Noobland/requirements.txt",
+		"/D/Discord Bots/Noobland/helpers.py",
+		"/C/Users/Jonathan/Documents/private_ssh_key.ppk",
+		"/D/Discord Bots/Noobland/files/75836.csv",
+		"/D/Discord Bots/Noobland/todo.txt",
+		"/D/Discord Bots/Noobland/Procfile",
+		"/D/Discord Bots/Noobland/changestatus.py"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pricing",
+			"Pricing",
+			"pricing",
+			"/*===========",
+			"rev_slider",
+			"weight",
+			"rgba(0, 0, 0, 0.55)",
+			"class=\"img-fluid\"",
+			"{\n",
+			"linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) )",
+			"cta-btn-dark",
+			"donations",
+			"https://www.facebook.com/GlastonburyAbbeyMA/",
+			"cta-btn",
+			".services",
+			"<i class=\"bx bx-chevron-right\"></i>",
+			"<i class=\"bx bx-chevron-up icon-close\"></i>",
+			"<i class=\"bx bx-chevron-down icon-show\"></i>",
+			"<i class=\"bx bx-help-circle icon-help\">",
+			"<i",
+			"icofon",
+			"#hi",
+			"img-fluid\"",
+			".member-img",
+			"<div class=\"social\">\n                                    <a href=\"\"><i class=\"icofont-twitter\"></i></a>\n                                    <a href=\"\"><i class=\"icofont-facebook\"></i></a>\n                                    <a href=\"\"><i class=\"icofont-instagram\"></i></a>\n                                    <a href=\"\"><i class=\"icofont-linkedin\"></i></a>\n                                </div>",
+			"\"img/team/",
+			"\"assets/",
+			"assets/"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".programs"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python 3/Python3.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"require",
+				"requirements.txt"
+			],
+			[
+				"helpers",
+				"helpers.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
