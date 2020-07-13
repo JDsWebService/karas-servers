@@ -19,5 +19,7 @@
 
         {{-- Scripts --}}
         @include('partials.scripts')
+        {{-- Custom JS --}}
+        <script src="js/script.js"></script>
     </body>
 </html>

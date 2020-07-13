@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index')->name('index');
 
+Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
+
 Auth::routes();
 
 Route::prefix('user')->name('user.')->group(function () {
