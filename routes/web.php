@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index')->name('index');
+// Normal Route
+// Route::get('/', 'PagesController@index')->name('index');
+// Coming Soon Route
+Route::get('/', 'PagesController@comingsoon')->name('index');
 
 Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
 
