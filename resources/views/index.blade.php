@@ -13,6 +13,9 @@
     {{-- Services Section --}}
     @include('content.services')
 
+    {{-- Testimonials Section --}}
+    @include('content.testimonials')
+
     {{-- About Section Small --}}
     {{-- @include('content.about-sm') --}}
 

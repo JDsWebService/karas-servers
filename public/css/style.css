@@ -790,8 +790,105 @@ a:focus, a:hover {
 }
 
 /*=================================================================
+ Call To Action 1
+==================================================================*/
+.call-to-action {
+  padding: 100px 0;
+  background: url("../images/call-to-action/call-to-action-bg-2.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.call-to-action h2 {
+  line-height: 1.5;
+}
+
+.call-to-action p {
+  color: #fff;
+}
+
+.call-to-action .btn-main, .call-to-action .btn-main-sm {
+  margin-top: 20px;
+}
+
+/*=================================================================
+ Call To Action 2
+==================================================================*/
+.call-to-action-2 {
+  padding: 100px 0;
+  background-image: url("../images/call-to-action/call-to-action-bg.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+.call-to-action-2 h2 {
+  line-height: 1.5;
+}
+
+.call-to-action-2 p {
+  color: #fff;
+}
+
+.call-to-action-2 .btn-main, .call-to-action-2 .btn-main-sm {
+  margin-top: 20px;
+}
+
+/*=================================================================
   Contact
   ==================================================================*/
+.contact-form {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-top: 20px;
+  }
+}
+
+.contact-form .form-control {
+  background-color: transparent;
+  border: 1px solid #dedede;
+  box-shadow: none;
+  height: 45px !important;
+  color: #0c0c0c;
+  height: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form #contact-submit:hover {
+  border-color: #f0326b;
+}
+
+.contact-form #contact-submit {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0;
+  background: #f0326b;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.contact-form textarea.form-control {
+  padding: 10px;
+  height: 120px !important;
+  outline: none;
+}
+
+.contact-details .contact-short-info {
+  margin-top: 15px;
+}
+
+.contact-details .contact-short-info li {
+  margin-bottom: 6px;
+}
+
 .social-icon li {
   display: inline-block;
   margin-right: 10px;
@@ -810,6 +907,52 @@ a:focus, a:hover {
   font-size: 20px;
   line-height: 50px;
   margin: 0;
+}
+
+.error {
+  padding: 10px;
+  color: #D8000C;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+}
+
+#error, #success {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.map {
+  position: relative;
+}
+
+.map #map {
+  height: 400px;
+  color: white;
+}
+
+.contact-meta-block {
+  margin-top: 30px;
+  padding: 40px 0;
+  min-height: 250px;
+  text-align: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+}
+
+.contact-meta-block > i {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 /*=================================================================
@@ -857,6 +1000,108 @@ a:focus, a:hover {
 .donation-table .price-title .value {
   font-size: 50px;
   padding: 10px 0;
+}
+
+/*=================================================================
+  Portfolio section
+==================================================================*/
+.portfolio-filter {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.portfolio-filter button {
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+  padding: 8px 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  color: #777;
+  outline: none;
+  background: none;
+}
+
+.portfolio-filter button:hover {
+  border-bottom: 2px solid #f0326b;
+  color: #000;
+}
+
+.portfolio-filter button.active {
+  border-bottom: 2px solid #f0326b;
+  color: #000;
+}
+
+.portfolio-items-wrapper li {
+  width: 32.33%;
+}
+
+.portfolio-block {
+  position: relative;
+  transition: .3s all;
+  overflow: hidden;
+}
+
+.portfolio-block:before {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240, 50, 107, 0.9);
+  transition: .3s all;
+}
+
+.portfolio-block:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.portfolio-block:hover .caption h4 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.portfolio-block:hover .caption {
+  opacity: 1;
+}
+
+.portfolio-block:hover .caption .search-icon {
+  opacity: 1;
+}
+
+.portfolio-block .caption {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  opacity: 0;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-block .caption h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.portfolio-block .caption h4 a {
+  color: #fff;
+}
+
+.portfolio-block .caption .search-icon {
+  background: #f0326b;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 13px;
+  font-size: 25px;
+  border-radius: 30px;
+  opacity: 0;
 }
 
 /*=================================================================
@@ -1036,6 +1281,52 @@ a:focus, a:hover {
 
 .team-member .member-photo img {
   transition: all 0.6s ease 0s;
+}
+
+/*=================================================================
+  Testimonial section
+==================================================================*/
+.testimonial {
+  background: #f0326b;
+  position: relative;
+}
+
+.testimonial .item i {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.testimonial .item .client-details {
+  padding-bottom: 30px;
+}
+
+.testimonial .item .client-details p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 200;
+  padding: 0 10%;
+}
+
+.testimonial .item .client-meta {
+  margin-top: 8px;
+  color: #fff;
+}
+
+.testimonial .item .client-meta h4 {
+  margin-bottom: 4px;
+}
+
+.testimonial .item .client-meta span {
+  font-size: 12px;
+}
+
+.testimonial .item .client-thumb img {
+  display: inline-block;
+  border-radius: 100%;
+  width: 90px;
+  height: auto;
 }
 
 /*=================================================================
