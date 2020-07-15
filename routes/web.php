@@ -15,13 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 // Normal Route
 Route::get('/', 'PagesController@index')->name('index');
-// Coming Soon Route
+// Coming Soon Routes
 // Route::get('/', 'PagesController@comingsoon')->name('index');
+// Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
 
-Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
+// Single Pages Group
+Route::name('pages.')->group(function () {
 
+	// FAQ Page
+	Route::get('/faq', 'PagesController@faq')->name('faq');
+
+});
+
+// Authentication Routes
 Auth::routes();
 
+// User Dashboard Routes
 Route::prefix('user')->name('user.')->group(function () {
 	Route::get('dashboard', 'UsersController@dashboard')->name('dashboard');
 });
