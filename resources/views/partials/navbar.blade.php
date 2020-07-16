@@ -37,7 +37,7 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="btn btn-discord"><i class="fab fa-discord"></i> Login</a>
+                                <a href="{{ route('login.discord') }}" class="btn btn-discord"><i class="fab fa-discord"></i> Login</a>
                             </li>
                         </ul>
                     </div>

@@ -6,10 +6,10 @@
 <!-- /client info -->
 <!-- client photo -->
 <div class="client-thumb">
-	<img src="images/client-logo/clients-1.jpg" class="img-fluid" alt="">
+	<img src="imgs/testimonials/netherian.jpg" class="img-fluid" alt="">
 </div>
 <div class="client-meta">
 	<h4>Netherian</h4>
-	<span>CEO , Company Name</span>
+	<span>Founder, The Lone Australian</span>
 </div>
 <!-- /client photo -->

@@ -27,8 +27,10 @@ Route::name('pages.')->group(function () {
 
 });
 
-// Authentication Routes
-Auth::routes();
+// Socialite Login
+Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
+Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 // User Dashboard Routes
 Route::prefix('user')->name('user.')->group(function () {
