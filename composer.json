@@ -16,7 +16,8 @@
         "laravel/socialite": "^4.4",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
-        "mews/purifier": "^3.2"
+        "mews/purifier": "^3.2",
+        "socialiteproviders/discord": "^2.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
