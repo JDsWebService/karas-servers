@@ -47,50 +47,50 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function redirectToProvider()
-    // {
-    //     return Socialite::driver('discord')->redirect();
-    // }
+    public function redirectToProvider()
+    {
+        return Socialite::driver('discord')->redirect();
+    }
 
     /**
      * Obtain the user information from discord.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function handleProviderCallback()
-    // {
-    //     $discordUser = Socialite::driver('discord')
-    //                         ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
-    //                         ->user();
+    public function handleProviderCallback()
+    {
+        $discordUser = Socialite::driver('discord')
+                            ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
+                            ->user();
 
-    //     // dd($discordUser);
+        // dd($discordUser);
 
-    //     // See if User already exists in database
-    //     $user = User::where([
-    //         ['provider_id', '=', $discordUser->user['id']],
-    //         ['email', '=', $discordUser->user['email']]
-    //     ])->first();
+        // See if User already exists in database
+        $user = User::where([
+            ['provider_id', '=', $discordUser->user['id']],
+            ['email', '=', $discordUser->user['email']]
+        ])->first();
 
-    //     // If user doesn't exist
-    //     if($user === null) {
-    //         // Add User To Database
-    //         $user = new User;
-    //         $user->provider = 'discord';
-    //         $user->provider_id = $discordUser->user['id'];
-    //         $user->username = $discordUser->user['username'];
-    //         $user->discriminator = $discordUser->user['discriminator'];
-    //         $user->fullusername = $discordUser->nickname;
-    //         $user->avatar = $discordUser->avatar;
-    //         $user->email = $discordUser->user['email'];
-    //         $user->email_verified = $discordUser->user['verified'];
-    //         $user->locale = $discordUser->user['locale'];
-    //         $user->twofactor = $discordUser->user['mfa_enabled'];
-    //         $user->save();
-    //     }
+        // If user doesn't exist
+        if($user === null) {
+            // Add User To Database
+            $user = new User;
+            $user->provider = 'discord';
+            $user->provider_id = $discordUser->user['id'];
+            $user->username = $discordUser->user['username'];
+            $user->discriminator = $discordUser->user['discriminator'];
+            $user->fullusername = $discordUser->nickname;
+            $user->avatar = $discordUser->avatar;
+            $user->email = $discordUser->user['email'];
+            $user->email_verified = $discordUser->user['verified'];
+            $user->locale = $discordUser->user['locale'];
+            $user->twofactor = $discordUser->user['mfa_enabled'];
+            $user->save();
+        }
 
-    //     Auth::login($user, true);
+        Auth::login($user, true);
 
-    //     return redirect()->route('index');
+        return redirect()->route('index');
 
-    // }
+    }
 }
