@@ -4,71 +4,17 @@
 			<div class="col-lg-12">
 				<!-- testimonial wrapper -->
 				<div class="testimonial-slider">
-					<!-- testimonial single -->
-					<div class="item text-center">
-						<i class="tf-ion-quote"></i>
-						<!-- client info -->
-						<div class="client-details">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores,
-								unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-						</div>
-						<!-- /client info -->
-						<!-- client photo -->
-						<div class="client-thumb">
-							<img src="images/client-logo/clients-1.jpg" class="img-fluid" alt="">
-						</div>
-						<div class="client-meta">
-							<h4>Matt Cutts</h4>
-							<span>CEO , Company Name</span>
-						</div>
-						<!-- /client photo -->
-					</div>
-					<!-- /testimonial single -->
+					
 
-					<!-- testimonial single -->
-					<div class="item text-center">
-						<i class="tf-ion-quote"></i>
-						<!-- client info -->
-						<div class="client-details">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores,
-								unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-						</div>
-						<!-- /client info -->
-						<!-- client photo -->
-						<div class="client-thumb">
-							<img src="images/client-logo/clients-2.jpg" class="img-fluid" alt="">
-						</div>
-						<div class="client-meta">
-							<h4>Elon Musk</h4>
-							<span>CEO , Company Name</span>
-						</div>
-						<!-- /client photo -->
-					</div>
-					<!-- /testimonial single -->
+					@foreach (glob(base_path() . '/resources/views/content/testimonials/*.blade.php') as $file)
+					    <!-- testimonial single -->
+					    <div class="item text-center">
+					    	<i class="fas fa-quote-left"></i>
+					    	@include('content.testimonials.' . basename(str_replace('.blade.php', '', $file)))
+					    </div>
+					    <!-- /testimonial single -->
+					@endforeach
 
-					<!-- testimonial single -->
-					<div class="item text-center">
-						<i class="tf-ion-quote"></i>
-						<!-- client info -->
-						<div class="client-details">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores,
-								unde corporis labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing
-								elit. Quia, officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?</p>
-						</div>
-						<!-- /client info -->
-						<!-- client photo -->
-						<div class="client-thumb">
-							<img src="images/client-logo/clients-1.jpg" class="img-fluid" alt="">
-						</div>
-						<div class="client-meta">
-							<h4>Jonathon Ive</h4>
-							<span>CEO , Company Name</span>
-						</div>
-						<!-- /client photo -->
-					</div>
-					<!-- /testimonial single -->
 				</div>
 			</div>
 			<!-- end col lg 12 -->

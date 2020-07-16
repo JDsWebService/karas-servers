@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         Mews\Purifier\PurifierServiceProvider::class,
+        \SocialiteProviders\Manager\ServiceProvider::class,
 
         /*
          * Application Service Providers...

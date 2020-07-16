@@ -1299,11 +1299,11 @@ a:focus, a:hover {
 }
 
 .testimonial .item .client-details {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .testimonial .item .client-details p {
-  font-size: 17px;
+  font-size: 14px;
   color: #fff;
   font-weight: 200;
   padding: 0 10%;
