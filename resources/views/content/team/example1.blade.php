@@ -10,7 +10,6 @@
         <div class="member-content">
             <h3>Username</h3>
             <span>Title</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
         </div>
         <!-- /member name & designation -->
     </div>
