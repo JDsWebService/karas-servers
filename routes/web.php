@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Normal Route
-Route::get('/', 'PagesController@index')->name('index');
+// Route::get('/', 'PagesController@index')->name('index');
 // Coming Soon Routes
-// Route::get('/', 'PagesController@comingsoon')->name('index');
+Route::get('/', 'PagesController@comingsoon')->name('index');
 // Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
 
 // Single Pages Group
