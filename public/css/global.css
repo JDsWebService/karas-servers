@@ -7,6 +7,16 @@ section.section-default {
 	align-items: center;
 }
 
+/* Alert Messages Section */
+section.section-alert {
+	padding-top: 100px;
+	padding-bottom: 0;
+	margin-bottom: -100px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /* Navbar Discord Login Button*/
 .navigation .navbar .btn-discord {
 	background-color: #7289da;

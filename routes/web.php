@@ -27,6 +27,19 @@ Route::name('pages.')->group(function () {
 
 });
 
+Route::prefix('servers')->name('servers.')->group(function () {
+	Route::middleware(['auth.staff', 'auth'])->group(function () {
+		// Ping Test
+		Route::get('ping-test', 'ServersController@pingtest')->name('ping-test');
+		// Add Server To List
+		Route::get('add', 'ServersController@addServer')->name('add');
+		Route::post('add', 'ServersController@storeServer')->name('store');
+	});
+
+	// Servers List
+	// Route::get('/', 'ServersController@list')->name('list');
+});
+
 // Socialite Login
 Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
 Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback');

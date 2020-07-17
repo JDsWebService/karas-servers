@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="imgs/logo.png" alt="logo">
+                    <a class="navbar-brand" href="{{ route('index') }}">
+                        <img src="/imgs/logo.png" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation"
                         aria-expanded="false" aria-label="Toggle navigation">

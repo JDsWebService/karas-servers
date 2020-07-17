@@ -12,6 +12,8 @@
         {{-- Navigation Bar --}}
         @include('partials.navbar')
 
+        @include('partials.messages')
+        
         @yield('content')
 
         {{-- Footer Section --}}
@@ -20,6 +22,6 @@
         {{-- Scripts --}}
         @include('partials.scripts')
         {{-- Custom JS --}}
-        <script src="js/script.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>

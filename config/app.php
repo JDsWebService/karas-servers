@@ -230,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         /* Package Alliases */
         'Purifier' => Mews\Purifier\Facades\Purifier::class,
+        'Ping' => App\Scripts\Ping::class,
     ],
 
 ];

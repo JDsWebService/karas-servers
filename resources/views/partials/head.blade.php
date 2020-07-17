@@ -11,12 +11,6 @@
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png" />
 
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="css/style.css">
-
-{{-- Custom Global Stylesheet --}}
-<link rel="stylesheet" href="css/global.css">
-
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -32,3 +26,9 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="/css/style.css">
+
+{{-- Custom Global Stylesheet --}}
+<link rel="stylesheet" href="/css/global.css">
