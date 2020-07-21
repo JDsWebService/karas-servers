@@ -75,6 +75,22 @@ class ServersController extends Controller
     public function rulesSpanish() {
         return view('servers.rules.spanish');
     }
+
+    // Public Facing Server Rules German Page
+    public function rulesGerman() {
+        return view('servers.rules.german');
+    }
+
+    // Public Facing Server Rules Korean Page
+    public function rulesKorean() {
+        return view('servers.rules.korean');
+    }
+
+    // Public Facing Server Rules Japanese Page
+    public function rulesJapanese() {
+        return view('servers.rules.japanese');
+    }
+    
     // Get Server Information From Battlemetrics API
     protected function getServerInfo($id) {
     	$client = new Guzzle(['verify' => false]);

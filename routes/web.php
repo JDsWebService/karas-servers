@@ -21,9 +21,10 @@ Route::get('/', 'PagesController@index')->name('index');
 
 // Single Pages Group
 Route::name('pages.')->group(function () {
-
+	// About Us Page
+	Route::get('about', 'PagesController@about')->name('about');
 	// FAQ Page
-	Route::get('/faq', 'PagesController@faq')->name('faq');
+	Route::get('faq', 'PagesController@faq')->name('faq');
 
 });
 
@@ -45,6 +46,12 @@ Route::prefix('servers')->name('servers.')->group(function () {
 		Route::get('portuguese', 'ServersController@rulesPortuguese')->name('portuguese');
 		// Spanish Rules Route
 		Route::get('spanish', 'ServersController@rulesSpanish')->name('spanish');
+		// German Rules Route
+		Route::get('german', 'ServersController@rulesGerman')->name('german');
+		// Korean Rules Route
+		Route::get('korean', 'ServersController@rulesKorean')->name('korean');
+		// Japanese Rules Route
+		Route::get('japanese', 'ServersController@rulesJapanese')->name('japanese');
 		// Index
 		Route::get('/', 'ServersController@rulesIndex')->name('index');
 	});

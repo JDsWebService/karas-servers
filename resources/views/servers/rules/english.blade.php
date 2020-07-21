@@ -19,33 +19,33 @@
 							<dl class="lead mb-5 mt-3">
 								<dt>Rule 1</dt>
 								<dd>
-									Don't be a douche.  If you wonder if you can do something that means you probably shouldn't.
+									Don't be a douche. If you wonder if you can do something that means you probably should not.
 								</dd>
 								<dt>Rule 2</dt>
 								<dd>
-									Cave building is enabled, However No Perm structures are allowed in artifact caves. You have been warned.
+									Cave building is enabled, however no permanent structures are allowed in artifact caves. You have been warned.
 								</dd>
 								<dt>Rule 3</dt>
 								<dd>
 									Respect each players/tribes bases.
 									<dl class="ml-5">
 										<dt>Rule 3a</dt>
-										<dd>Don't build right next to another tribe's base, they may want to  expand and the Map is plenty big enough for everyone.</dd>
+										<dd>Do not build right next to other tribes base, they may want to expand and the map is big enough for everyone.</dd>
 										<dt>Rule 3b</dt>
-										<dd>Do Not poke around other players/tribes bases without asking.  This is a big no no.  If its not your base stay out.</dd>
+										<dd>Do not poke around other players/tribes bases without asking. This is a big no no. If it is not your base, stay out.</dd>
 									</dl>
 								</dd>
 								<dt>Rule 4</dt>
 								<dd>
-									<strong>DO NOT</strong> put your dinosaurs on Aggressive Wander outside of a fully enclosed PEN or Dino Leash. I will straight up Kill any I find and if I find several I will just dinowipe your tribe's dinos.
+									<strong>DO NOT</strong> put your dinosaurs on 'aggressive wander' outside of a fully enclosed area or a dinosaur leash. I will straight up kill any dinosaur I find. If I find several dinosaurs I will just 'dinowipe' your tribe's dinosaurs.
 								</dd>
 								<dt>Rule 5</dt>
 								<dd>
-									No griefing! Griefing or trolling will not be tolerated at all. If you have a problem with someone work it out. If you threaten to drop wild dinos in someone's base you will be given one warning. If you actually follow through you will either be base wiped or perma banned depending on damage caused. No second chances. This also applies to "picking other players up" with a flyer without their consent & interfering or killing dinosaurs someone is attempting to tame.
+									No griefing! Griefing or trolling will not be tolerated at all. If you have a problem with someone work it out. If you threaten to drop wild dinosaurs in someone's base you will be given one warning. If you actually follow through you will either be base wiped or permanently banned depending on damage caused. No second chances. This also applies to "picking other players up" with a flyer without their consent & interfering or killing dinosaurs someone is attempting to tame.
 								</dd>
 								<dt>Rule 6</dt>
 								<dd>
-									No exploiting, players found abusing exploits will be banned, ie. no cryopod cloning will result in immediate ban.
+									No exploiting, players found abusing exploits will be banned, ie. no cryopod cloning. This will result in immediate ban.
 								</dd>
 								<dt>Rule 7</dt>
 								<dd>
@@ -53,7 +53,7 @@
 								</dd>
 								<dt>Rule 8</dt>
 								<dd>
-									No racist, bigoted, or other offensive chat, if you wouldn't say it to your mother don't say it in chat.
+									No racist, bigoted, or other offensive chat, if you would not say it to your mother do not say it in chat.
 								</dd>
 								
 							</dl>

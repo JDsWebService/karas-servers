@@ -20,4 +20,9 @@ class PagesController extends Controller
     public function faq() {
     	return view('pages.faq');
     }
+
+    // About Us Page
+    public function about() {
+        return view('pages.about');
+    }
 }
