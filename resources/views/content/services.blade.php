@@ -32,7 +32,7 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Growing Community</h3>
-                    <p>[Insert Discord User Stats Here / How many Players, etc.]</p>
+                    <p>With over 500 players online at any given time in our Discord, our community is ever growing! Come check us out on our <a href="{{ route('pages.about')}}">about page</a> for more information!</p>
                 </div>
             </div>
         </div>      <!-- End row -->
