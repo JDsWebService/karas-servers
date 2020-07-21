@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Server Rules')
+@section('title', 'Server Rules - German')
 
 @section('content')
 
