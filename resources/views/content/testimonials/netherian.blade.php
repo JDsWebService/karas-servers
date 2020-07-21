@@ -6,7 +6,7 @@
 <!-- /client info -->
 <!-- client photo -->
 <div class="client-thumb">
-	<img src="imgs/testimonials/netherian.jpg" class="img-fluid" alt="">
+	<img src="imgs/testimonials/netherian.png" class="img-fluid" alt="">
 </div>
 <div class="client-meta">
 	<h4>Netherian</h4>

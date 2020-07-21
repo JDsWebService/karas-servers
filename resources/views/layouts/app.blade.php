@@ -17,7 +17,7 @@
         @yield('content')
 
         {{-- Footer Section --}}
-        @include('partials.footer')
+        @include('partials.footer-sm')
 
         {{-- Scripts --}}
         @include('partials.scripts')

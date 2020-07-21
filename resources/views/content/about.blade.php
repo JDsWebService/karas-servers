@@ -6,7 +6,7 @@
             </div>
             <div class="col-12 col-md-7">
                 <p>With our servers located on the East Coast of the US, and a dedicated fiber optic line, we make sure that you have the highest quality lag free experience on the Ark! With an ever growing community, high population tribes, and a trading platform, getting started on our servers is easy!</p>
-                <a href="#" target="_blank" class="btn btn-main">Click To Learn More</a> 
+                {{-- <a href="#" target="_blank" class="btn btn-main">Click To Learn More</a>  --}}
             </div>
             
         </div>      <!-- End row -->

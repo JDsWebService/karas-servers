@@ -29,7 +29,7 @@
                     <!-- /plan description -->
 
                     <!-- signup button -->
-                    <a class="btn btn-main" href="#">Signup</a>
+                    <a class="btn btn-main" target="_blank" href="https://www.patreon.com/join/karasworlds/checkout?rid=3141916">Subscribe To Donation Tier</a>
                     <!-- /signup button -->
 
                 </div>
@@ -54,7 +54,7 @@
                     <!-- /plan description -->
 
                     <!-- signup button -->
-                    <a class="btn btn-main" href="#">Signup</a>
+                    <a class="btn btn-main" target="_blank" href="https://www.patreon.com/join/karasworlds/checkout?rid=3141920">Subscribe To Donation Tier</a>
                     <!-- /signup button -->
 
                 </div>
@@ -79,7 +79,7 @@
                     <!-- /plan description -->
 
                     <!-- signup button -->
-                    <a class="btn btn-main" href="#">Signup</a>
+                    <a class="btn btn-main" target="_blank" href="https://www.patreon.com/join/karasworlds/checkout?rid=3141927">Subscribe To Donation Tier</a>
                     <!-- /signup button -->
 
                 </div>

@@ -16,7 +16,7 @@
                     <p>Today I have something of my own small server farm with multiple servers and PCs.</p>
                     <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
                         <li class="list-inline-item">
-                            <a href="#" target="_blank" class="btn btn-main">Join Our Discord</a>       
+                            <a href="https://discord.gg/ep3aB4y" target="_blank" class="btn btn-main"><i class="fab fa-discord"></i> Join Our Discord</a>       
                         </li>
                     </ul>
                 </div>

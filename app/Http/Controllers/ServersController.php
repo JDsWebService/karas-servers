@@ -56,7 +56,25 @@ class ServersController extends Controller
 
     }
 
+    // Public Facing Server Rules Index Page
+    public function rulesIndex() {
+        return view('servers.rules.index');
+    }
 
+    // Public Facing Server Rules English Page
+    public function rulesEnglish() {
+        return view('servers.rules.english');
+    }
+
+    // Public Facing Server Rules Portuguese Page
+    public function rulesPortuguese() {
+        return view('servers.rules.portuguese');
+    }
+
+    // Public Facing Server Rules Spanish Page
+    public function rulesSpanish() {
+        return view('servers.rules.spanish');
+    }
     // Get Server Information From Battlemetrics API
     protected function getServerInfo($id) {
     	$client = new Guzzle(['verify' => false]);

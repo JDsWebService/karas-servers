@@ -20,12 +20,12 @@
     {{-- @include('content.about-sm') --}}
 
     {{-- Team Section --}}
-    @include('content.team')
+    {{-- @include('content.team') --}}
 
     {{-- Donations Section --}}
     @include('content.donations')
 
     {{-- Blog Section --}}
-    @include('content.blog')
+    {{-- @include('content.blog') --}}
 
 @endsection
