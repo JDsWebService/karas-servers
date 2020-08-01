@@ -51,9 +51,9 @@ class ServersController extends Controller
     	return redirect()->route('servers.add');
     }
 
-    // Public Facing Server List
-    public function list() {
-
+    // Public Facing Server Status Page
+    public function status() {
+        return view('servers.status');
     }
 
     // Public Facing Server Rules Index Page

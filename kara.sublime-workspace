@@ -11,6 +11,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  1.11.3:\n  ======\n  \n    Fix:\n     - line annotation background (#552)\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n",
+			"settings":
+			{
+				"buffer_size": 860,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -98,11 +109,11 @@
 		"/E/Sites/kara/public/css",
 		"/E/Sites/kara/resources",
 		"/E/Sites/kara/resources/views",
-		"/E/Sites/kara/resources/views/content",
 		"/E/Sites/kara/routes"
 	],
 	"file_history":
 	[
+		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
 		"/E/Sites/kara/routes/web.php",
 		"/E/Sites/kara/resources/views/content/services.blade.php",
 		"/E/Sites/kara/resources/views/content/hero.blade.php",
@@ -137,7 +148,6 @@
 		"/E/Sites/kara/vendor/kozz/laravel-guzzle-provider/src/Providers/Guzzle.php",
 		"/E/Sites/kara/vendor/kozz/laravel-guzzle-provider/src/Facades/Guzzle.php",
 		"/E/Sites/kara/bootstrap/app.php",
-		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
 		"/E/Sites/kara/resources/views/partials/head.blade.php",
 		"/E/Sites/kara/app/Models/Server.php",
 		"/E/Sites/kara/app/Http/Middleware/Authenticate.php",
@@ -234,7 +244,7 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -308,8 +318,42 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								860,
+								860
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"bracket_highlighter.busy": false,
+							"default_dir": "E:\\Sites\\kara",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

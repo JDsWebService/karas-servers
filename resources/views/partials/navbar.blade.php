@@ -25,20 +25,20 @@
                             </li>
 
                             {{-- Temporary Server Rules Link --}}
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('servers.rules.index') }}">Server Rules</a>
-                            </li>
+                            </li> --}}
 
                             {{-- Servers Links --}}
-                            {{-- <li class="nav-item dropdown">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Servers
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Status</a>
-                                    <a class="dropdown-item" href="#">Rules</a>
+                                    <a class="dropdown-item" href="{{ route('servers.status') }}">Status</a>
+                                    <a class="dropdown-item" href="{{ route('servers.rules.index') }}">Server Rules</a>
                                 </div>
-                            </li> --}}
+                            </li>
                             {{-- FAQ Link --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('pages.faq') }}">F.A.Q</a>
