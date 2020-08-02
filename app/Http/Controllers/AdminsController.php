@@ -28,11 +28,12 @@ class AdminsController extends Controller
     public function addServer() {
     	return view('admin.servers.add');
     }
-
+    
     // Admin Store Server
     public function storeServer(Request $request) {
-    	$serverInfo = BMController::getServerInfo($request->provider_id);
 
+        $serverInfo = BMController::getServerInfo($request);
+        
     	// Check if Server Is In Database
     	$server = Server::where('provider_id', $request->provider_id)->first();
     	if($server === null) {
