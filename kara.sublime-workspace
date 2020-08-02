@@ -11,17 +11,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  1.11.3:\n  ======\n  \n    Fix:\n     - line annotation background (#552)\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n",
-			"settings":
-			{
-				"buffer_size": 860,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -105,16 +94,49 @@
 		"/E/Sites/kara/app",
 		"/E/Sites/kara/app/Http",
 		"/E/Sites/kara/app/Http/Controllers",
-		"/E/Sites/kara/public",
-		"/E/Sites/kara/public/css",
 		"/E/Sites/kara/resources",
 		"/E/Sites/kara/resources/views",
+		"/E/Sites/kara/resources/views/partials",
 		"/E/Sites/kara/routes"
 	],
 	"file_history":
 	[
-		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
+		"/C/Users/Jonathan/Downloads/ReadMe.txt",
+		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
 		"/E/Sites/kara/routes/web.php",
+		"/E/Sites/kara/app/Http/Controllers/ServersController.php",
+		"/E/Sites/kara/resources/views/servers/status.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/clusters/pvp.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/clusters/modded.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/val.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/scorched.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/rag.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/genesis.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/extinction.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/crystal.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/modded/abberation.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/pvp/rag.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/pvp/crystal.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/pvp/island.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/clusters/standalone.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/standalone/island.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/clusters/pve.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/val2.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/val1.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/scorched.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/rag3.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/rag2.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/rag1.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/island7.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/island6.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/island5.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/genesis.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/extinction.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/crystal.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/thecenter.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/abberation.blade.php",
+		"/E/Sites/kara/resources/views/servers/widgets/island3.blade.php",
+		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
 		"/E/Sites/kara/resources/views/content/services.blade.php",
 		"/E/Sites/kara/resources/views/content/hero.blade.php",
 		"/E/Sites/kara/resources/views/servers/rules/spanish.blade.php",
@@ -124,10 +146,8 @@
 		"/E/Sites/kara/resources/views/servers/rules/german.blade.php",
 		"/E/Sites/kara/resources/views/servers/rules/english.blade.php",
 		"/E/Sites/kara/resources/views/servers/rules/index.blade.php",
-		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
 		"/E/Sites/kara/resources/views/pages/about.blade.php",
 		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
-		"/E/Sites/kara/app/Http/Controllers/ServersController.php",
 		"/E/Sites/kara/resources/views/content/testimonials/netherian.blade.php",
 		"/E/Sites/kara/resources/views/content/testimonials/kiraslistyt.blade.php",
 		"/E/Sites/kara/public/css/global.css",
@@ -208,39 +228,7 @@
 		"/E/Sites/abbey/resources/views/partials/app/life.blade.php",
 		"/E/Sites/abbey/resources/views/partials/app/socialmedia.blade.php",
 		"/E/Sites/abbey/resources/views/partials/app/footer.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/programs.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/cta.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/about.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/hero.blade.php",
-		"/E/Sites/abbey/public/js/main.js",
-		"/E/Sites/abbey/resources/views/partials/app/team.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/services.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/faq.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/contact.blade.php",
-		"/E/Sites/abbey/routes/web.php",
-		"/E/Sites/abbey/resources/views/partials/app/head.blade.php",
-		"/E/Sites/abbey/resources/views/index.blade.php",
-		"/E/Sites/abbey/resources/views/partials/app/scripts.blade.php",
-		"/E/Sites/abbey/public/img/abbey/monks/monk1.jfif",
-		"/E/Sites/abbey/resources/partials/app/scripts.blade.php",
-		"/E/Sites/abbey/resources/layouts/app.blade.php",
-		"/E/Sites/abbey/resources/partials/app/head.blade.php",
-		"/E/Sites/abbey/.baker/portfolio-details.html",
-		"/E/Sites/abbey/.baker/forms/contact.php",
-		"/E/Sites/abbey/package.json",
-		"/E/Sites/abbey/.baker/index.html",
-		"/E/Sites/abbey/.env",
-		"/D/Sites/tarkov/resources/views/layouts/app.blade.php",
-		"/D/Sites/ninja/resources/views/layouts/app.blade.php",
-		"/D/Sites/tarkov/app/Http/Controllers/ProfileController.php",
-		"/D/Sites/tarkov/app/Providers/RouteServiceProvider.php",
-		"/D/Sites/tarkov/app/Http/Controllers/PagesController.php",
-		"/D/Sites/tarkov/resources/views/profile/dashboard.blade.php",
-		"/D/Sites/tarkov/resources/views/home.blade.php",
-		"/D/Sites/tarkov/resources/views/pages/index.blade.php",
-		"/D/Sites/tarkov/resources/views/welcome.blade.php",
-		"/D/Sites/tarkov/.env",
-		"/D/Sites/ninja/.env"
+		"/E/Sites/abbey/resources/views/partials/app/programs.blade.php"
 	],
 	"find":
 	{
@@ -258,6 +246,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dm",
+			"'servers.widgets.",
 			"body",
 			"<div class=\"col-sm-4 text-center\">",
 			"h-50",
@@ -318,42 +308,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 860,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								860,
-								860
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"bracket_highlighter.busy": false,
-							"default_dir": "E:\\Sites\\kara",
-							"incomplete_sync": null,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

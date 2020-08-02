@@ -10,7 +10,7 @@
 	            
 				<div class="col-sm-12">
 					<h1>Add Server</h1>
-					{{ Form::open(['route' => 'servers.store']) }}
+					{{ Form::open(['route' => 'admin.servers.store']) }}
 						<label for="provider_id">Battlemetrics Server ID</label>
 						<input type="text" class="form-control" name="provider_id" placeholder="847309">
 

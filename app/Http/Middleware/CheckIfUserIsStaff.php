@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class CheckIfUserIsStaff
 {
@@ -16,12 +17,8 @@ class CheckIfUserIsStaff
      */
     public function handle($request, Closure $next)
     {
-        $staff = [
-            'DJRedNight#3428',
-            'AshleyLee#1988',
-        ];
-        $user = Auth::user();
-        if(!in_array($user->fullusername, $staff)) {
+        // If session isStaff is false redirect to homepage
+        if(Session::get('isStaff') === false) {
             return redirect()->route('index');
         }
 

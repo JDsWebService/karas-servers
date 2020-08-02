@@ -39,24 +39,40 @@
                                     <a class="dropdown-item" href="{{ route('servers.rules.index') }}">Server Rules</a>
                                 </div>
                             </li>
+
                             {{-- FAQ Link --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('pages.faq') }}">F.A.Q</a>
                             </li>
-                            {{-- Dropdown Links --}}
-                            {{-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">404 Page</a>
-                                </div>
-                            </li> --}}
+                            
                             {{-- Discord Login Button --}}
-                            {{-- <li class="nav-item">
-                                <a href="{{ route('login.discord') }}" class="btn btn-discord"><i class="fab fa-discord"></i> Login</a>
-                            </li> --}}
+                            @guest
+                                <li class="nav-item">
+                                    <a href="{{ route('login.discord') }}" class="btn btn-discord"><i class="fab fa-discord"></i> Login</a>
+                                </li>
+                            @endguest
+
+                            {{-- User Logged In Dropdown --}}
+                            @auth
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="{{ Auth::user()->avatar }}" alt="User's Avatar" class="navbar-avatar rounded-circle"> {{ Auth::user()->fullusername }}
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        @staff
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fas fa-user-shield"></i> Admin Dashboard
+                                            </a>
+                                        @endstaff
+                                        <a class="dropdown-item" href="{{ route('user.dashboard') }}">
+                                            <i class="fas fa-tachometer-alt"></i> Dashboard
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}">
+                                            <i class="fas fa-sign-out-alt"></i> Logout
+                                        </a>
+                                    </div>
+                                </li>
+                            @endauth
                         </ul>
                     </div> <!-- /.links -->
                 </nav>

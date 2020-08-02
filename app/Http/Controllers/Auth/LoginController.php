@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 
 
@@ -63,8 +64,6 @@ class LoginController extends Controller
                             ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
                             ->user();
 
-        // dd($discordUser);
-
         // See if User already exists in database
         $user = User::where([
             ['provider_id', '=', $discordUser->user['id']],
@@ -90,7 +89,29 @@ class LoginController extends Controller
 
         Auth::login($user, true);
 
+        $this->isUserStaff($user);
+
         return redirect()->route('index');
+
+    }
+
+    // Check to see if user is Staff
+    protected function isUserStaff($user) {
+
+        // Define List of Staff
+        $staff = [
+            'DJRedNight#3428',
+            'AshleyLee#1988',
+        ];
+        // Check if logged in user is in staff array
+        if(in_array($user->fullusername, $staff)) {
+            // Create a session variable to be used by Blade Directive
+            // Ref: AppServiceProvider.php
+            Session::put('isStaff', true);
+            return true;
+        }
+
+        return false;
 
     }
 }

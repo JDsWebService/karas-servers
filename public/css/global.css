@@ -17,6 +17,7 @@ section.section-alert {
 	justify-content: center;
 	align-items: center;
 }
+
 /* Navbar Discord Login Button*/
 .navigation .navbar .btn-discord {
 	background-color: #7289da;
@@ -29,6 +30,12 @@ section.section-alert {
 	color: #cccccc;
 	padding: 5px 10px !important;
 	margin: 15px 5px !important;
+}
+
+/* Navbar User Avatar */
+.navbar-avatar {
+	width: 24px;
+	height: 24px;
 }
 
 /* Team Section - Team Member Image */

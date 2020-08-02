@@ -18,6 +18,7 @@ class UsersController extends Controller
 
     // User Dashboard
     public function dashboard() {
-    	return view('user.dashboard');
+        return view('pages.404');
+    	// return view('user.dashboard');
     }
 }

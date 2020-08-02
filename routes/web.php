@@ -29,14 +29,6 @@ Route::name('pages.')->group(function () {
 });
 
 Route::prefix('servers')->name('servers.')->group(function () {
-	// Admin Server Routes
-	// Route::prefix('admin')->middleware(['auth.staff', 'auth'])->group(function () {
-	// 	// Ping Test
-	// 	Route::get('ping-test', 'ServersController@pingtest')->name('ping-test');
-	// 	// Add Server To List
-	// 	Route::get('add', 'ServersController@addServer')->name('add');
-	// 	Route::post('add', 'ServersController@storeServer')->name('store');
-	// });
 
 	// Server Rules
 	Route::prefix('rules')->name('rules.')->group(function () {
@@ -61,11 +53,24 @@ Route::prefix('servers')->name('servers.')->group(function () {
 });
 
 // Socialite Login
-// Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
-// Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback');
-// Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
+Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 // User Dashboard Routes
-// Route::prefix('user')->name('user.')->group(function () {
-	// Route::get('dashboard', 'UsersController@dashboard')->name('dashboard');
-// });
+Route::prefix('user')->name('user.')->group(function () {
+	Route::get('dashboard', 'UsersController@dashboard')->name('dashboard');
+});
+
+// Admin Routes
+Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->group(function () {
+	// Ping Test
+	Route::get('ping-test', 'AdminsController@pingtest')->name('ping-test');
+	
+	// Server Management Routes
+	Route::prefix('servers')->name('servers.')->group(function () {
+		// Add Server To List
+		Route::get('add', 'AdminsController@addServer')->name('add');
+		Route::post('add', 'AdminsController@storeServer')->name('store');
+	});
+});
