@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sure OS is up to date!
+sudo apt update && sudo apt upgrade
+
 # Run Composer Update
 composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
