@@ -2,6 +2,8 @@
 <html class="no-js">
     <head>
       @include('partials.head')
+      <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
+      @yield('stylesheets')
     </head>
 
     <body id="body">
@@ -23,5 +25,6 @@
         @include('partials.scripts')
         {{-- Custom JS --}}
         <script src="/js/script.js"></script>
+        @yield('scripts')
     </body>
 </html>

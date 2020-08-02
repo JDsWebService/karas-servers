@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Session;
 
 class AdminsController extends Controller
 {
+    // Dashboard
+    public function dashboard() {
+        return view('admin.dashboard');
+    }
     // Ping Test
     public function pingtest() {
     	$test = new Ping;

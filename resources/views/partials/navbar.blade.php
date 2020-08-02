@@ -63,7 +63,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         @staff
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
                                                 <i class="fas fa-user-shield"></i> Admin Dashboard
                                             </a>
                                         @endstaff

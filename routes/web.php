@@ -64,6 +64,8 @@ Route::prefix('user')->name('user.')->group(function () {
 
 // Admin Routes
 Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->group(function () {
+	// Dashboard
+	Route::get('dashboard', 'AdminsController@dashboard')->name('dashboard');
 	// Ping Test
 	Route::get('ping-test', 'AdminsController@pingtest')->name('ping-test');
 	
