@@ -53,7 +53,7 @@ class AdminsController extends Controller
         }
     	
     	
-    	return redirect()->route('admin.servers.add');
+    	return redirect()->route('admin.servers.index');
     }
 
     // Edit Server
@@ -87,6 +87,19 @@ class AdminsController extends Controller
         }
         
         
+        return redirect()->route('admin.servers.index');
+    }
+
+    // Delete Server
+    public function deleteServer($provider_id) {
+        $server = Server::where('provider_id', $provider_id)->first();
+
+        if($server->delete()) {
+            Session::flash('success', 'Server has been deleted successfully!');
+        } else {
+            Session::flash('danger', 'Something went wrong when deleting the server');
+        }
+
         return redirect()->route('admin.servers.index');
     }
 

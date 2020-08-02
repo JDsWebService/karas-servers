@@ -3,8 +3,15 @@
 @section('title', 'View Servers')
 
 @section('content')
-
-	<table class="table table-dark table-hoverable table-sm">
+	
+	<div class="row justify-content-center">
+		<div class="col-sm-2">
+			<a href="{{ route('admin.servers.add') }}" class="btn btn-sm btn-success btn-block">
+				<i class="far fa-plus-square"></i> Add Server
+			</a>
+		</div>
+	</div>
+	<table class="table table-dark table-hover table-sm table-borderless mt-3">
 		<thead>
 			<tr>
 				<th scope="col">#</th>
