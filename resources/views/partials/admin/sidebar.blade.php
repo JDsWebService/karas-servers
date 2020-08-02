@@ -39,38 +39,44 @@
                 <li class="header-menu">
                     <span>General</span>
                 </li>
+                
+                <li>
+                    <a href="{{ route('admin.dashboard') }}">
+                        <i class="fas fa-house-user"></i>
+                        <span>Admin Home</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="{{ route('index') }}">
                         <i class="fas fa-home"></i>
-                        <span>Home</span>
+                        <span>Site Home</span>
                     </a>
                 </li>
 
                 {{-- Dropdown --}}
                 <li class="sidebar-dropdown">
                     <a href="#">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span>E-commerce</span>
-                        <span class="badge badge-pill badge-primary">3</span>
+                        <i class="fas fa-server"></i>
+                        <span>Servers</span>
+                        {{-- <span class="badge badge-pill badge-primary">3</span> --}}
                     </a>
                     <div class="sidebar-submenu">
                         <ul>
                             <li>
-                                <a href="#">Dashboard 1
-                                    <span class="badge badge-pill badge-success">Pro</span>
+                                <a href="{{ route('admin.servers.index') }}">
+                                    <i class="far fa-eye"></i>View All Servers
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Products
-
+                                <a href="{{ route('admin.servers.add') }}">
+                                    <i class="far fa-plus-square"></i>Add New Server
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Orders</a>
-                            </li>
-                            <li>
-                                <a href="#">Credit cart</a>
+                                <a href="#">
+                                    <i class="fas fa-jedi"></i>Force Update
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -78,13 +84,13 @@
                 
                 {{-- Header --}}
                 <li class="header-menu">
-                    <span>Extra</span>
+                    <span>Sidebar Header</span>
                 </li>
                 {{-- Menu Item w/o Dropdown --}}
                 <li>
                     <a href="#">
                         <i class="fa fa-calendar"></i>
-                        <span>Calendar</span>
+                        <span>Link</span>
                     </a>
                 </li>
                 

@@ -71,8 +71,15 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	
 	// Server Management Routes
 	Route::prefix('servers')->name('servers.')->group(function () {
-		// Add Server To List
+		// Add & Store Server
 		Route::get('add', 'AdminsController@addServer')->name('add');
 		Route::post('add', 'AdminsController@storeServer')->name('store');
+		// Edit & Update Server
+		Route::get('edit/{provider_id}', 'AdminsController@editServer')->name('edit');
+		Route::post('edit', 'AdminsController@updateServer')->name('update');
+		// Delete Server
+		Route::delete('delete/{provider_id}', 'AdminsContoller@deleteServer')->name('delete');
+		// Index of Servers
+		Route::get('/', 'AdminsController@listServers')->name('index');
 	});
 });

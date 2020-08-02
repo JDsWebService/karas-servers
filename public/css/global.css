@@ -7,6 +7,12 @@ section.section-default {
 	align-items: center;
 }
 
+/* Global Pagination Links */
+.pagination {
+	width: 100%;
+	justify-content: center;
+}
+
 /* Alert Messages Section */
 section.section-alert {
 	padding-top: 100px;

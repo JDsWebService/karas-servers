@@ -27,7 +27,7 @@
         <div class="page-wrapper chiller-theme sidebar-bg bg1 toggled">
             
             {{-- Sidebar --}}
-            @include('partials.admin._sidebar')
+            @include('partials.admin.sidebar')
 
             <main class="page-content">
                 <div class="container-fluid">
@@ -39,12 +39,12 @@
                     <hr>
                     
                     {{-- Flash Messages --}}
-                    @include('partials.messages')
+                    @include('partials.admin.messages')
 
                     @yield('content')
 
                     {{-- Footer --}}
-                    @include('partials.admin._footer')
+                    @include('partials.admin.footer')
                 </div>
             </main> <!-- /.page-content -->
             

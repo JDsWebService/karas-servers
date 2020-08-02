@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \GuzzleHttp\Client as Guzzle;
 
 class BattleMetricsController extends Controller
 {
     // Get Server Information From Battlemetrics API
-    public function getServerInfo($id) {
+    public static function getServerInfo($id) {
     	$client = new Guzzle(['verify' => false]);
     	$response = $client->get('https://api.battlemetrics.com/servers/' . $id);
     	
