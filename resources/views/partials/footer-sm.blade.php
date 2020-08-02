@@ -1,6 +1,6 @@
 <footer id="footer" class="bg-one">
   <div class="footer-bottom">
-    <h5>Copyright 2020. All rights reserved.</h5>
+    <h5>&copy; {{ config('app.name', 'Laravel') }} {{ \Carbon\Carbon::now()->year }} - All Rights Reserved</h5>
     <h6>Design and Developed by <a href="http://jdswebservice.com/" target="_blank">JD's Web Service</a>.</h6>
     <div class="row justify-content-center">
       <div class="col-sm-6">

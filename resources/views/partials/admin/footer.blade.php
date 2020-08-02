@@ -7,7 +7,3 @@
 		<a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
 	@endif
 </p>
-
-<p class="text-center">
-	<a href="#">Admin Dashboard</a>
-</p>
