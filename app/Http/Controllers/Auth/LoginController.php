@@ -66,8 +66,7 @@ class LoginController extends Controller
 
         // See if User already exists in database
         $user = User::where([
-            ['provider_id', '=', $discordUser->user['id']],
-            ['email', '=', $discordUser->user['email']]
+            ['provider_id', '=', $discordUser->user['id']]
         ])->first();
 
         // If user doesn't exist
@@ -76,6 +75,17 @@ class LoginController extends Controller
             $user = new User;
             $user->provider = 'discord';
             $user->provider_id = $discordUser->user['id'];
+            $user->username = $discordUser->user['username'];
+            $user->discriminator = $discordUser->user['discriminator'];
+            $user->fullusername = $discordUser->nickname;
+            $user->avatar = $discordUser->avatar;
+            $user->email = $discordUser->user['email'];
+            $user->email_verified = $discordUser->user['verified'];
+            $user->locale = $discordUser->user['locale'];
+            $user->twofactor = $discordUser->user['mfa_enabled'];
+            $user->save();
+        } else {
+            // Update the Users Information
             $user->username = $discordUser->user['username'];
             $user->discriminator = $discordUser->user['discriminator'];
             $user->fullusername = $discordUser->nickname;
