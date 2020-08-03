@@ -10,7 +10,7 @@
 	            <div class="col-12">
 	                <div class="title text-center">
 	                    <h4>Our untold story</h4>
-	                    <h2>Blog.</h2>
+	                    <h2>Blog & Events</h2>
 	                    <span class="border"></span>
 	                    <p>Read more about what's going on in Kara's World's!</p>
 	                </div>
