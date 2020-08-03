@@ -21,7 +21,7 @@
 
                             {{-- Blog --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('blog.show') }}">Blog</a>
+                                <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                             </li>
 
                             {{-- About Us Page --}}

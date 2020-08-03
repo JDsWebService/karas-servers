@@ -20,7 +20,7 @@ Route::get('/', 'PagesController@index')->name('index');
 // Public Facing Blog Routes
 Route::prefix('blog')->name('blog.')->group(function () {
 
-	Route::get('/show', 'BlogController@show')->name('show');
+	Route::get('s/{slug}', 'BlogController@show')->name('show');
 	Route::get('/', 'BlogController@index')->name('index');
 
 });
