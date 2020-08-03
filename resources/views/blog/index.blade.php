@@ -27,9 +27,9 @@
 		            <!-- single blog post -->
 		            <article class="col-md-4 col-sm-6" >
 		                <div class="post-item">
-		                    <div class="post-thumb">
+		                    {{-- <div class="post-thumb">
 		                        <img class="img-fluid shadow rounded" src="images/blog/post-1.jpg" alt="Generic placeholder image">
-		                    </div>
+		                    </div> --}}
 		                    <div class="post-title">
 		                        <h3 class="mt-0"><a href="">{{ $post->title }}</a></h3>
 		                    </div>
