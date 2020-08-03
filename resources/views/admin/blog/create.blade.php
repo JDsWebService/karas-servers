@@ -30,6 +30,6 @@
 
 @section('scripts')
 	
-	<x-tinymce/>
+	<x-tiny-m-c-e/>
 
 @endsection
