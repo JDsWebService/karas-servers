@@ -13,11 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Normal Route
+// Homepage
 Route::get('/', 'PagesController@index')->name('index');
-// Coming Soon Routes
 // Route::get('/', 'PagesController@comingsoon')->name('index');
-// Route::get('/comingsoon', 'PagesController@comingsoon')->name('comingsoon');
+
+// Public Facing Blog Routes
+Route::prefix('blog')->name('blog.')->group(function () {
+
+	Route::get('/show', 'BlogController@show')->name('show');
+	Route::get('/', 'BlogController@index')->name('index');
+
+});
 
 // Single Pages Group
 Route::name('pages.')->group(function () {
@@ -25,11 +31,10 @@ Route::name('pages.')->group(function () {
 	Route::get('about', 'PagesController@about')->name('about');
 	// FAQ Page
 	Route::get('faq', 'PagesController@faq')->name('faq');
-
 });
 
+// Public Facing Server Routes
 Route::prefix('servers')->name('servers.')->group(function () {
-
 	// Server Rules
 	Route::prefix('rules')->name('rules.')->group(function () {
 		// English Rules Route
@@ -71,15 +76,21 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	
 	// Server Management Routes
 	Route::prefix('servers')->name('servers.')->group(function () {
-		// Add & Store Server
 		Route::get('add', 'Admin\ServersController@addServer')->name('add');
 		Route::post('add', 'Admin\ServersController@storeServer')->name('store');
-		// Edit & Update Server
 		Route::get('edit/{provider_id}', 'Admin\ServersController@editServer')->name('edit');
 		Route::post('edit', 'Admin\ServersController@updateServer')->name('update');
-		// Delete Server
 		Route::delete('delete/{provider_id}', 'Admin\ServersController@deleteServer')->name('delete');
-		// Index of Servers
 		Route::get('/', 'Admin\ServersController@listServers')->name('index');
+	});
+
+	// Blog Management Routes
+	Route::prefix('blog')->name('blog.')->group(function () {
+		Route::get('create', 'Admin\BlogController@create')->name('create');
+		Route::post('create', 'Admin\BlogController@store')->name('store');
+		Route::get('edit/{slug}', 'Admin\BlogController@edit')->name('edit');
+		Route::post('update/{slug}', 'Admin\BlogController@update')->name('update');
+		Route::post('delete/{slug}', 'Admin\BlogController@destroy')->name('delete');
+		Route::get('/', 'Admin\BlogController@index')->name('index');
 	});
 });

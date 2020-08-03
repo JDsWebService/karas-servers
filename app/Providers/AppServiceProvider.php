@@ -34,5 +34,6 @@ class AppServiceProvider extends ServiceProvider
             // Return false if not staff
             return false;
         });
+
     }
 }

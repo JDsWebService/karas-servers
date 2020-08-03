@@ -81,6 +81,28 @@
                         </ul>
                     </div>
                 </li>
+
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fas fa-blog"></i>
+                        <span>Blog</span>
+                        {{-- <span class="badge badge-pill badge-primary">3</span> --}}
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="{{ route('admin.blog.index') }}">
+                                    <i class="far fa-eye"></i>View All Posts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.blog.create') }}">
+                                    <i class="far fa-plus-square"></i>Create New Post
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 
                 {{-- Header --}}
                 <li class="header-menu">

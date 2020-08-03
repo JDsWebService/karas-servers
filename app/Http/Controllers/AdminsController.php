@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Scripts\Ping;
 
-
 class AdminsController extends Controller
 {
     // Dashboard

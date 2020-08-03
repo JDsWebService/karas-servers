@@ -36,4 +36,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Define Relationship Blog/Post
+    public function posts() {
+        return $this->hasMany('App\Models\Blog\Post');
+    }
 }
