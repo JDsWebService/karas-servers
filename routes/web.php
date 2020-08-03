@@ -33,23 +33,23 @@ Route::prefix('servers')->name('servers.')->group(function () {
 	// Server Rules
 	Route::prefix('rules')->name('rules.')->group(function () {
 		// English Rules Route
-		Route::get('english', 'ServersController@rulesEnglish')->name('english');
+		Route::get('english', 'Servers\RulesController@rulesEnglish')->name('english');
 		// Portuguese Rules Route
-		Route::get('portuguese', 'ServersController@rulesPortuguese')->name('portuguese');
+		Route::get('portuguese', 'Servers\RulesController@rulesPortuguese')->name('portuguese');
 		// Spanish Rules Route
-		Route::get('spanish', 'ServersController@rulesSpanish')->name('spanish');
+		Route::get('spanish', 'Servers\RulesController@rulesSpanish')->name('spanish');
 		// German Rules Route
-		Route::get('german', 'ServersController@rulesGerman')->name('german');
+		Route::get('german', 'Servers\RulesController@rulesGerman')->name('german');
 		// Korean Rules Route
-		Route::get('korean', 'ServersController@rulesKorean')->name('korean');
+		Route::get('korean', 'Servers\RulesController@rulesKorean')->name('korean');
 		// Japanese Rules Route
-		Route::get('japanese', 'ServersController@rulesJapanese')->name('japanese');
+		Route::get('japanese', 'Servers\RulesController@rulesJapanese')->name('japanese');
 		// Index
-		Route::get('/', 'ServersController@rulesIndex')->name('index');
+		Route::get('/', 'Servers\RulesController@rulesIndex')->name('index');
 	});
 
 	// Servers Status Page
-	Route::get('status', 'ServersController@status')->name('status');
+	Route::get('status', 'Servers\StatusController@status')->name('status');
 });
 
 // Socialite Login
@@ -72,14 +72,14 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	// Server Management Routes
 	Route::prefix('servers')->name('servers.')->group(function () {
 		// Add & Store Server
-		Route::get('add', 'AdminsController@addServer')->name('add');
-		Route::post('add', 'AdminsController@storeServer')->name('store');
+		Route::get('add', 'Admin\ServersController@addServer')->name('add');
+		Route::post('add', 'Admin\ServersController@storeServer')->name('store');
 		// Edit & Update Server
-		Route::get('edit/{provider_id}', 'AdminsController@editServer')->name('edit');
-		Route::post('edit', 'AdminsController@updateServer')->name('update');
+		Route::get('edit/{provider_id}', 'Admin\ServersController@editServer')->name('edit');
+		Route::post('edit', 'Admin\ServersController@updateServer')->name('update');
 		// Delete Server
-		Route::delete('delete/{provider_id}', 'AdminsController@deleteServer')->name('delete');
+		Route::delete('delete/{provider_id}', 'Admin\ServersController@deleteServer')->name('delete');
 		// Index of Servers
-		Route::get('/', 'AdminsController@listServers')->name('index');
+		Route::get('/', 'Admin\ServersController@listServers')->name('index');
 	});
 });

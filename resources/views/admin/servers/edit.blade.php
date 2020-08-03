@@ -8,9 +8,7 @@
 
 		<div class="col-sm-6">
 			{{ Form::model($server, ['route' => ['admin.servers.update', $server->id]]) }}
-				<label for="provider_id">Battlemetrics Server ID</label>
-				{{ Form::text('provider_id', null, ['class' => 'form-control', 'placeholder' => '846493']) }}
-				{{-- <input type="text" class="form-control" name="provider_id" placeholder="847309"> --}}
+				{{ Form::hidden('provider_id') }}
 
 				<label for="cluster" class="mt-2">Cluster</label>
 				{{ Form::select('cluster', ['pvp' => 'PvP', 'pve' => 'PvE', 'modded' => 'Modded', 'other' => 'Other'], null, ['class' => 'form-control']) }}
@@ -23,8 +21,13 @@
 				<h4>Heads Up!</h4>
 				<p>This information will be updated when you save. You can't edit this information.</p>
 			</div>
+
 			<label>Server Name</label>
 			<input type="text" value="{{ $server->name }}" class="form-control" disabled>
+			
+			<label class="mt-2">BattleMetrics ID</label>
+			<input type="text" value="{{ $server->provider_id }}" class="form-control" disabled>
+
 			<div class="row mt-2">
 				<div class="col-sm-6">
 					<label>Server IP</label>
