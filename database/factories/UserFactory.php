@@ -47,5 +47,6 @@ $factory->define(User::class, function (Faker $faker) {
         'locale' => $faker->locale,
         'twofactor' => $faker->boolean,
         'remember_token' => Str::random(60),
+        'created_at' => $faker->dateTimeBetween('-30days', 'now'),
     ];
 });
