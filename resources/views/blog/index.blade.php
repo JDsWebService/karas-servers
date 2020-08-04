@@ -38,7 +38,7 @@
 		                    </div>
 		                    <div class="post-content">
 		                        <p>
-		                        	{{ $post->smallBody }}
+		                        	{!! $post->smallBody !!}
 		                        </p>
 		                    </div>
 		                    <a class="btn btn-main" href="{{ route('blog.show', $post->slug) }}">Read more</a>
