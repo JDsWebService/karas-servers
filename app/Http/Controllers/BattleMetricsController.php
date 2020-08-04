@@ -10,12 +10,12 @@ use \GuzzleHttp\Exception\ClientException;
 class BattleMetricsController extends Controller
 {
     // Get Server Information From Battlemetrics API
-    public static function getServerInfo($request) {
+    public static function getServerInfo($id) {
 
     	$client = new Guzzle(['verify' => false]);
         
         try {
-            $response = $client->get('https://api.battlemetrics.com/servers/' . $request->provider_id);
+            $response = $client->get('https://api.battlemetrics.com/servers/' . $id);
             if($response->getStatusCode() == 200) {
                 $serverInfo = json_decode($response->getBody()->getContents())->data->attributes;
             }

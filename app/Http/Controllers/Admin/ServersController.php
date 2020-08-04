@@ -95,7 +95,7 @@ class ServersController extends Controller
     	}
 
     	// Check BattleMetrics API for Server
-    	$serverInfo = BMController::getServerInfo($request);
+    	$serverInfo = BMController::getServerInfo(Purifier::clean($request->provider_id));
 
     	// Assign all the request data to the Server Object
         $server->provider_id = $serverInfo->id;

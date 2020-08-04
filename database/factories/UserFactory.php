@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\User;
+use App\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -15,14 +15,37 @@ use Illuminate\Support\Str;
 | your application. Factories provide a convenient way to generate new
 | model instances for testing / seeding your application's database.
 |
+|--------------------------------------------------------------------------
+| Users Table Columns
+|--------------------------------------------------------------------------
+| str  $provider
+| str  $provider_id
+| str  $username
+| str  $discriminator
+| str  $fullusername
+| str  $avatar
+| str  $email
+| bool  $email_verified
+| str  $locale
+| bool  $twofactor
+|
 */
 
 $factory->define(User::class, function (Faker $faker) {
+    $username = $faker->userName;
+    $discriminator = $faker->randomNumber(4, true);
+    $fullusername = $username . "#" . $discriminator;
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => Str::random(10),
+        'provider' => 'discord',
+        'provider_id' => 123456789012345678,
+        'username' => $username,
+        'discriminator' => $discriminator,
+        'fullusername' => $fullusername,
+        'avatar' => $faker->imageURL(128, 128, 'cats'),
+        'email' => $faker->unique()->freeEmail,
+        'email_verified' => $faker->boolean,
+        'locale' => $faker->locale,
+        'twofactor' => $faker->boolean,
+        'remember_token' => Str::random(60),
     ];
 });

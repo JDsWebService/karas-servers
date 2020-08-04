@@ -4,6 +4,7 @@
 
 @section('content')
 
+
     {{-- Above The Fold - Welcome --}}
     @include('content.hero')
 
