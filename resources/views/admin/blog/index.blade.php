@@ -40,7 +40,7 @@
 							<a href="{{ route('admin.blog.edit', $post->slug) }}" class="btn btn-secondary btn-sm">
 								<i class="far fa-edit"></i> Edit
 							</a>
-							<a href="#" class="btn btn-warning btn-sm" target="_blank">
+							<a href="{{ route('blog.show', $post->slug) }}" class="btn btn-warning btn-sm" target="_blank">
 								<i class="far fa-eye"></i> View
 							</a>
 						</td>

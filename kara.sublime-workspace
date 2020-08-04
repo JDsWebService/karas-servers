@@ -19,25 +19,7 @@
 			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 3184,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/AdminsController.php",
-			"settings":
-			{
-				"buffer_size": 3472,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/BattleMetricsController.php",
-			"settings":
-			{
-				"buffer_size": 760,
+				"buffer_size": 3848,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -63,15 +45,15 @@
 				"Indentation: Reindent Lines"
 			],
 			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
 				"find use",
 				"PHPCompanion:Find Use"
 			],
 			[
 				"re",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"reint",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -123,31 +105,54 @@
 	[
 		"/E/Sites/kara",
 		"/E/Sites/kara/app",
-		"/E/Sites/kara/app/Exceptions",
-		"/E/Sites/kara/app/Http",
-		"/E/Sites/kara/app/Http/Controllers",
-		"/E/Sites/kara/public",
-		"/E/Sites/kara/public/css",
+		"/E/Sites/kara/app/View",
+		"/E/Sites/kara/app/View/Components",
 		"/E/Sites/kara/resources",
 		"/E/Sites/kara/resources/views",
-		"/E/Sites/kara/resources/views/admin",
-		"/E/Sites/kara/resources/views/admin/servers",
-		"/E/Sites/kara/resources/views/layouts",
 		"/E/Sites/kara/resources/views/partials",
 		"/E/Sites/kara/routes"
 	],
 	"file_history":
 	[
+		"/E/Sites/kara/app/Http/Controllers/BlogController.php",
+		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
+		"/E/Sites/kara/resources/views/blog/index.blade.php",
+		"/E/Sites/kara/resources/views/admin/blog/create.blade.php",
+		"/E/Sites/kara/resources/views/admin/blog/edit.blade.php",
+		"/E/Sites/kara/resources/views/admin/blog/index.blade.php",
+		"/E/Sites/kara/app/View/Components/TinyMCE.php",
+		"/E/Sites/kara/app/Models/Blog/Post.php",
+		"/E/Sites/kara/resources/views/blog/show.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/Admin/BlogController.php",
+		"/E/Sites/kara/config/purifier.php",
+		"/E/Sites/kara/resources/views/components/tiny-m-c-e.blade.php",
+		"/E/Sites/kara/resources/views/partials/admin/sidebar.blade.php",
+		"/E/Sites/kara/database/migrations/2020_08_03_020930_add_subtitle_column_to_blog_posts_table.php",
+		"/E/Sites/kara/database/migrations/2020_08_03_020905_ass_subtitle_column_to_blog_posts_table.php",
+		"/E/Sites/kara/app/Models/User.php",
+		"/E/Sites/kara/database/migrations/2020_08_03_015036_create_blog_posts_table.php",
+		"/E/Sites/kara/app/Providers/AppServiceProvider.php",
+		"/E/Sites/kara/resources/views/components/tinymce.blade.php",
+		"/E/Sites/kara/public/css/blog/dfree-tinymce.css",
+		"/E/Sites/kara/public/js/blog/dfree-tinymce.js",
+		"/E/Sites/kara/resources/views/partials/head.blade.php",
+		"/E/Sites/kara/resources/views/content/blog.blade.php",
+		"/E/Sites/kara/resources/views/index.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/AdminsController.php",
+		"/E/Sites/kara/app/Http/Controllers/BattleMetricsController.php",
+		"/E/Sites/kara/app/Http/Controllers/Admin/ServersController.php",
+		"/E/Sites/kara/resources/views/admin/servers/edit.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/ServersController.php",
+		"/E/Sites/kara/app/Http/Controllers/Servers/StatusController.php",
+		"/E/Sites/kara/app/Http/Controllers/Servers/RulesController.php",
 		"/E/Sites/kara/app/Exceptions/BattleMetricsException.php",
 		"/E/Sites/kara/app/Exceptions/Handler.php",
-		"/E/Sites/kara/app/Http/Controllers/BattleMetricsController.php",
 		"/E/Sites/kara/resources/views/admin/servers/index.blade.php",
 		"/E/Sites/kara/resources/views/partials/admin/footer.blade.php",
 		"/E/Sites/kara/resources/views/partials/footer-sm.blade.php",
 		"/E/Sites/kara/resources/views/partials/footer.blade.php",
 		"/E/Sites/kara/update.sh",
 		"/E/server_admin/fresh.sh",
-		"/E/Sites/kara/resources/views/admin/servers/edit.blade.php",
 		"/E/Sites/kara/public/css/global.css",
 		"/E/Sites/kara/resources/views/admin/servers/add.blade.php",
 		"/E/Sites/kara/resources/views/layouts/admin.blade.php",
@@ -158,10 +163,7 @@
 		"/E/Sites/kara/public/css/admin/admin.css",
 		"/E/Sites/kara/.env",
 		"/E/Sites/kara/resources/views/layouts/app.blade.php",
-		"/E/Sites/kara/resources/views/partials/head.blade.php",
 		"/E/Sites/kara/resources/views/partials/admin/_scripts.blade.php",
-		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
-		"/E/Sites/kara/app/Http/Controllers/AdminsController.php",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa12764.16477/laravel-bootstrap-4-admin-ui-master/public/js/app.js",
 		"/E/Sites/kara/routes/web.php",
 		"/E/Sites/kara/app/Http/Controllers/Auth/LoginController.php",
@@ -169,8 +171,6 @@
 		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
 		"/E/Sites/kara/resources/views/pages/404.blade.php",
 		"/E/Sites/kara/resources/views/layouts/404.blade.php",
-		"/E/Sites/kara/app/Http/Controllers/ServersController.php",
-		"/E/Sites/kara/app/Providers/AppServiceProvider.php",
 		"/E/Sites/kara/app/Http/Middleware/CheckIfUserIsStaff.php",
 		"/C/Users/Jonathan/Downloads/ReadMe.txt",
 		"/E/Sites/kara/resources/views/servers/status.blade.php",
@@ -223,7 +223,6 @@
 		"/E/Sites/kara/resources/views/content/testimonials/bakuga.blade.php",
 		"/E/Sites/kara/resources/views/content/testimonials/example1.blade.php",
 		"/E/Sites/kara/resources/views/content/about.blade.php",
-		"/E/Sites/kara/resources/views/index.blade.php",
 		"/C/Users/Jonathan/Downloads/sql.sql",
 		"/E/Sites/kara/resources/views/servers/add.blade.php",
 		"/E/Sites/kara/app/Http/Kernel.php",
@@ -242,34 +241,11 @@
 		"/E/Sites/kara/resources/views/content/team/kara.blade.php",
 		"/E/Sites/kara/app/Http/Controllers/Auth/VerificationController.php",
 		"/E/Sites/kara/app/Providers/EventServiceProvider.php",
-		"/E/Sites/kara/config/services.php",
-		"/E/Sites/kara/composer.lock",
-		"/C/php/php.ini",
-		"/E/Sites/kara/public/index.php",
-		"/E/Sites/kara/routes/api.php",
-		"/E/Sites/kara/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/E/Sites/kara/public/css/style.css",
-		"/E/Sites/kara/resources/views/content/testimonials.blade.php",
-		"/E/Sites/kara/resources/views/content/testimonials/example2.blade.php",
-		"/E/Sites/kara/resources/views/pages/faq.blade.php",
-		"/E/Sites/kara/public/js/script.js",
-		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa9208.1096/navigator-free/themes/navigator-free/index.html",
-		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa33628.41469/navigator-free/themes/navigator-free/plugins/slick-carousel/slick/slick.js",
-		"/E/Sites/kara/.gitignore",
-		"/E/Sites/kara/resources/views/comingsoon/index.blade.php",
-		"/E/Sites/kara/public/comingsoon-files/css/main.css",
-		"/E/server_admin/nginx_default.txt",
-		"/E/keys/ssh/karasworld_ssh_public",
-		"/E/Sites/kara/resources/views/content/team.blade.php",
-		"/E/Sites/kara/resources/views/partials/services.blade.php",
-		"/E/Sites/kara/resources/views/partials/about.blade.php",
-		"/E/Sites/kara/resources/views/partials/hero.blade.php",
-		"/E/Sites/kara/resources/views/partials/donations.blade.php",
-		"/E/Sites/kara/resources/views/partials/connect.blade.php"
+		"/E/Sites/kara/config/services.php"
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -283,6 +259,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" btn-sm ",
+			"server",
+			"id",
+			"$server",
+			"blog",
+			".demo-dfree",
+			"AdminsController",
+			"ServersController",
 			"sidebar-submenu",
 			"ref=\"#\">",
 			"/images/",
@@ -351,7 +335,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -360,15 +344,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3184,
+						"buffer_size": 3848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3050,
-								3050
+								428,
+								428
 							]
 						],
 						"settings":
@@ -378,27 +362,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										3068,
-										3069
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/single_quote.png",
-										"region.greenish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										3038,
-										3039
-									]
 								},
 								"unmatched":
 								{
@@ -406,41 +375,36 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -451,16 +415,21 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
@@ -470,253 +439,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/AdminsController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3472,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1228,
-								1228
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1459,
-										1460
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1030,
-										1031
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1138.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/BattleMetricsController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 760,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								455,
-								455
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										756,
-										757
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										302,
-										303
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content"
-							],
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 80.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
