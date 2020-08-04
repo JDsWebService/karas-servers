@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog\Post;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
 	// Home Page
     public function index() {
-    	return view('index');
+        $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
+
+    	return view('index')
+                        ->withPosts($posts);
     }
 
     // Coming Soon Page
