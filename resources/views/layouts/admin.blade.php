@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
         <link rel="stylesheet" href="/css/admin/admin.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
+        <link rel="stylesheet" href="/css/admin/admin-custom.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
         <link rel="stylesheet" href="/css/admin/admin-themes.css">
         <link rel="stylesheet" href="/css/admin/slate.css">
         

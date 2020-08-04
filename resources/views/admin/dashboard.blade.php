@@ -13,13 +13,47 @@
 			<div class="row justify-content-center">
 				<div class="col-sm-6">
 					<h4>Users Last Seven Days</h4>
-					<canvas id="myChart" width="100" height="50"></canvas>
+					<canvas id="myChart" width="100" height="55"></canvas>
 				</div>
 				<div class="col-sm-6">
-					
+					<h4>We are currently managing...</h4>
+					<div class="row justify-content-center">
+						<div class="col-sm-6">
+							<div class="card-counter primary">
+								<i class="fas fa-server"></i>
+								<span class="count-numbers">{{ $serverCount }}</span>
+								<span class="count-name">Servers</span>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="card-counter danger">
+								<i class="fas fa-blog"></i>
+								<span class="count-numbers">{{ $postCount }}</span>
+								<span class="count-name">Blog Posts</span>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center mt-3">
+
+						{{-- <div class="col-sm-6">
+							<div class="card-counter success">
+								<i class="far fa-calendar-alt"></i>
+								<span class="count-numbers">6875</span>
+								<span class="count-name">Events</span>
+							</div>
+						</div> --}}
+
+						<div class="col-sm-6">
+							<div class="card-counter info">
+								<i class="fa fa-users"></i>
+								<span class="count-numbers">{{ $userCount }}</span>
+								<span class="count-name">Users</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
