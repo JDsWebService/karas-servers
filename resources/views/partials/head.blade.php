@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="/css/themefisher-font/style.css">
 
 <!-- Main Stylesheet -->
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
 
 {{-- Custom Global Stylesheet --}}
-<link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/global.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
