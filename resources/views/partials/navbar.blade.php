@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-xl">
                     {{-- Logo Image --}}
                     <a class="navbar-brand" href="{{ route('index') }}">
                         <img src="/imgs/logo.png" alt="logo">
