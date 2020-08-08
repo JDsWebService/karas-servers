@@ -42,12 +42,13 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('servers.status') }}">Status</a>
                                     <a class="dropdown-item" href="{{ route('servers.rules.index') }}">Server Rules</a>
+                                    <a class="dropdown-item" href="{{ route('pages.faq') }}">F.A.Q</a>
                                 </div>
                             </li>
 
                             {{-- FAQ Link --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('pages.faq') }}">F.A.Q</a>
+                                <a class="nav-link" href="#">Resources</a>
                             </li>
                             
                             {{-- Discord Login Button --}}
