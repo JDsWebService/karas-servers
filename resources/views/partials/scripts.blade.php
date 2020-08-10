@@ -30,3 +30,12 @@
 
   gtag('config', 'UA-51867042-3');
 </script>
+{{-- FileUpload Script --}}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#fileUpload').change(function (e) {
+        	var fileName = e.target.files[0].name;
+            $('#fileUploadPTag').text("Uploading file: " + fileName);        
+        });
+    });
+</script>

@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Resources;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Handlers\FileUploadHandler;
+use App\Models\Resource\Ingredient;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Mews\Purifier\Facades\Purifier;
 
 class IngredientsController extends Controller
 {
@@ -14,7 +18,11 @@ class IngredientsController extends Controller
      */
     public function index()
     {
-        //
+        // Grab all the Ingredients
+        $ingredients = Ingredient::orderBy('created_at', 'desc')->paginate(15);
+
+        return view('admin.resources.ingredients.index')
+                                ->withIngredients($ingredients);
     }
 
     /**
@@ -24,7 +32,7 @@ class IngredientsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.resources.ingredients.create');
     }
 
     /**
@@ -35,7 +43,27 @@ class IngredientsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|max:255|string',
+            'fileUpload' => 'required|image|max:1999'
+        ]);
+
+        // Handle File Upload
+        $file = FileUploadHandler::uploadFile($request, 'fileUpload', 'ingredients');
+
+        // Create the object
+        $ingredient = new Ingredient;
+
+        // Add request to object
+        $ingredient->name = Purifier::clean($request->name);
+        $ingredient->image = $file->pathToStore;
+        
+        // Save Object
+        $ingredient->save();
+        // Flash Message
+        Session::flash('success', 'Ingredient has been added to the database!');
+        // Redirect
+        return redirect()->route('admin.resources.ingredients.index');
     }
 
     /**

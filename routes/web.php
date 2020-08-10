@@ -31,6 +31,8 @@ Route::name('pages.')->group(function () {
 	Route::get('about', 'PagesController@about')->name('about');
 	// FAQ Page
 	Route::get('faq', 'PagesController@faq')->name('faq');
+	// Resources Page
+	Route::get('resources', 'PagesController@resources')->name('resources');
 });
 
 // Public Facing Server Routes
@@ -92,5 +94,17 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 		Route::post('update/{slug}', 'Admin\BlogController@update')->name('update');
 		Route::post('delete/{slug}', 'Admin\BlogController@destroy')->name('delete');
 		Route::get('/', 'Admin\BlogController@index')->name('index');
+	});
+
+	// Resources Management
+	Route::prefix('resources')->name('resources.')->group(function () {
+
+		// Ingredient Management
+		Route::prefix('ingredients')->name('ingredients.')->group(function () {
+			Route::get('create', 'Resources\IngredientsController@create')->name('create');
+			Route::post('store', 'Resources\IngredientsController@store')->name('store');
+			Route::get('/', 'Resources\IngredientsController@index')->name('index');
+		});
+
 	});
 });

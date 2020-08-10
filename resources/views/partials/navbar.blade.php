@@ -48,7 +48,7 @@
 
                             {{-- FAQ Link --}}
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Resources</a>
+                                <a class="nav-link" href="{{ route('pages.resources') }}">Resources</a>
                             </li>
                             
                             {{-- Discord Login Button --}}

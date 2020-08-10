@@ -29,4 +29,9 @@ class PagesController extends Controller
     public function about() {
         return view('pages.about');
     }
+
+    // Resources Page
+    public function resources() {
+        return view('pages.resources');
+    }
 }

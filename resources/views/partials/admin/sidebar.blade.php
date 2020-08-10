@@ -65,23 +65,24 @@
                         <ul>
                             <li>
                                 <a href="{{ route('admin.servers.index') }}">
-                                    <i class="far fa-eye"></i>View All Servers
+                                    <i class="far fa-eye"></i> View All Servers
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('admin.servers.add') }}">
-                                    <i class="far fa-plus-square"></i>Add New Server
+                                    <i class="far fa-plus-square"></i> Add New Server
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fas fa-jedi"></i>Force Update
+                                    <i class="fas fa-jedi"></i> Force Update
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-
+                
+                {{-- Blog Dropdown --}}
                 <li class="sidebar-dropdown">
                     <a href="#">
                         <i class="fas fa-blog"></i>
@@ -92,12 +93,35 @@
                         <ul>
                             <li>
                                 <a href="{{ route('admin.blog.index') }}">
-                                    <i class="far fa-eye"></i>View All Posts
+                                    <i class="far fa-eye"></i> View All Posts
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('admin.blog.create') }}">
-                                    <i class="far fa-plus-square"></i>Create New Post
+                                    <i class="far fa-plus-square"></i> Create New Post
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                {{-- Recipes Dropdown --}}
+                <li class="sidebar-dropdown">
+                    <a href="#">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Recipes</span>
+                        {{-- <span class="badge badge-pill badge-primary">3</span> --}}
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-book-open"></i> View All Recipes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.resources.ingredients.index') }}">
+                                    <i class="fas fa-shopping-basket"></i> View All Ingredients
                                 </a>
                             </li>
                         </ul>
