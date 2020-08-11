@@ -33,7 +33,7 @@
 				@foreach($posts as $post)
 					<tr>
 						<th scope="row">{{ $post->id }}</th>
-						<td>{{ $post->title }}</td>
+						<td>{!! $post->title !!}</td>
 						<td>{{ $post->user->username }}</td>
 						<td>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($post->created_at))->diffForHumans() }}</td>
 						<td>

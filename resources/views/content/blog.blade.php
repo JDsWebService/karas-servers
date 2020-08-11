@@ -25,7 +25,7 @@
                                 <img class="img-fluid shadow rounded" src="images/blog/post-1.jpg" alt="Generic placeholder image">
                             </div> --}}
                             <div class="post-title">
-                                <h3 class="mt-0"><a href="">{{ $post->title }}</a></h3>
+                                <h3 class="mt-0"><a href="">{!! $post->title !!}</a></h3>
                             </div>
                             <div class="post-meta">
                                 <span>By</span> <a href="#">{{ $post->user->username }}</a>

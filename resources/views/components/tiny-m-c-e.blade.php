@@ -10,7 +10,8 @@
 		],
 		toolbar: 'undo redo | ' + 
 		'formatselect | ' +
-		'bold italic | ' + 
+		'bold italic | ' +
+		'link | ' + 
 		'alignleft aligncenter alignright alignjustify | ' +
 		'bullist numlist | ' +
 		'removeformat',
