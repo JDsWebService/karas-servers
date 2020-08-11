@@ -16,7 +16,12 @@ class CreateIngredientsTable extends Migration
         Schema::create('ingredients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image');
+            $table->string('fileNameWithExt');
+            $table->string('fileName');
+            $table->string('extension');
+            $table->string('fileNameToStore');
+            $table->string('fullPath');
+            $table->string('publicPath');
             $table->timestamps();
         });
     }

@@ -103,6 +103,9 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 		Route::prefix('ingredients')->name('ingredients.')->group(function () {
 			Route::get('create', 'Resources\IngredientsController@create')->name('create');
 			Route::post('store', 'Resources\IngredientsController@store')->name('store');
+			Route::get('edit/{id}', 'Resources\IngredientsController@edit')->name('edit');
+			Route::post('edit/{id}', 'Resources\IngredientsController@update')->name('update');
+			Route::post('delete/{id}', 'Resources\IngredientsController@destroy')->name('delete');
 			Route::get('/', 'Resources\IngredientsController@index')->name('index');
 		});
 

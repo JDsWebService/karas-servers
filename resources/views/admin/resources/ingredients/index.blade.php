@@ -35,16 +35,18 @@
 						<th scope="row">{{ $ingredient->id }}</th>
 						<td>{{ $ingredient->name }}</td>
 						<td>
-							<img src="{{ $ingredient->image }}" alt="{{ $ingredient->name }} Preview" style="width: 16px; height: 16px;">
+							<img src="{{ $ingredient->publicPath }}" alt="{{ $ingredient->name }} Preview" style="width: 16px; height: 16px;">
 						</td>
 						<td>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($ingredient->created_at))->diffForHumans() }}</td>
 						<td>
-							<a href="#" class="btn btn-secondary btn-sm">
+							<a href="{{ route('admin.resources.ingredients.edit', $ingredient->id) }}" class="btn btn-secondary btn-sm">
 								<i class="far fa-edit"></i> Edit
 							</a>
-							<a href="#" class="btn btn-danger btn-sm" target="_blank">
+							<button class="btn btn-danger btn-sm" form="deleteIngredientForm{{ $ingredient->id }}">
 								<i class="far fa-trash-alt"></i> Delete
-							</a>
+							</button>
+							{{ Form::open(['route' => ['admin.resources.ingredients.delete', $ingredient->id], 'id' => 'deleteIngredientForm' . $ingredient->id ])}}
+							{{ Form::close() }}
 						</td>
 					</tr>
 				@endforeach

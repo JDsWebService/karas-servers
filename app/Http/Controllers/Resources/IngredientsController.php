@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Resources;
 
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\Handlers\FileUploadHandler;
+use App\Http\Controllers\Handlers\FileHandler;
 use App\Models\Resource\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -49,14 +49,19 @@ class IngredientsController extends Controller
         ]);
 
         // Handle File Upload
-        $file = FileUploadHandler::uploadFile($request, 'fileUpload', 'ingredients');
+        $file = FileHandler::uploadFile($request, 'ingredients');
 
         // Create the object
         $ingredient = new Ingredient;
 
         // Add request to object
         $ingredient->name = Purifier::clean($request->name);
-        $ingredient->image = $file->pathToStore;
+        $ingredient->fileNameWithExt = $file->fileNameWithExt;
+        $ingredient->fileName = $file->fileName;
+        $ingredient->extension = $file->extension;
+        $ingredient->fileNameToStore = $file->fileNameToStore;
+        $ingredient->fullPath = $file->fullPath;
+        $ingredient->publicPath = $file->publicPath;
         
         // Save Object
         $ingredient->save();
@@ -67,17 +72,6 @@ class IngredientsController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -85,7 +79,12 @@ class IngredientsController extends Controller
      */
     public function edit($id)
     {
-        //
+        // Grab the Ingredient by the ID
+        $ingredient = Ingredient::where('id', $id)->first();
+
+        // Return the view with the ingredient
+        return view('admin.resources.ingredients.edit')
+                                ->withIngredient($ingredient);
     }
 
     /**
@@ -97,7 +96,35 @@ class IngredientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|max:255|string',
+            'fileUpload' => 'nullable|image|max:1999'
+        ]);
+
+        // Create the object
+        $ingredient = Ingredient::where('id', $id)->first();
+
+        // Handle File Upload
+        if($request->fileUpload != null) {
+            $file = FileHandler::replaceFile($ingredient, $request, 'ingredients');
+            $ingredient->fileNameWithExt = $file->fileNameWithExt;
+            $ingredient->fileName = $file->fileName;
+            $ingredient->extension = $file->extension;
+            $ingredient->fileNameToStore = $file->fileNameToStore;
+            $ingredient->fullPath = $file->fullPath;
+            $ingredient->publicPath = $file->publicPath;
+        }
+        
+        // Add request to object
+        $ingredient->name = Purifier::clean($request->name);
+        
+        // Save Object
+        $ingredient->save();
+
+        // Flash Message
+        Session::flash('success', 'Ingredient has been added to the database!');
+        // Redirect
+        return redirect()->route('admin.resources.ingredients.index');
     }
 
     /**
@@ -108,6 +135,10 @@ class IngredientsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $ingredient = Ingredient::where('id', $id)->first();
+        $fileDelete = FileHandler::deleteFile($ingredient);
+        $ingredient->delete();
+        Session::flash('success', 'Ingredient has been deleted.');
+        return redirect()->route('admin.resources.ingredients.index');
     }
 }

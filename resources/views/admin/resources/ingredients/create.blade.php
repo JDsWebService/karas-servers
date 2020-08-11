@@ -13,7 +13,7 @@
 				
 				@include('components.fileupload')
 
-				<button type="submit" class="btn btn-success mt-4 btn-block"><i class="fas fa-server"></i> Add Ingredient</button>
+				<button type="submit" class="btn btn-success mt-4 btn-block"><i class="far fa-plus-square"></i> Add Ingredient</button>
 			{{ Form::close() }}
 		</div>
 
