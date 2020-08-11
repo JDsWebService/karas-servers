@@ -22,17 +22,48 @@ class FileHandler extends Controller
 	// $table->string('fileNameToStore');
 	// $table->string('fullPath');
 	// $table->string('publicPath');
+	//
+	// ---------------------------------------
+	// Calling the Handler
+	// ---------------------------------------
 	// 
+	// $file = FileHandler::uploadFile($request, 'ingredients');
+	// 
+	// ---------------------------------------
+	// Using This Handler
+	// ---------------------------------------
+	// 
+	// Saving the information processed in this handler is quite easy.
+	// Just make sure to save the following after calling the handler.
+	// 
+	// $resource->fileNameWithExt = $file->fileNameWithExt;
+	// $resource->fileName = $file->fileName;
+	// $resource->extension = $file->extension;
+	// $resource->fileNameToStore = $file->fileNameToStore;
+	// $resource->fullPath = $file->fullPath;
+	// $resource->publicPath = $file->publicPath;
 
 
-	// Trim Path
+	/**
+	 * Trim from the beginning of a path
+	 *
+	 * @param string $path
+	 * @param string $prefix
+	 * @return string $trimmedPath
+	 **/
     protected static function trimPath($path, $prefix) {
 		$trimmedPath = $path;
 		if (substr($trimmedPath, 0, strlen($prefix)) == $prefix) {
 		    return $trimmedPath = substr($trimmedPath, strlen($prefix));
 		}
     }
-	// Create File Object
+
+	/**
+	 * Creates a file object to be used inside of a controller
+	 *
+	 * @param array $array
+	 * @return object $object
+	 **/
 	protected static function createFileObject(Array $array) {
 		$publicPath = self::trimPath($array['fullPath'], 'public');
 
@@ -49,7 +80,14 @@ class FileHandler extends Controller
 		return $object;
 	}
 
-    // Handle a file upload
+    /**
+	 * Handles uploading a file to the storage folder.
+	 *
+	 * @param Illuminate\Http\Request $request
+	 * @param string $storageFolder
+	 * @param string $formName
+	 * @return self::createFileObject()
+	 **/
     public static function uploadFile(Request $request, $storageFolder = 'noPath', $formName = 'fileUpload') {
     	$storagePath = 'public/' . $storageFolder;
     	// Get filename with extension
@@ -75,7 +113,16 @@ class FileHandler extends Controller
     	return self::createFileObject($fileArray);
     }
 
-    // Handle File Replacement
+    /**
+	 * Handles repalcing a file in the storage folder.
+	 * Passes to uploadFile Method, then returns file object
+	 *
+	 * @param Illuminate\Database\Eloquent\Model $resource
+	 * @param Illuminate\Http\Request $request
+	 * @param string $storageFolder
+	 * @param string $formName
+	 * @return self::createFileObject()
+	 **/
     public static function replaceFile(Model $resource, Request $request, $storageFolder = 'noPath', $formName = 'fileUpload') {
     	// Delete the old file
     	Storage::delete($resource->fullPath);
@@ -83,7 +130,12 @@ class FileHandler extends Controller
     	return self::uploadFile($request, $storageFolder, $formName);
     }
 
-    // Handle File Deletion
+    /**
+	 * Handles file deletion from the storage folder
+	 *
+	 * @param Illuminate\Database\Eloquent\Model $resource
+	 * @return bool true
+	 **/
     public static function deleteFile(Model $resource) {
     	Storage::delete($resource->fullPath);
     	return true;
