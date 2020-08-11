@@ -24,11 +24,6 @@
                                 <a class="nav-link" href="{{ route('blog.index') }}">Blog & Events</a>
                             </li>
 
-                            {{-- About Us Page --}}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('pages.about') }}">About Us</a>
-                            </li>
-
                             {{-- Temporary Server Rules Link --}}
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('servers.rules.index') }}">Server Rules</a>
@@ -46,9 +41,14 @@
                                 </div>
                             </li>
 
-                            {{-- FAQ Link --}}
-                            <li class="nav-item">
+                            {{-- Resources Link --}}
+                            {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('pages.resources') }}">Resources</a>
+                            </li> --}}
+
+                            {{-- About Us Page --}}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('pages.about') }}">About Us</a>
                             </li>
                             
                             {{-- Discord Login Button --}}
