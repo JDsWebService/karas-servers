@@ -11,15 +11,6 @@ class User extends Authenticatable
     use Notifiable;
 
     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
@@ -40,5 +31,20 @@ class User extends Authenticatable
     // Define Relationship Blog/Post
     public function posts() {
         return $this->hasMany('App\Models\Blog\Post');
+    }
+
+    // Get Tribe Rank Attribute
+    public function getTribeRankAttribute($value) {
+        switch($value) {
+            case 'owner':
+                return 'Owner';
+                break;
+            case 'admin':
+                return 'Admin';
+                break;
+            case 'member':
+                return 'Member';
+                break;
+        }
     }
 }

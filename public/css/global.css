@@ -163,3 +163,27 @@ section.section-alert {
 .services .service-block p {
   color: #777;
 }
+
+/* Social Media Colors */
+.youtube-color {
+	background-color: #ff0000;
+	color: #ffffff;
+}
+.youtube-color:hover {
+	color: #aa0000;
+}
+.twitch-color {
+	background-color: #6441a5;
+	color: #ffffff;
+}
+.facebook-color {
+	background-color: #3b5998;
+	color: #ffffff;
+}
+.battlemetrics-color {
+	background-color: #222222;
+	color: #ffffff;
+}
+.battlemetrics-color:hover {
+	color: #aaaaaa;
+}
