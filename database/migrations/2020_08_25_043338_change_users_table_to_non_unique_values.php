@@ -22,6 +22,13 @@ class ChangeUsersTableToNonUniqueValues extends Migration
             $table->string('twitch_url')->nullable()->change();
             $table->string('facebook_url')->nullable()->change();
             $table->string('battlemetrics_url')->nullable()->change();
+
+            // Drop All Unique Indexs
+            $table->dropUnique('users_steam_id_unique');
+            $table->dropUnique('users_epic_id_unique');
+            $table->dropUnique('users_youtube_url_unique');
+            $table->dropUnique('users_twitch_url_unique');
+
         });
     }
 
@@ -41,6 +48,12 @@ class ChangeUsersTableToNonUniqueValues extends Migration
             $table->string('twitch_url')->nullable()->unique()->change();
             $table->string('facebook_url')->nullable()->unique()->change();
             $table->string('battlemetrics_url')->nullable()->unique()->change();
+
+            // Add Indexes Back
+            $table->unique('steam_id');
+            $table->unique('epic_id');
+            $table->unique('youtube_url');
+            $table->unique('twitch_url');
         });
     }
 }

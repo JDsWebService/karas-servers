@@ -66,8 +66,8 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 // User Dashboard Routes
 Route::prefix('user')->name('user.')->group(function () {
-	Route::get('dashboard', 'PagesController@whoops')->name('dashboard');
-	// Route::get('dashboard', 'UsersController@dashboard')->name('dashboard');
+	// Route::get('dashboard', 'PagesController@whoops')->name('dashboard');
+	Route::get('dashboard', 'UsersController@dashboard')->name('dashboard');
 	Route::post('dashboard', 'UsersController@update')->name('update');
 });
 
