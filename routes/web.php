@@ -56,7 +56,8 @@ Route::prefix('servers')->name('servers.')->group(function () {
 	});
 
 	// Servers Status Page
-	Route::get('status', 'Servers\StatusController@status')->name('status');
+	Route::get('status', 'PagesController@whoops')->name('status');
+	// Route::get('status', 'Servers\StatusController@status')->name('status');
 });
 
 // Socialite Login
