@@ -47,4 +47,22 @@ class User extends Authenticatable
                 break;
         }
     }
+
+    // Define Steam ID Mutator
+    public function getSteamIdAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['steam_id'] = NULL;
+        } else {
+            $this->attributes['steam_id'] = $value;
+        }
+    }
+
+    // Define Epic ID Mutator
+    public function getSteamIdAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['epic_id'] = NULL;
+        } else {
+            $this->attributes['epic_id'] = $value;
+        }
+    }
 }
