@@ -58,7 +58,7 @@ class User extends Authenticatable
     }
 
     // Define Epic ID Mutator
-    public function getSteamIdAttribute($value) {
+    public function getEpicIdAttribute($value) {
         if ( empty($value) ) { // will check for empty string, null values, see php.net about it
             $this->attributes['epic_id'] = NULL;
         } else {
