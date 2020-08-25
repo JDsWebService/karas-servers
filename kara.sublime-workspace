@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"find",
+				"findBattlemetricsURLLink"
+			],
+			[
 				"In",
 				"IngredientsController"
 			],
@@ -28,30 +32,30 @@
 	"buffers":
 	[
 		{
-			"file": "routes/web.php",
+			"file": "app/Http/Controllers/UsersController.php",
 			"settings":
 			{
-				"buffer_size": 4649,
+				"buffer_size": 6316,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "resources/views/partials/admin/sidebar.blade.php",
+			"file": "resources/views/user/dashboard.blade.php",
 			"settings":
 			{
-				"buffer_size": 7981,
+				"buffer_size": 8713,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/Http/Controllers/Resources/IngredientsController.php",
+			"file": "resources/views/components/user-profile-progress.blade.php",
 			"settings":
 			{
-				"buffer_size": 4451,
+				"buffer_size": 1753,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -72,6 +76,10 @@
 			],
 			[
 				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -142,9 +150,19 @@
 	"expanded_folders":
 	[
 		"/E/Sites/kara",
+		"/E/Sites/kara/app",
+		"/E/Sites/kara/app/Http",
+		"/E/Sites/kara/app/Http/Controllers",
+		"/E/Sites/kara/app/Models",
+		"/E/Sites/kara/app/Models/Blog",
 		"/E/Sites/kara/resources",
 		"/E/Sites/kara/resources/views",
 		"/E/Sites/kara/resources/views/components",
+		"/E/Sites/kara/resources/views/modals",
+		"/E/Sites/kara/resources/views/modals/help",
+		"/E/Sites/kara/resources/views/pages",
+		"/E/Sites/kara/resources/views/partials",
+		"/E/Sites/kara/resources/views/user",
 		"/E/Sites/kara/routes",
 		"/E/Sites/kara/storage",
 		"/E/Sites/kara/storage/app",
@@ -152,6 +170,17 @@
 	],
 	"file_history":
 	[
+		"/E/Sites/kara/resources/views/components/user-profile-card.blade.php",
+		"/E/Sites/kara/app/Models/User.php",
+		"/E/Sites/kara/public/css/global.css",
+		"/E/Sites/kara/resources/views/components/includes/user-profile-card-css.blade.php",
+		"/E/Sites/kara/resources/views/components/user-profile-progress.blade.php",
+		"/E/Sites/kara/resources/views/modals/help/battlemetricsurl.blade.php",
+		"/E/Sites/kara/resources/views/modals/help/epicid.blade.php",
+		"/E/Sites/kara/resources/views/modals/help/steamid.blade.php",
+		"/E/Sites/kara/resources/views/components/userdashboardcss.blade.php",
+		"/E/Sites/kara/resources/views/partials/admin/sidebar.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/Resources/IngredientsController.php",
 		"/E/Sites/kara/resources/views/components/tiny-m-c-e.blade.php",
 		"/E/Sites/kara/resources/views/admin/blog/index.blade.php",
 		"/E/Sites/kara/resources/views/blog/index.blade.php",
@@ -171,8 +200,6 @@
 		"/E/Sites/kara/public/js/admin.js",
 		"/E/Sites/kara/public/css/admin/admin-custom.css",
 		"/E/Sites/kara/resources/views/pages/resources.blade.php",
-		"/E/Sites/kara/resources/views/partials/admin/sidebar.blade.php",
-		"/E/Sites/kara/public/css/global.css",
 		"/E/Sites/kara/resources/views/content/services.blade.php",
 		"/E/Sites/kara/public/css/style.css",
 		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
@@ -180,7 +207,6 @@
 		"/E/Sites/kara/resources/views/admin/dashboard.blade.php",
 		"/E/Sites/kara/database/seeds/ServersTableSeeder.php",
 		"/E/Sites/kara/database/factories/UserFactory.php",
-		"/E/Sites/kara/app/Models/User.php",
 		"/E/Sites/kara/database/seeds/UsersTableSeeder.php",
 		"/E/Sites/kara/database/seeds/BlogPostSeeder.php",
 		"/E/Sites/kara/database/seeds/DatabaseSeeder.php",
@@ -271,15 +297,7 @@
 		"/E/Sites/kara/resources/views/servers/widgets/thecenter.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/abberation.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/island3.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/spanish.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/portuguese.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/korean.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/japanese.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/german.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/english.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/index.blade.php",
-		"/E/Sites/kara/resources/views/pages/about.blade.php",
-		"/E/Sites/kara/resources/views/content/testimonials/netherian.blade.php"
+		"/E/Sites/kara/resources/views/servers/rules/spanish.blade.php"
 	],
 	"find":
 	{
@@ -297,6 +315,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" rel=\"publisher\"",
+			";\n",
+			"home_server_id",
+			"div",
+			"$progress",
+			"progress",
+			"false",
+			"true",
+			"object->",
+			"return",
+			"youtube_url",
+			"steam_id",
+			"|unique:users",
+			"steam_id",
+			"youtube_id",
+			"steam_id",
+			"favorite_server_id",
+			"steamIDHelpModalLabel",
+			"steamIDHelpModal",
+			"steamIDHelpModalLabel",
+			"steamIDHelpModal",
+			"exampleModalLabel",
+			"exampleModal",
+			"server",
 			"ingredient",
 			"FileUploadHandler::",
 			"pathToStore",
@@ -394,239 +436,62 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "routes/web.php",
+					"file": "app/Http/Controllers/UsersController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4649,
+						"buffer_size": 6316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4557,
-								4557
+								3342,
+								3352
 							]
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										4636,
-										4637
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										4133,
-										4134
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1640.0,
+						"translation.y": 1560.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "resources/views/partials/admin/sidebar.blade.php",
+					"file": "resources/views/user/dashboard.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7981,
+						"buffer_size": 8713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4885,
-								4885
+								7392,
+								7392
 							]
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										4886,
-										4887
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										4850,
-										4851
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -636,7 +501,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2160.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -644,125 +509,36 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/Http/Controllers/Resources/IngredientsController.php",
+					"file": "resources/views/components/user-profile-progress.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4451,
+						"buffer_size": 1753,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1329,
-								1387
+								664,
+								665
 							]
 						],
 						"settings":
 						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2141,
-										2142
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1138,
-										1139
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

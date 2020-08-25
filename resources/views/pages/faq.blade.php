@@ -249,7 +249,7 @@
 							</div>
 						</div>
 
-						{{-- Question 13 --}}
+						{{-- Question 14 --}}
 						<div class="card">
 							<div class="card-header" id="headingFourteen">
 								<h2 class="mb-0">
@@ -261,6 +261,22 @@
 							<div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#faqAccordian">
 								<div class="card-body">
 									Mindwipes are unlimited, and there is no cooldown for them.
+								</div>
+							</div>
+						</div>
+
+						{{-- Question 15 --}}
+						<div class="card">
+							<div class="card-header" id="headingFifteen">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+										If I have two survivors on the same account, do they share uploaded items in ARK Data?
+									</button>
+								</h2>
+							</div>
+							<div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#faqAccordian">
+								<div class="card-body">
+									Yes, the ARK Data is per account and not per Survivor. For example: You have Survivor 1 on The Island, and Survivor 2 on The Center. You upload items to your ARK Data from Survivor 1, log out of Survivor 1, and log into Survivor 2, you can then grab those items you uploaded to the ARK Data on Survivor 2.
 								</div>
 							</div>
 						</div>
