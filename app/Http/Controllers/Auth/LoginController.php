@@ -101,6 +101,8 @@ class LoginController extends Controller
 
         $this->isUserStaff($user);
 
+        dd(Auth::user());
+
         return redirect()->route('index');
 
     }
@@ -127,6 +129,7 @@ class LoginController extends Controller
 
     public function logout() {
         Auth::logout();
+        Session::forget('isStaff');
         Session::flush();
         return redirect()->route('index');
     }
