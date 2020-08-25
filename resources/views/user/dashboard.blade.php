@@ -23,7 +23,7 @@
                                 <h3>External Profiles</h3>
                             </div>
                             <div class="col-sm-4 text-right">
-                                <span class="badge badge-pill badge-info">1/2 Required</span>
+                                <span class="badge badge-pill badge-info">1/2 Required For Completion</span>
                                 @if(!$progress->external)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
                                 @else
@@ -55,7 +55,7 @@
                                 <h3>Social Media</h3>
                             </div>
                             <div class="col-sm-4 text-right">
-                                <span class="badge badge-pill badge-info">1/4 Required</span>
+                                <span class="badge badge-pill badge-info">1/4 Required For Completion</span>
                                 @if(!$progress->social_media)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
                                 @else
@@ -94,7 +94,7 @@
                         <div class="row justify-content-center">
                                 <div class="col-sm-8"><h5>Server</h5></div>
                                 <div class="col-sm-4 text-right">
-                                    <span class="badge badge-pill badge-info">2/2 Required</span>
+                                    <span class="badge badge-pill badge-info">2/2 Required For Completion</span>
                                     @if(!$progress->server)
                                         <span class="badge badge-pill badge-warning">Not Completed</span>
                                     @else
@@ -113,7 +113,7 @@
                         <div class="row justify-content-center mt-3">
                                 <div class="col-sm-8"><h5>Tribe</h5></div>
                                 <div class="col-sm-4 text-right">
-                                    <span class="badge badge-pill badge-info">2/2 Required</span>
+                                    <span class="badge badge-pill badge-info">2/2 Required For Completion</span>
                                     @if(!$progress->tribe)
                                         <span class="badge badge-pill badge-warning">Not Completed</span>
                                     @else
@@ -135,7 +135,7 @@
                                 <h3>Bio</h3>
                             </div>
                             <div class="col-sm-4 text-right">
-                                <span class="badge badge-pill badge-info">1/1 Required</span>
+                                <span class="badge badge-pill badge-info">1/1 Required For Completion</span>
                                 @if(!$progress->bio)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
                                 @else

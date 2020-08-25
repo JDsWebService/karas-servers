@@ -11,7 +11,7 @@
 @else
     <div class="callout callout-warning">
         <h4>Uh-oh! Looks like you haven't filled out your profile just yet!</h4>
-        <p>We want to get to know you a little better! Fill out your profile information below, once you click submit you'll see your profile card on the left update accordingly.</p>
+        <p>We want to get to know you a little better! Fill out your profile information below, once you click submit you'll see your profile card on the left update accordingly. <strong>All fields are optional, however if you choose not to fill them out your profile will not read as complete. See the <span class="badge badge-pill badge-info">X/X Required For Completion</span> badge next to each section to see what it takes to complete that section.</strong></p>
         <p>
             <div class="progress">
                 @if($progress->percentage == '0')
