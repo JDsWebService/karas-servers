@@ -65,4 +65,40 @@ class User extends Authenticatable
             $this->attributes['epic_id'] = $value;
         }
     }
+
+    // Define YouTubeURL Mutator
+    public function getYoutubeUrlAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['youtube_url'] = NULL;
+        } else {
+            $this->attributes['youtube_url'] = $value;
+        }
+    }
+
+    // Define TwitchUrl Mutator
+    public function getTwitchUrlAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['twitch_url'] = NULL;
+        } else {
+            $this->attributes['twitch_url'] = $value;
+        }
+    }
+
+    // Define FacebookUrl Mutator
+    public function getFacebookUrlAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['facebook_url'] = NULL;
+        } else {
+            $this->attributes['facebook_url'] = $value;
+        }
+    }
+
+    // Define BattlemetricsUrl Mutator
+    public function getBattlemetricsUrlAttribute($value) {
+        if ( empty($value) ) { // will check for empty string, null values, see php.net about it
+            $this->attributes['battlemetrics_url'] = NULL;
+        } else {
+            $this->attributes['battlemetrics_url'] = $value;
+        }
+    }
 }
