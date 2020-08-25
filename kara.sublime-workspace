@@ -32,30 +32,12 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/UsersController.php",
+			"file": "routes/web.php",
 			"settings":
 			{
-				"buffer_size": 6316,
+				"buffer_size": 4860,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/user/dashboard.blade.php",
-			"settings":
-			{
-				"buffer_size": 8713,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/views/components/user-profile-progress.blade.php",
-			"settings":
-			{
-				"buffer_size": 1753,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -71,12 +53,12 @@
 		"selected_items":
 		[
 			[
-				"find",
-				"PHPCompanion:Find Use"
-			],
-			[
 				"rein",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"find",
+				"PHPCompanion:Find Use"
 			],
 			[
 				"reind",
@@ -153,28 +135,29 @@
 		"/E/Sites/kara/app",
 		"/E/Sites/kara/app/Http",
 		"/E/Sites/kara/app/Http/Controllers",
-		"/E/Sites/kara/app/Models",
-		"/E/Sites/kara/app/Models/Blog",
-		"/E/Sites/kara/resources",
-		"/E/Sites/kara/resources/views",
-		"/E/Sites/kara/resources/views/components",
-		"/E/Sites/kara/resources/views/modals",
-		"/E/Sites/kara/resources/views/modals/help",
-		"/E/Sites/kara/resources/views/pages",
-		"/E/Sites/kara/resources/views/partials",
-		"/E/Sites/kara/resources/views/user",
-		"/E/Sites/kara/routes",
-		"/E/Sites/kara/storage",
-		"/E/Sites/kara/storage/app",
-		"/E/Sites/kara/storage/app/public"
+		"/E/Sites/kara/routes"
 	],
 	"file_history":
 	[
-		"/E/Sites/kara/resources/views/components/user-profile-card.blade.php",
+		"/E/Sites/kara/README.md",
+		"/E/Sites/kara/routes/web.php",
+		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
+		"/E/Sites/kara/resources/views/components/user-profile-progress.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
 		"/E/Sites/kara/app/Models/User.php",
+		"/E/Sites/kara/database/migrations/2020_08_25_043338_change_users_table_to_non_unique_values.php",
+		"/E/Sites/kara/database/migrations/2020_08_02_031355_change_users_avatar_column_to_allow_null.php",
+		"/E/Sites/kara/database/migrations/2020_08_19_203007_add_user_profile_fields_to_users_table.php",
+		"/E/Sites/kara/app/Console/Commands/GrantEarlyAccessStatus.php",
+		"/E/Sites/kara/vendor/laravel/framework/src/Illuminate/Console/Concerns/InteractsWithIO.php",
+		"/E/Sites/kara/vendor/laravel/framework/src/Illuminate/Console/Command.php",
+		"/E/Sites/kara/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php",
+		"/E/Sites/kara/vendor/facade/ignition/src/Middleware/AddGitInformation.php",
+		"/E/Sites/kara/resources/views/pages/faq.blade.php",
+		"/E/Sites/kara/resources/views/user/dashboard.blade.php",
+		"/E/Sites/kara/resources/views/components/user-profile-card.blade.php",
 		"/E/Sites/kara/public/css/global.css",
 		"/E/Sites/kara/resources/views/components/includes/user-profile-card-css.blade.php",
-		"/E/Sites/kara/resources/views/components/user-profile-progress.blade.php",
 		"/E/Sites/kara/resources/views/modals/help/battlemetricsurl.blade.php",
 		"/E/Sites/kara/resources/views/modals/help/epicid.blade.php",
 		"/E/Sites/kara/resources/views/modals/help/steamid.blade.php",
@@ -202,7 +185,6 @@
 		"/E/Sites/kara/resources/views/pages/resources.blade.php",
 		"/E/Sites/kara/resources/views/content/services.blade.php",
 		"/E/Sites/kara/public/css/style.css",
-		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
 		"/E/Sites/kara/app/Http/Controllers/AdminsController.php",
 		"/E/Sites/kara/resources/views/admin/dashboard.blade.php",
 		"/E/Sites/kara/database/seeds/ServersTableSeeder.php",
@@ -228,7 +210,6 @@
 		"/E/Sites/kara/resources/views/partials/footer-sm.blade.php",
 		"/E/Sites/kara/.git/config",
 		"/C/Users/Jonathan/.gitconfig",
-		"/E/Sites/kara/routes/web.php",
 		"/E/Sites/kara/app/Http/Controllers/BlogController.php",
 		"/E/Sites/kara/resources/views/admin/blog/create.blade.php",
 		"/E/Sites/kara/app/View/Components/TinyMCE.php",
@@ -260,8 +241,6 @@
 		"/E/Sites/kara/.env",
 		"/E/Sites/kara/resources/views/partials/admin/_scripts.blade.php",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa12764.16477/laravel-bootstrap-4-admin-ui-master/public/js/app.js",
-		"/E/Sites/kara/database/migrations/2020_08_02_031355_change_users_avatar_column_to_allow_null.php",
-		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
 		"/E/Sites/kara/resources/views/pages/404.blade.php",
 		"/E/Sites/kara/resources/views/layouts/404.blade.php",
 		"/E/Sites/kara/app/Http/Middleware/CheckIfUserIsStaff.php",
@@ -287,17 +266,7 @@
 		"/E/Sites/kara/resources/views/servers/widgets/scorched.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/rag3.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/rag2.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/rag1.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/island7.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/island6.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/island5.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/genesis.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/extinction.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/crystal.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/thecenter.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/abberation.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/island3.blade.php",
-		"/E/Sites/kara/resources/views/servers/rules/spanish.blade.php"
+		"/E/Sites/kara/resources/views/servers/widgets/rag1.blade.php"
 	],
 	"find":
 	{
@@ -315,6 +284,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"->change()",
+			"->unique()",
+			"YouTubeURL",
+			"collapseFourteen",
+			"headingFourteen",
 			" rel=\"publisher\"",
 			";\n",
 			"home_server_id",
@@ -436,106 +410,126 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/UsersController.php",
+					"file": "routes/web.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6316,
+						"buffer_size": 4860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3342,
-								3352
+								2041,
+								2041
 							]
 						],
 						"settings":
 						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2045,
+										2046
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"region.greenish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										2038,
+										2039
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1560.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/user/dashboard.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8713,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7392,
-								7392
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/views/components/user-profile-progress.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1753,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								664,
-								665
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Laravel Blade Highlighter/blade.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -600,6 +594,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"interacti",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\InteractsWithIO.php"
+			],
 			[
 				"app.php",
 				"bootstrap\\app.php"

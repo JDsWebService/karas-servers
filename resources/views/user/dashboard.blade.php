@@ -19,16 +19,18 @@
                     {{ Form::model($user, ['route' => ['user.update', $user->id]]) }}
                         
                         <div class="row">
-                            <div class="col-sm-10">
+                            <div class="col-sm-8">
                                 <h3>External Profiles</h3>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-4 text-right">
+                                <span class="badge badge-pill badge-info">1/2 Required</span>
                                 @if(!$progress->external)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
+                                @else
+                                    <span class="badge badge-pill badge-success">Completed</span>
                                 @endif
                             </div>
                         </div>
-                        <hr>
                         <p class="lead">By filling these two fields out, it will allow our support staff to quickly help you and give you access to our Patreon/Supporters exclusive server whenever you sign up for <a href="https://www.patreon.com/karasworlds" target="_blank">Kara's World's Patreon</a>.</p>
                         <div class="row">
                             <div class="col-sm-6">
@@ -47,17 +49,20 @@
                             </div>
                         </div>
                         
+                        <hr>
                         <div class="row mt-3">
-                            <div class="col-sm-10">
+                            <div class="col-sm-8">
                                 <h3>Social Media</h3>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-4 text-right">
+                                <span class="badge badge-pill badge-info">1/4 Required</span>
                                 @if(!$progress->social_media)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
+                                @else
+                                    <span class="badge badge-pill badge-success">Completed</span>
                                 @endif
                             </div>
                         </div>
-                        <hr>
                         <p class="lead">Have a YouTube channel you want to brag about? Do you stream on Twitch? Get your name known, and get a fancy button on your profile card!</p>
                         <div class="row">
                             <div class="col-sm-6">
@@ -83,16 +88,19 @@
                             </div>
                         </div>
 
-                        <h3 class="mt-3">Tribe & Server Info</h3>
                         <hr>
+                        <h3 class="mt-3">Tribe & Server Info</h3>
                         <p class="lead">Love the server that you're playing on? Apart of the best tribe ever? Let other people know where and who you play with!</p>
                         <div class="row justify-content-center">
-                            @if(!$progress->server)
-                                <div class="col-sm-10"><h5>Server</h5></div>
-                                <div class="col-sm-2"><span class="badge badge-pill badge-warning">Not Completed</span></div>
-                            @else
-                                <div class="col-sm-12"><h5>Server</h5></div>
-                            @endif
+                                <div class="col-sm-8"><h5>Server</h5></div>
+                                <div class="col-sm-4 text-right">
+                                    <span class="badge badge-pill badge-info">2/2 Required</span>
+                                    @if(!$progress->server)
+                                        <span class="badge badge-pill badge-warning">Not Completed</span>
+                                    @else
+                                        <span class="badge badge-pill badge-success">Completed</span>
+                                    @endif
+                                </div>
                             <div class="col-sm-6">
                                 <label for="favorite_server_id">Favorite Server</label>
                                 {{ Form::select('favorite_server_id', $serversArray, null, ['placeholder' => 'Select your favorite server...', 'class' => 'form-control']) }}
@@ -103,12 +111,15 @@
                             </div>
                         </div>
                         <div class="row justify-content-center mt-3">
-                            @if(!$progress->tribe)
-                                <div class="col-sm-10"><h5>Tribe</h5></div>
-                                <div class="col-sm-2"><span class="badge badge-pill badge-warning">Not Completed</span></div>
-                            @else
-                                <div class="col-sm-12"><h5>Tribe</h5></div>
-                            @endif
+                                <div class="col-sm-8"><h5>Tribe</h5></div>
+                                <div class="col-sm-4 text-right">
+                                    <span class="badge badge-pill badge-info">2/2 Required</span>
+                                    @if(!$progress->tribe)
+                                        <span class="badge badge-pill badge-warning">Not Completed</span>
+                                    @else
+                                        <span class="badge badge-pill badge-success">Completed</span>
+                                    @endif
+                                </div>
                             <div class="col-sm-6">
                                 <label for="tribe_name">Tribe Name</label>
                                 {{ Form::text('tribe_name', null, ['class' => 'form-control', 'placeholder' => 'Tribe of ...']) }}
@@ -118,18 +129,20 @@
                                 {{ Form::select('tribe_rank', ['owner' => 'Owner', 'admin' => 'Admin', 'member' => 'Member'], null, ['class' => 'form-control', 'placeholder' => 'Select your Tribe Rank ...']) }}
                             </div>
                         </div>
-
+                        <hr>
                         <div class="row mt-3">
-                            <div class="col-sm-10">
+                            <div class="col-sm-8">
                                 <h3>Bio</h3>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-4 text-right">
+                                <span class="badge badge-pill badge-info">1/1 Required</span>
                                 @if(!$progress->bio)
                                     <span class="badge badge-pill badge-warning">Not Completed</span>
+                                @else
+                                    <span class="badge badge-pill badge-success">Completed</span>
                                 @endif
                             </div>
                         </div>
-                        <hr>
                         <p class="lead">Tell us about yourself!</p>
                         <div class="row mt-3">
                             <div class="col-sm-12">
