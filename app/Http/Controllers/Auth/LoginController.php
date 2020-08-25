@@ -62,6 +62,7 @@ class LoginController extends Controller
     {
         $discordUser = Socialite::driver('discord')
                             ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
+                            ->stateless()
                             ->user();
 
         // See if User already exists in database
@@ -101,7 +102,7 @@ class LoginController extends Controller
 
         $this->isUserStaff($user);
 
-        dd(Auth::user());
+        // dd(Auth::user());
 
         return redirect()->route('index');
 
