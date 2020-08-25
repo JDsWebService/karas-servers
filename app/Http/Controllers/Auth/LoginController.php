@@ -124,4 +124,10 @@ class LoginController extends Controller
         return false;
 
     }
+
+    public function logout() {
+        Auth::logout();
+        Session::flush();
+        return redirect()->route('index');
+    }
 }
