@@ -18,7 +18,6 @@
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">0%</div>
                 @else
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="{{ $progress->percentage }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $progress->percentage }}%">{{ $progress->percentage }}%</div>
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                 @endif
             </div>
         </p>
