@@ -16,7 +16,7 @@
                     <hr>
                     @include('components.user-profile-progress')
                     
-                    {{ Form::model($user, ['route' => ['user.update', $user->id]]) }}
+                    {{ Form::model($user, ['route' => ['user.update', $user->id], 'method' => 'POST']) }}
                         
                         <div class="row">
                             <div class="col-sm-8">
