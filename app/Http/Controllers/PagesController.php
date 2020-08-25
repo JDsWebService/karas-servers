@@ -34,4 +34,8 @@ class PagesController extends Controller
     public function resources() {
         return view('pages.resources');
     }
+
+    public function whoops() {
+        return view('pages.404');
+    }
 }
