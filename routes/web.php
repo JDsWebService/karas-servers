@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 // Homepage
 Route::get('/', 'PagesController@index')->name('index');
-// Route::get('/', 'PagesController@comingsoon')->name('index');
+
+// Merch Page Redirect
+Route::get('/merch', 'PagesController@merch')->name('merch');
 
 // Public Facing Blog Routes
 Route::prefix('blog')->name('blog.')->group(function () {

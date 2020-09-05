@@ -15,6 +15,11 @@ class PagesController extends Controller
                         ->withPosts($posts);
     }
 
+    // Merch Page
+    public function merch() {
+        return redirect()->to('https://www.redbubble.com/people/Karas-Worlds/shop?asc=u');
+    }
+
     // Coming Soon Page
     public function comingsoon() {
     	return view('comingsoon.index');

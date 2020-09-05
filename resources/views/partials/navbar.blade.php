@@ -19,6 +19,10 @@
                                 <a class="nav-link" href="{{ route('index') }}">Home</a>
                             </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="{{ route('merch') }}">Merch</a>
+                            </li>
+
                             {{-- Blog --}}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('blog.index') }}">Blog & Events</a>
