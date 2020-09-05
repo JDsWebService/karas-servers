@@ -115,6 +115,7 @@ class LoginController extends Controller
         $staff = [
             'DJRedNight#3428',
             'AshleyLee#1988',
+            'gucci#8387'
         ];
         // Check if logged in user is in staff array
         if(in_array($user->fullusername, $staff)) {
