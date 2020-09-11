@@ -31,6 +31,23 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Http/Controllers/Handlers/FileHandler.php",
+			"settings":
+			{
+				"buffer_size": 4802,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 6316,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -44,12 +61,12 @@
 		"selected_items":
 		[
 			[
-				"find",
-				"PHPCompanion:Find Use"
-			],
-			[
 				"rein",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"find",
+				"PHPCompanion:Find Use"
 			],
 			[
 				"reind",
@@ -122,24 +139,42 @@
 	},
 	"expanded_folders":
 	[
-		"/E/Sites/kara"
+		"/E/Sites/kara",
+		"/E/Sites/kara/app",
+		"/E/Sites/kara/app/Http",
+		"/E/Sites/kara/app/Http/Controllers",
+		"/E/Sites/kara/resources",
+		"/E/Sites/kara/resources/views",
+		"/E/Sites/kara/resources/views/admin",
+		"/E/Sites/kara/resources/views/admin/resources",
+		"/E/Sites/kara/resources/views/user"
 	],
 	"file_history":
 	[
+		"/C/php/php.ini",
+		"/E/Sites/kara/app/Http/Controllers/Resources/IngredientsController.php",
+		"/E/Sites/kara/database/migrations/2020_08_03_015036_create_blog_posts_table.php",
+		"/E/Sites/kara/database/migrations/2020_08_03_020930_add_subtitle_column_to_blog_posts_table.php",
+		"/E/Sites/kara/resources/views/admin/blog/edit.blade.php",
+		"/E/Sites/kara/resources/views/admin/resources/ingredients/create.blade.php",
+		"/E/Sites/kara/resources/views/content/blog.blade.php",
+		"/E/Sites/kara/routes/web.php",
+		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
+		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
+		"/E/Sites/kara/resources/views/content/hero.blade.php",
+		"/E/Sites/kara/app/Http/Controllers/Auth/LoginController.php",
+		"/E/Sites/kara/resources/views/content/donations.blade.php",
 		"/E/Sites/kara/resources/views/user/dashboard.blade.php",
 		"/E/Sites/kara/resources/views/components/user-profile-progress.blade.php",
-		"/E/Sites/kara/app/Http/Controllers/Auth/LoginController.php",
 		"/E/Sites/kara/.env",
 		"/E/Sites/kara/.git/COMMIT_EDITMSG",
 		"/E/Sites/kara/database/migrations/2020_08_25_070811_change_users_table_email_index.php",
 		"/E/Sites/kara/config/session.php",
 		"/E/Sites/kara/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php",
 		"/E/Sites/kara/database/migrations/2020_08_25_055547_change_users_table_nullable_email_field.php",
-		"/E/Sites/kara/routes/web.php",
 		"/E/Sites/kara/app/Http/Controllers/BlogController.php",
 		"/E/Sites/kara/README.md",
 		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
-		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
 		"/E/Sites/kara/app/Models/User.php",
 		"/E/Sites/kara/database/migrations/2020_08_25_043338_change_users_table_to_non_unique_values.php",
 		"/E/Sites/kara/database/migrations/2020_08_02_031355_change_users_avatar_column_to_allow_null.php",
@@ -158,19 +193,14 @@
 		"/E/Sites/kara/resources/views/modals/help/steamid.blade.php",
 		"/E/Sites/kara/resources/views/components/userdashboardcss.blade.php",
 		"/E/Sites/kara/resources/views/partials/admin/sidebar.blade.php",
-		"/E/Sites/kara/app/Http/Controllers/Resources/IngredientsController.php",
 		"/E/Sites/kara/resources/views/components/tiny-m-c-e.blade.php",
 		"/E/Sites/kara/resources/views/admin/blog/index.blade.php",
 		"/E/Sites/kara/resources/views/blog/index.blade.php",
 		"/E/Sites/kara/resources/views/blog/show.blade.php",
-		"/E/Sites/kara/resources/views/content/blog.blade.php",
-		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
-		"/E/Sites/kara/resources/views/admin/blog/edit.blade.php",
 		"/E/Sites/kara/app/Http/Controllers/Handlers/FileHandler.php",
 		"/E/Sites/kara/database/migrations/2020_08_10_223552_create_ingredients_table.php",
 		"/E/Sites/kara/resources/views/admin/resources/ingredients/index.blade.php",
 		"/E/Sites/kara/resources/views/admin/resources/ingredients/edit.blade.php",
-		"/E/Sites/kara/resources/views/admin/resources/ingredients/create.blade.php",
 		"/E/Sites/kara/app/Models/Resource/Ingredient.php",
 		"/E/Sites/kara/resources/views/components/fileupload.blade.php",
 		"/E/Sites/kara/resources/views/partials/scripts.blade.php",
@@ -189,7 +219,6 @@
 		"/E/Sites/kara/database/seeds/DatabaseSeeder.php",
 		"/E/Sites/kara/database/factories/BlogPostFactory.php",
 		"/E/Sites/kara/resources/views/index.blade.php",
-		"/E/Sites/kara/database/migrations/2020_08_03_015036_create_blog_posts_table.php",
 		"/E/Sites/kara/app/Http/Controllers/Admin/ServersController.php",
 		"/E/Sites/kara/app/Http/Controllers/BattleMetricsController.php",
 		"/E/Sites/kara/database/factories/ServerFactory.php",
@@ -197,7 +226,6 @@
 		"/E/Sites/kara/resources/views/layouts/app.blade.php",
 		"/E/Sites/kara/resources/views/partials/head.blade.php",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa15084.4761/navigator-free/themes/navigator-free/index.html",
-		"/E/Sites/kara/resources/views/content/hero.blade.php",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa15084.21431/navigator-free/themes/navigator-free/index.html",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa15084.12692/navigator-free/themes/navigator-free/css/style.css",
 		"/C/Users/Jonathan/AppData/Local/Temp/Rar$DRa15084.46158/navigator-free/themes/navigator-free/css/maps/style.css.map",
@@ -209,7 +237,6 @@
 		"/E/Sites/kara/app/Models/Blog/Post.php",
 		"/E/Sites/kara/app/Http/Controllers/Admin/BlogController.php",
 		"/E/Sites/kara/config/purifier.php",
-		"/E/Sites/kara/database/migrations/2020_08_03_020930_add_subtitle_column_to_blog_posts_table.php",
 		"/E/Sites/kara/database/migrations/2020_08_03_020905_ass_subtitle_column_to_blog_posts_table.php",
 		"/E/Sites/kara/app/Providers/AppServiceProvider.php",
 		"/E/Sites/kara/resources/views/components/tinymce.blade.php",
@@ -251,13 +278,11 @@
 		"/E/Sites/kara/resources/views/servers/widgets/pvp/crystal.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/pvp/island.blade.php",
 		"/E/Sites/kara/resources/views/servers/widgets/clusters/standalone.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/standalone/island.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/clusters/pve.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/val2.blade.php"
+		"/E/Sites/kara/resources/views/servers/widgets/standalone/island.blade.php"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -400,8 +425,253 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Http/Controllers/Handlers/FileHandler.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4802,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										4800,
+										4801
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										233,
+										234
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/UsersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										644,
+										645
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										624,
+										625
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -461,6 +731,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"pagescontro",
+				"app\\Http\\Controllers\\PagesController.php"
+			],
 			[
 				"interacti",
 				"vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\InteractsWithIO.php"

@@ -24,6 +24,15 @@ class FileHandler extends Controller
 	// $table->string('publicPath');
 	//
 	// ---------------------------------------
+	// Create a Symbolic Link To The Storage
+	// ---------------------------------------
+	// 
+	// Before using the handler, you must create a symbolic link to the
+	// storage folder by running the following command.
+	//
+	// $ php artisan storage:link
+	//
+	// ---------------------------------------
 	// Calling the Handler
 	// ---------------------------------------
 	// 

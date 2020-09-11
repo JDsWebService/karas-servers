@@ -13,6 +13,11 @@ section.section-default {
 	justify-content: center;
 }
 
+/* Hero Section Title */
+section.hero-area #title {
+    color: #fff;
+}
+
 /* Alert Messages Section */
 section.section-alert {
 	padding-top: 100px;

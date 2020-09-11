@@ -8,6 +8,9 @@
     {{-- Above The Fold - Welcome --}}
     @include('content.hero')
 
+    {{-- Merch Section --}}
+    @include('content.merch')
+
     {{-- Blog Section --}}
     @include('content.blog')
 
@@ -29,6 +32,6 @@
     {{-- Donations Section --}}
     @include('content.donations')
 
-    
+
 
 @endsection
