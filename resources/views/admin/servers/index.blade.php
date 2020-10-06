@@ -14,28 +14,38 @@
 	<table class="table table-dark table-hover table-sm table-borderless mt-3">
 		<thead>
 			<tr>
-{{--				<th scope="col">#</th>--}}
-{{--				<th scope="col">Name</th>--}}
-{{--				<th scope="col">Cluster</th>--}}
-{{--				<th scope="col"></th>--}}
+				<th scope="col">BM ID #</th>
+				<th scope="col">Name</th>
+                <th scope="col">IP/Port</th>
+                <th scope="col">Global Rank</th>
+                <th scope="col">Map</th>
+				<th scope="col">Computed Cluster</th>
+				<th scope="col"></th>
 			</tr>
 		</thead>
 		<tbody>
-{{--			@foreach($servers as $server)--}}
-{{--				<tr>--}}
-{{--					<th scope="row">{{ $server->provider_id }}</th>--}}
-{{--					<td>{{ $server->name }}</td>--}}
-{{--					<td class="text-uppercase">{{ $server->cluster }}</td>--}}
-{{--					<td>--}}
-{{--						<a href="{{ route('admin.servers.edit', $server->provider_id) }}" class="btn btn-secondary btn-sm">--}}
-{{--							<i class="far fa-edit"></i> Edit--}}
-{{--						</a>--}}
-{{--						<a href="https://www.battlemetrics.com/servers/ark/{{ $server->provider_id }}" class="btn btn-warning btn-sm" target="_blank">--}}
-{{--							<i class="fas fa-search"></i> BattleMetrics--}}
-{{--						</a>--}}
-{{--					</td>--}}
-{{--				</tr>--}}
-{{--			@endforeach--}}
+			@foreach($servers as $server)
+                {{ Form::open(['route' => ['admin.servers.delete', $server->provider_id], 'method' => 'DELETE', 'name' => $server->provider_id . 'deleteForm']) }}
+                {{ Form::close() }}
+				<tr>
+					<th scope="row">{{ $server->provider_id }}</th>
+					<td>{{ \Illuminate\Support\Str::limit($server->name, 35, '...') }}</td>
+                    <td>{{ $server->ip }}:{{ $server->port }}</td>
+                    <td>{{ $server->rank }}</td>
+                    <td>{{ $server->map }}</td>
+					<td class="text-uppercase">{{ $server->computedCluster }}</td>
+					<td>
+
+                            <button type="submit" class="btn btn-sm btn-danger">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+
+						<a href="https://www.battlemetrics.com/servers/ark/{{ $server->provider_id }}" class="btn btn-warning btn-sm" target="_blank">
+							<i class="fas fa-search"></i> View
+						</a>
+					</td>
+				</tr>
+			@endforeach
 
 		</tbody>
 	</table>

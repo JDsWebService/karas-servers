@@ -35,11 +35,7 @@
 					<input type="text" value="{{ $server->port }}" class="form-control" disabled>
 				</div>
 			</div>
-			{{ Form::open(['route' => ['admin.servers.delete', $server->provider_id], 'method' => 'DELETE']) }}
-				<button type="submit" class="btn btn-sm btn-danger mt-4 btn-block">
-					<i class="far fa-trash-alt"></i> Delete Server
-				</button>
-			{{ Form::close() }}
+
 		</div>
 
 	</div>

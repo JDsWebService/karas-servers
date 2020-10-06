@@ -8,6 +8,8 @@ use GuzzleHttp\Exception\ClientException;
 
 class BattlemetricsHandler {
 
+    protected static $serverInfo;
+
     /**
      * Get Server Information From Battlemetrics API
      *
@@ -22,9 +24,13 @@ class BattlemetricsHandler {
         try {
             $response = $client->get('https://api.battlemetrics.com/servers/' . $id);
             if($response->getStatusCode() == 200) {
-                $serverInfo = json_decode($response->getBody()->getContents())->data->attributes;
+                // Define the Server Info Variable
+                self::$serverInfo = json_decode($response->getBody()->getContents())->data;
+
+                // Check to make sure the server is an Ark Server
+                self::checkServerType();
             }
-            return $serverInfo;
+            return self::$serverInfo->attributes;
         } catch (ClientException $e) {
             // If request came back OK
             if($e->getResponse()->getStatusCode() == 429) {
@@ -33,6 +39,13 @@ class BattlemetricsHandler {
                 throw new BattleMetricsException('Err: BattleMetrics API - Generic Error No Code Given');
             }
         }
+    }
+
+    private static function checkServerType() {
+        if(self::$serverInfo->relationships->game->data->id != "ark") {
+            throw new BattleMetricsException('Err: Given Provider ID is not of Game Type: ARK');
+        }
+        return true;
     }
 
 }

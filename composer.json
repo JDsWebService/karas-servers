@@ -19,7 +19,8 @@
         "laravel/ui": "^2.1",
         "laravelcollective/html": "^6.1",
         "mews/purifier": "^3.2",
-        "socialiteproviders/discord": "^2.0"
+        "socialiteproviders/discord": "^2.0",
+      "ext-json": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

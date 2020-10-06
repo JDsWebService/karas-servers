@@ -36,23 +36,6 @@ class ServersController extends Controller
     	return redirect()->route('admin.servers.index');
     }
 
-    // Edit Server
-    public function editServer($provider_id) {
-        $server = Server::where('provider_id', $provider_id)->first();
-
-        return view('admin.servers.edit')
-                                ->withServer($server);
-    }
-
-    // Update Server
-    public function updateServer(Request $request) {
-
-        // Handle Server Database Logic
-        $this->handleServerRequest($request);
-
-        return redirect()->route('admin.servers.index');
-    }
-
     // Delete Server
     public function deleteServer($provider_id) {
         $server = Server::where('provider_id', $provider_id)->first();
@@ -67,9 +50,9 @@ class ServersController extends Controller
     }
 
     // Handle Server Database & Request Logic
-    protected function handleServerRequest($request) {
+    protected function handleServerRequest(Request $request) {
         // Get the server from the database
-        $server = $this->getServerFromDatabase($request);
+        $server = $this->checkIfServerExists($request);
 
         // If Server is false, something went wrong while getting the server from the database
         if(!$server) {
@@ -86,42 +69,10 @@ class ServersController extends Controller
         $server->save();
 
         // Get the correct flash message to send to user
-        Session::flash('success', $this->getSaveStatusMessage($request->method()));
+        Session::flash('success', 'Server has been added to the database!');
 
         return redirect()->route('admin.servers.index');
 
-    }
-
-    private function getServerFromDatabase(Request $request) {
-        // Get the requests method
-        $method = $request->method();
-
-        // Grab Server From Database
-        $server = Server::where('provider_id', Purifier::clean($request->provider_id))->first();
-
-        // Figure out what type of method we're using
-        switch($method) {
-            case 'POST':
-                // Error Handling
-                if($server != null) {
-                    Session::flash('danger', 'Server is already in the database. Update it instead!');
-                    return false;
-                }
-                $server = new Server;
-                break;
-            case 'PUT':
-                // Error Handling
-                if($server == null) {
-                    Session::flash('danger', 'Server is not in the database. Consider adding it instead!');
-                    return false;
-                }
-                break;
-            default:
-                Session::flash('danger', 'Something went wrong. Err Code: 1-ServersController@getServerFromDatabase');
-                return false;
-        }
-
-        return $server;
     }
 
     private function populateServerInstance(Server $server, $serverInfo) {
@@ -159,13 +110,19 @@ class ServersController extends Controller
         }
     }
 
-    private function getSaveStatusMessage($method) {
-        if($method == 'POST') {
-            return 'Server has been added to the database';
-        } elseif ($method == 'PUT') {
-            return 'Server has been updated in the database';
+    private function checkIfServerExists(Request $request) {
+        // Grab Server From Database
+        $server = Server::where('provider_id', Purifier::clean($request->provider_id))->first();
+
+        // If a server was returned
+        if($server != null) {
+            // Server exists already!
+            Session::flash('warning', 'Server was already added to the database. Delete server instead?');
+            return false;
         }
-        return 'ServersContoller@getSaveStatusMessage returned valued outside of parameter. Check method in controller';
+
+        // If server is null, which it should be, return new server
+        return new Server;
     }
 
 }
