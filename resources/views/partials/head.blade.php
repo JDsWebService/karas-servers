@@ -26,10 +26,10 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 {{-- Themefisher Font --}}
-<link rel="stylesheet" href="/css/themefisher-font/style.css">
+<link rel="stylesheet" href="css/themefisher-font/style.css">
 
 <!-- Main Stylesheet -->
-<link rel="stylesheet" href="/css/style.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
+<link rel="stylesheet" href="css/style.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
 
 {{-- Custom Global Stylesheet --}}
-<link rel="stylesheet" href="/css/global.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
+<link rel="stylesheet" href="css/global.css?v={{ strtotime(\Carbon\Carbon::now()) }}">

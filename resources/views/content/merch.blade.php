@@ -14,7 +14,7 @@
             {{-- First Card --}}
             <div class="col-sm-3">
                 <div class="card text-center" style="background-color: #f9f9f9;">
-                    <img src="/imgs/merch/item1.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
+                    <img src="imgs/merch/item1.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
                     <div class="card-body">
                         <h5 class="card-title">Kara's Worlds ARK Logo Classic T-Shirt</h5>
                         <p class="card-text">$19.90</p>
@@ -26,7 +26,7 @@
             {{-- Second Card --}}
             <div class="col-sm-3">
                 <div class="card text-center" style="background-color: #f9f9f9;">
-                    <img src="/imgs/merch/item2.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
+                    <img src="imgs/merch/item2.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
                     <div class="card-body">
                         <h5 class="card-title">Karasworlds.com Fade to White Acrylic Block</h5>
                         <p class="card-text">$25.25</p>
@@ -38,7 +38,7 @@
             {{-- Third Card --}}
             <div class="col-sm-3">
                 <div class="card text-center" style="background-color: #f9f9f9;">
-                    <img src="/imgs/merch/item3.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
+                    <img src="imgs/merch/item3.png" class="card-img-top" alt="Kara's Worlds ARK Logo Classic T-Shirt">
                     <div class="card-body">
                         <h5 class="card-title">Kara's Worlds ARK Logo Tank Top</h5>
                         <p class="card-text">$19.90</p>

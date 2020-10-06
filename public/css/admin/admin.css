@@ -152,7 +152,7 @@ body {
 /*----------sidebar background images --------------*/
 
 .sidebar-bg.bg1 .sidebar-wrapper{
-    background-image: url(/imgs/admin/bg1.jpg);
+    background-image: url('imgs/admin/bg1.jpg');
 }
 
 /*----------------sidebar-content----------------*/

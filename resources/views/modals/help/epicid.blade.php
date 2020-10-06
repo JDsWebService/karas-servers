@@ -12,7 +12,7 @@
             <div class="modal-body">
                 You can find your account ID by clicking this <a href="https://www.epicgames.com/account/personal?productName=epicgames&lang=en">link</a> and signing in. This will automatically bring you to your Epic Account's General Settings page where you can find your Epic ID listed. See the image below for an example.
                 <br>
-                <img src="/imgs/modals/help/epic_ID_example.png" alt="Epic ID Example" class="img-fluid">
+                <img src="imgs/modals/help/epic_ID_example.png" alt="Epic ID Example" class="img-fluid">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

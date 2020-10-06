@@ -5,7 +5,7 @@
                 <nav class="navbar navbar-expand-xl">
                     {{-- Logo Image --}}
                     <a class="navbar-brand" href="{{ route('index') }}">
-                        <img src="/imgs/logo.png" alt="logo">
+                        <img src="imgs/logo.png" alt="logo">
                     </a>
                     {{-- Hamburger --}}
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation"
@@ -54,7 +54,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('pages.about') }}">About Us</a>
                             </li>
-                            
+
                             {{-- Discord Login Button --}}
                             @guest
                                 <li class="nav-item">
@@ -67,7 +67,7 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         @if(Auth::user()->avatar != NULL)
-                                            <img src="{{ Auth::user()->avatar }}" alt="User's Avatar" class="navbar-avatar rounded-circle"> 
+                                            <img src="{{ Auth::user()->avatar }}" alt="User's Avatar" class="navbar-avatar rounded-circle">
                                         @endif
                                         {{ Auth::user()->fullusername }}
                                     </a>
