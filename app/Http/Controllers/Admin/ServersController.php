@@ -15,6 +15,10 @@ class ServersController extends Controller
     public function listServers() {
         $servers = Server::orderBy('cluster', 'asc')->orderBy('name', 'asc')->paginate(10);
 
+        if($servers->count() == 0) {
+            Session::flash('warning', 'No Servers Are In The Database. You need to create one first!');
+            return redirect()->route('admin.servers.add');
+        }
         return view('admin.servers.index')
                                 ->withServers($servers);
     }
@@ -23,12 +27,12 @@ class ServersController extends Controller
     public function addServer() {
     	return view('admin.servers.add');
     }
-    
+
     // Admin Store Server
     public function storeServer(Request $request) {
     	// Handle Server Database Logic
         $this->handleServerRequest($request);
-        
+
     	return redirect()->route('admin.servers.index');
     }
 
@@ -45,7 +49,7 @@ class ServersController extends Controller
 
         // Handle Server Database Logic
         $this->handleServerRequest($request, 'update');
-        
+
         return redirect()->route('admin.servers.index');
     }
 
@@ -115,6 +119,6 @@ class ServersController extends Controller
         } elseif ($saveStatus == true && $newServer == false) {
         	Session::flash('success', 'Server Updated In The Database');
         }
-        
+
     }
 }

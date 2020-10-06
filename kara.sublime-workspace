@@ -32,19 +32,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/Handlers/FileHandler.php",
+			"file": "app/Providers/AppServiceProvider.php",
 			"settings":
 			{
-				"buffer_size": 4802,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/UsersController.php",
-			"settings":
-			{
-				"buffer_size": 6316,
+				"buffer_size": 781,
 				"line_ending": "Unix"
 			}
 		}
@@ -60,6 +51,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ini",
+				"Set Syntax: INI"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
@@ -141,40 +136,53 @@
 	[
 		"/E/Sites/kara",
 		"/E/Sites/kara/app",
-		"/E/Sites/kara/app/Http",
-		"/E/Sites/kara/app/Http/Controllers",
-		"/E/Sites/kara/resources",
-		"/E/Sites/kara/resources/views",
-		"/E/Sites/kara/resources/views/admin",
-		"/E/Sites/kara/resources/views/admin/resources",
-		"/E/Sites/kara/resources/views/user"
+		"/E/Sites/kara/app/Providers"
 	],
 	"file_history":
 	[
+		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
+		"/E/Sites/kara/public/css/global.css",
+		"/E/Sites/kara/composer.json",
+		"/E/Sites/kara/public/css/style.css",
+		"/E/Sites/kara/.env",
+		"/E/Sites/kara/routes/web.php",
+		"/E/Sites/kara/database/migrations/2020_08_25_070811_change_users_table_email_index.php",
+		"/E/server_admin/nginx_default.txt",
+		"/E/Sites/rtmp-live/composer.json",
+		"/E/Sites/msp/composer.json",
 		"/C/php/php.ini",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Saved/DinoExports/76561198053544529/DinoExport_292972102444757147.ini",
+		"/E/Sites/kara/database/seeds/BlogPostSeeder.php",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Saved/DinoExports/76561198053544529/DinoExport_349514685280764445.ini",
+		"/D/Games/Steam/steamapps/common/ARK/ShooterGame/Saved/DinoExports/76561198053544529/DinoExport_56560500437912324.ini",
+		"/Z/Applications/JetBrains PhpStorm 2020.1.1 Сборка 201.7223.96  30 апреля 2020 г/Лечение/lib/ACTIVATION_CODE.txt",
+		"/Z/Applications/JetBrains DataGrip 2020.1/important.txt",
+		"/Z/Applications/JetBrains PhpStorm 2020.1.1 Сборка 201.7223.96  30 апреля 2020 г/Лечение/lib/sha1sum.txt",
+		"/Z/Applications/JetBrains PhpStorm 2020.1.1 Сборка 201.7223.96  30 апреля 2020 г/Лечение/lib/important.txt",
+		"/E/Torrents/Complete/JetBrains DataGrip 2020.1/Лечение.txt",
+		"/E/Torrents/Complete/JetBrains DataGrip 2020.1/important.txt",
+		"/C/Users/Jonathan/Downloads/ServerGame.11472.2020.06.12_16.47.35.log",
+		"/C/Users/Jonathan/Downloads/ServerGame.17772.2020.09.13_13.58.29.log",
+		"/E/Sites/kara/app/Http/Controllers/Handlers/FileHandler.php",
+		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
 		"/E/Sites/kara/app/Http/Controllers/Resources/IngredientsController.php",
 		"/E/Sites/kara/database/migrations/2020_08_03_015036_create_blog_posts_table.php",
 		"/E/Sites/kara/database/migrations/2020_08_03_020930_add_subtitle_column_to_blog_posts_table.php",
 		"/E/Sites/kara/resources/views/admin/blog/edit.blade.php",
 		"/E/Sites/kara/resources/views/admin/resources/ingredients/create.blade.php",
 		"/E/Sites/kara/resources/views/content/blog.blade.php",
-		"/E/Sites/kara/routes/web.php",
 		"/E/Sites/kara/app/Http/Controllers/PagesController.php",
-		"/E/Sites/kara/resources/views/partials/navbar.blade.php",
 		"/E/Sites/kara/resources/views/content/hero.blade.php",
 		"/E/Sites/kara/app/Http/Controllers/Auth/LoginController.php",
 		"/E/Sites/kara/resources/views/content/donations.blade.php",
 		"/E/Sites/kara/resources/views/user/dashboard.blade.php",
 		"/E/Sites/kara/resources/views/components/user-profile-progress.blade.php",
-		"/E/Sites/kara/.env",
 		"/E/Sites/kara/.git/COMMIT_EDITMSG",
-		"/E/Sites/kara/database/migrations/2020_08_25_070811_change_users_table_email_index.php",
 		"/E/Sites/kara/config/session.php",
 		"/E/Sites/kara/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php",
 		"/E/Sites/kara/database/migrations/2020_08_25_055547_change_users_table_nullable_email_field.php",
 		"/E/Sites/kara/app/Http/Controllers/BlogController.php",
 		"/E/Sites/kara/README.md",
-		"/E/Sites/kara/app/Http/Controllers/UsersController.php",
 		"/E/Sites/kara/app/Models/User.php",
 		"/E/Sites/kara/database/migrations/2020_08_25_043338_change_users_table_to_non_unique_values.php",
 		"/E/Sites/kara/database/migrations/2020_08_02_031355_change_users_avatar_column_to_allow_null.php",
@@ -186,7 +194,6 @@
 		"/E/Sites/kara/vendor/facade/ignition/src/Middleware/AddGitInformation.php",
 		"/E/Sites/kara/resources/views/pages/faq.blade.php",
 		"/E/Sites/kara/resources/views/components/user-profile-card.blade.php",
-		"/E/Sites/kara/public/css/global.css",
 		"/E/Sites/kara/resources/views/components/includes/user-profile-card-css.blade.php",
 		"/E/Sites/kara/resources/views/modals/help/battlemetricsurl.blade.php",
 		"/E/Sites/kara/resources/views/modals/help/epicid.blade.php",
@@ -197,7 +204,6 @@
 		"/E/Sites/kara/resources/views/admin/blog/index.blade.php",
 		"/E/Sites/kara/resources/views/blog/index.blade.php",
 		"/E/Sites/kara/resources/views/blog/show.blade.php",
-		"/E/Sites/kara/app/Http/Controllers/Handlers/FileHandler.php",
 		"/E/Sites/kara/database/migrations/2020_08_10_223552_create_ingredients_table.php",
 		"/E/Sites/kara/resources/views/admin/resources/ingredients/index.blade.php",
 		"/E/Sites/kara/resources/views/admin/resources/ingredients/edit.blade.php",
@@ -209,13 +215,11 @@
 		"/E/Sites/kara/public/css/admin/admin-custom.css",
 		"/E/Sites/kara/resources/views/pages/resources.blade.php",
 		"/E/Sites/kara/resources/views/content/services.blade.php",
-		"/E/Sites/kara/public/css/style.css",
 		"/E/Sites/kara/app/Http/Controllers/AdminsController.php",
 		"/E/Sites/kara/resources/views/admin/dashboard.blade.php",
 		"/E/Sites/kara/database/seeds/ServersTableSeeder.php",
 		"/E/Sites/kara/database/factories/UserFactory.php",
 		"/E/Sites/kara/database/seeds/UsersTableSeeder.php",
-		"/E/Sites/kara/database/seeds/BlogPostSeeder.php",
 		"/E/Sites/kara/database/seeds/DatabaseSeeder.php",
 		"/E/Sites/kara/database/factories/BlogPostFactory.php",
 		"/E/Sites/kara/resources/views/index.blade.php",
@@ -263,22 +267,7 @@
 		"/E/Sites/kara/resources/views/pages/404.blade.php",
 		"/E/Sites/kara/resources/views/layouts/404.blade.php",
 		"/E/Sites/kara/app/Http/Middleware/CheckIfUserIsStaff.php",
-		"/C/Users/Jonathan/Downloads/ReadMe.txt",
-		"/E/Sites/kara/resources/views/servers/status.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/clusters/pvp.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/clusters/modded.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/val.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/scorched.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/rag.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/genesis.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/extinction.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/crystal.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/modded/abberation.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/pvp/rag.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/pvp/crystal.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/pvp/island.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/clusters/standalone.blade.php",
-		"/E/Sites/kara/resources/views/servers/widgets/standalone/island.blade.php"
+		"/C/Users/Jonathan/Downloads/ReadMe.txt"
 	],
 	"find":
 	{
@@ -296,6 +285,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"maineskypixels.com",
 			"steam_id",
 			"<div class=\"col-sm-10\">",
 			"<div class=\"col-sm-2\">",
@@ -425,24 +415,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/Handlers/FileHandler.php",
-					"semi_transient": false,
+					"file": "app/Providers/AppServiceProvider.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 4802,
+						"buffer_size": 781,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								717
+								470,
+								771
 							]
 						],
 						"settings":
@@ -454,8 +444,8 @@
 								{
 									"1":
 									[
-										4800,
-										4801
+										777,
+										778
 									]
 								},
 								"icon":
@@ -470,8 +460,8 @@
 								{
 									"1":
 									[
-										233,
-										234
+										460,
+										461
 									]
 								},
 								"unmatched":
@@ -480,147 +470,16 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
-							"git_gutter_is_enabled": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 120.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/UsersController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								642,
-								642
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										644,
-										645
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										624,
-										625
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -631,31 +490,41 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_tag_content"
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
@@ -732,6 +601,10 @@
 		"selected_items":
 		[
 			[
+				"",
+				"database\\seeds\\BlogPostSeeder.php"
+			],
+			[
 				"pagescontro",
 				"app\\Http\\Controllers\\PagesController.php"
 			],
@@ -788,7 +661,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 268.0,
+	"side_bar_width": 397.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
