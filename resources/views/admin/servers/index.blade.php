@@ -25,8 +25,7 @@
 		</thead>
 		<tbody>
 			@foreach($servers as $server)
-                {{ Form::open(['route' => ['admin.servers.delete', $server->provider_id], 'method' => 'DELETE', 'name' => $server->provider_id . 'deleteForm']) }}
-                {{ Form::close() }}
+                {{ Form::open(['route' => ['admin.servers.delete', $server->provider_id], 'method' => 'DELETE']) }}
 				<tr>
 					<th scope="row">{{ $server->provider_id }}</th>
 					<td>{{ \Illuminate\Support\Str::limit($server->name, 35, '...') }}</td>
@@ -45,6 +44,7 @@
 						</a>
 					</td>
 				</tr>
+                {{ Form::close() }}
 			@endforeach
 
 		</tbody>
