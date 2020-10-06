@@ -80,13 +80,11 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	Route::get('dashboard', 'AdminsController@dashboard')->name('dashboard');
 	// Ping Test
 	Route::get('ping-test', 'AdminsController@pingtest')->name('ping-test');
-	
+
 	// Server Management Routes
 	Route::prefix('servers')->name('servers.')->group(function () {
 		Route::get('add', 'Admin\ServersController@addServer')->name('add');
 		Route::post('add', 'Admin\ServersController@storeServer')->name('store');
-		Route::get('edit/{provider_id}', 'Admin\ServersController@editServer')->name('edit');
-		Route::post('edit', 'Admin\ServersController@updateServer')->name('update');
 		Route::delete('delete/{provider_id}', 'Admin\ServersController@deleteServer')->name('delete');
 		Route::get('/', 'Admin\ServersController@listServers')->name('index');
 	});
