@@ -176,7 +176,7 @@
 	}
 
 	.card.hovercard .cardheader {
-		background: url("imgs/server_icon.png");
+		background: url({{ asset('imgs/server_icon.png') }});
 		background-size: cover;
 		height: 135px;
 	}
