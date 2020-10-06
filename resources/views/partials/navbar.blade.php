@@ -5,7 +5,7 @@
                 <nav class="navbar navbar-expand-xl">
                     {{-- Logo Image --}}
                     <a class="navbar-brand" href="{{ route('index') }}">
-                        <img src="imgs/logo.png" alt="logo">
+                        <img src="{{ asset('imgs/logo.png') }}" alt="logo">
                     </a>
                     {{-- Hamburger --}}
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation"
