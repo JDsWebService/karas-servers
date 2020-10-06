@@ -10,10 +10,10 @@
         <!-- Custom Scrollbar CSS -->
         <link rel="stylesheet" href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
-        <link rel="stylesheet" href="/css/admin/admin.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
-        <link rel="stylesheet" href="/css/admin/admin-custom.css?v={{ strtotime(\Carbon\Carbon::now()) }}">
-        <link rel="stylesheet" href="/css/admin/admin-themes.css">
-        <link rel="stylesheet" href="/css/admin/slate.css">
+        <link rel="stylesheet" href="{{ asset('css/admin/admin.css?v=' . strtotime(\Carbon\Carbon::now())) }}">
+        <link rel="stylesheet" href="{{ asset('css/admin/admin-custom.css?v=' . strtotime(\Carbon\Carbon::now())) }}">
+        <link rel="stylesheet" href="{{ asset('css/admin/admin-themes.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/admin/slate.css') }}">
 
         {{-- Page Specific Stylesheets --}}
         @yield('stylesheets')
@@ -56,7 +56,7 @@
 
         {{-- Admin Template Specific JS --}}
         <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="js/admin.js?v={{ strtotime(\Carbon\Carbon::now()) }}"></script>
+        <script src="{{ asset('js/admin.js?v=' . strtotime(\Carbon\Carbon::now())) }}"></script>
         {{-- Page Specific Scripts --}}
         @yield('scripts')
 
