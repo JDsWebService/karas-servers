@@ -9,13 +9,13 @@
     <body id="body">
 
         {{-- Preloader --}}
-        @include('partials.preloader')
-        
+        {{-- @include('partials.preloader') --}}
+
         {{-- Navigation Bar --}}
         @include('partials.navbar')
 
         @include('partials.messages')
-        
+
         @yield('content')
 
         {{-- Footer Section --}}
