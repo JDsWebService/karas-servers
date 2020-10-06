@@ -9,10 +9,7 @@
 		<div class="col-sm-6">
 			{{ Form::model($server, ['route' => ['admin.servers.update', $server->id]]) }}
 				{{ Form::hidden('provider_id') }}
-
-				<label for="cluster" class="mt-2">Cluster</label>
-				{{ Form::select('cluster', ['pvp' => 'PvP', 'pve' => 'PvE', 'modded' => 'Modded', 'other' => 'Other'], null, ['class' => 'form-control']) }}
-
+            
 				<button type="submit" class="btn btn-success mt-4 btn-block"><i class="fas fa-server"></i> Save Server</button>
 			{{ Form::close() }}
 		</div>
@@ -24,7 +21,7 @@
 
 			<label>Server Name</label>
 			<input type="text" value="{{ $server->name }}" class="form-control" disabled>
-			
+
 			<label class="mt-2">BattleMetrics ID</label>
 			<input type="text" value="{{ $server->provider_id }}" class="form-control" disabled>
 
