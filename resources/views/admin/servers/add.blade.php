@@ -7,7 +7,7 @@
 	<div class="row">
 
 		<div class="col-sm-12">
-			{{ Form::open(['route' => 'admin.servers.store']) }}
+			{{ Form::open(['route' => 'admin.servers.store', 'method' => 'POST']) }}
 				<label for="provider_id">Battlemetrics Server ID</label>
 				{{ Form::text('provider_id', null, ['class' => 'form-control', 'placeholder' => '846493']) }}
 

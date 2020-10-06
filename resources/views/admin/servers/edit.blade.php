@@ -7,9 +7,9 @@
 	<div class="row">
 
 		<div class="col-sm-6">
-			{{ Form::model($server, ['route' => ['admin.servers.update', $server->id]]) }}
+			{{ Form::model($server, ['route' => ['admin.servers.update', $server->id], 'method' => 'PUT']) }}
 				{{ Form::hidden('provider_id') }}
-            
+
 				<button type="submit" class="btn btn-success mt-4 btn-block"><i class="fas fa-server"></i> Save Server</button>
 			{{ Form::close() }}
 		</div>

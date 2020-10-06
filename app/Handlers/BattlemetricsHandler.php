@@ -1,19 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Handlers;
 
 use App\Exceptions\BattleMetricsException;
-use Illuminate\Http\Request;
-use \GuzzleHttp\Client as Guzzle;
-use \GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Client as Guzzle;
+use GuzzleHttp\Exception\ClientException;
 
-class BattleMetricsController extends Controller
-{
-    // Get Server Information From Battlemetrics API
+class BattlemetricsHandler {
+
+    /**
+     * Get Server Information From Battlemetrics API
+     *
+     * @param $id
+     * @return mixed
+     * @throws BattleMetricsException
+     */
     public static function getServerInfo($id) {
 
-    	$client = new Guzzle(['verify' => false]);
-        
+        $client = new Guzzle(['verify' => false]);
+
         try {
             $response = $client->get('https://api.battlemetrics.com/servers/' . $id);
             if($response->getStatusCode() == 200) {
@@ -29,4 +34,5 @@ class BattleMetricsController extends Controller
             }
         }
     }
+
 }

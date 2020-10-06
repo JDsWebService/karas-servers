@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\BattleMetricsController as BMController;
+use App\Handlers\BattlemetricsHandler;
 use App\Http\Controllers\Controller;
 use App\Models\Server;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class ServersController extends Controller
 {
     // Admin List Servers
     public function listServers() {
-        $servers = Server::orderBy('cluster', 'asc')->orderBy('name', 'asc')->paginate(10);
+        $servers = Server::orderBy('computedCluster', 'asc')->orderBy('name', 'asc')->paginate(10);
 
         if($servers->count() == 0) {
             Session::flash('warning', 'No Servers Are In The Database. You need to create one first!');
@@ -48,7 +48,7 @@ class ServersController extends Controller
     public function updateServer(Request $request) {
 
         // Handle Server Database Logic
-        $this->handleServerRequest($request, 'update');
+        $this->handleServerRequest($request);
 
         return redirect()->route('admin.servers.index');
     }
@@ -67,58 +67,105 @@ class ServersController extends Controller
     }
 
     // Handle Server Database & Request Logic
-    protected function handleServerRequest($request, $route = 'store') {
-    	// Grab Server From Database
-    	$server = Server::where('provider_id', Purifier::clean($request->provider_id))->first();
+    protected function handleServerRequest($request) {
+        // Get the server from the database
+        $server = $this->getServerFromDatabase($request);
 
-    	// Figure out what route we're coming from
-    	switch($route) {
-    		case 'store':
-    			// Error Handling
-    			if($server != null) {
-    				Session::flash('danger', 'Server is already in the database. Update it instead!');
-    				return;
-    			}
-    			// Everything is good to go
-    			$server = new Server;
-    			$newServer = true;
-
-    			break;
-    		case 'update':
-    			// Error Handling
-    			if($server == null) {
-    				Session::flash('danger', 'Server is not in the database. Consider adding it instead!');
-    				return;
-    			}
-    			// Everything is good to go
-    			$newServer = false;
-    			break;
-    		default:
-    			Session::flash('danger', 'Something went wrong. Err Code: 1');
-    			return;
-    	}
-
-    	// Check BattleMetrics API for Server
-    	$serverInfo = BMController::getServerInfo(Purifier::clean($request->provider_id));
-        dd($serverInfo);
-    	// Assign all the request data to the Server Object
-        $server->provider_id = $serverInfo->id;
-        $server->name = $serverInfo->name;
-        $server->address = $serverInfo->address;
-        $server->ip = $serverInfo->ip;
-        $server->port = $serverInfo->port;
-        $server->portQuery = $serverInfo->portQuery;
-        $server->cluster = Purifier::clean($request->cluster);
-
-        // Save the Server Object
-        $saveStatus = $server->save();
-
-        // Flash Session Message
-      	if($saveStatus == true && $newServer == true) {
-        	Session::flash('success', 'Server Added to the Database');
-        } elseif ($saveStatus == true && $newServer == false) {
-        	Session::flash('success', 'Server Updated In The Database');
+        // If Server is false, something went wrong while getting the server from the database
+        if(!$server) {
+            return redirect()->route('admin.servers.index');
         }
 
+    	// Check BattleMetrics API for Server
+    	$serverInfo = BattlemetricsHandler::getServerInfo(Purifier::clean($request->provider_id));
+
+    	// Populate the server model instance with all data from Battlemetrics API
+    	$result = $this->populateServerInstance($server, $serverInfo);
+
+        // Save the Server Object
+        $server->save();
+
+        // Get the correct flash message to send to user
+        Session::flash('success', $this->getSaveStatusMessage($request->method()));
+
+        return redirect()->route('admin.servers.index');
+
     }
+
+    private function getServerFromDatabase(Request $request) {
+        // Get the requests method
+        $method = $request->method();
+
+        // Grab Server From Database
+        $server = Server::where('provider_id', Purifier::clean($request->provider_id))->first();
+
+        // Figure out what type of method we're using
+        switch($method) {
+            case 'POST':
+                // Error Handling
+                if($server != null) {
+                    Session::flash('danger', 'Server is already in the database. Update it instead!');
+                    return false;
+                }
+                $server = new Server;
+                break;
+            case 'PUT':
+                // Error Handling
+                if($server == null) {
+                    Session::flash('danger', 'Server is not in the database. Consider adding it instead!');
+                    return false;
+                }
+                break;
+            default:
+                Session::flash('danger', 'Something went wrong. Err Code: 1-ServersController@getServerFromDatabase');
+                return false;
+        }
+
+        return $server;
+    }
+
+    private function populateServerInstance(Server $server, $serverInfo) {
+        $server->provider_id = $serverInfo->id;
+        $server->name = $serverInfo->name;
+        $server->ip = $serverInfo->ip;
+        $server->port = $serverInfo->port;
+        $server->players = $serverInfo->players;
+        $server->maxPlayers = $serverInfo->maxPlayers;
+        $server->rank = $serverInfo->rank;
+        $server->status = $serverInfo->status;
+        $server->map = $serverInfo->details->map;
+        $server->time = $serverInfo->details->time;
+        $server->pve = $serverInfo->details->pve;
+        $server->modded = $serverInfo->details->modded;
+        $server->crossplay = $serverInfo->details->crossplay;
+        $server->private = $serverInfo->private;
+        $server->computedCluster = $this->getServerCluster($server);
+
+        return $server;
+    }
+
+    private function getServerCluster(Server $server) {
+        // Super Modded
+        if($server->pve && $server->modded && !$server->crossplay) {
+            return 'Super Modded';
+        }
+        // PvE
+        if($server->pve && $server->crossplay) {
+            return 'PvE';
+        }
+        // PvP
+        if(!$server->pve) {
+            return 'PvP';
+        }
+    }
+
+    private function getSaveStatusMessage($method) {
+        if($method == 'POST') {
+            return 'Server has been added to the database';
+        } elseif ($method == 'PUT') {
+            return 'Server has been updated in the database';
+        }
+        return 'ServersContoller@getSaveStatusMessage returned valued outside of parameter. Check method in controller';
+    }
+
 }
