@@ -24,7 +24,7 @@
         {{-- Scripts --}}
         @include('partials.scripts')
         {{-- Custom JS --}}
-        <script src="/js/script.js?v={{ strtotime(\Carbon\Carbon::now()) }}"></script>
+        <script src="js/script.js?v={{ strtotime(\Carbon\Carbon::now()) }}"></script>
         @yield('scripts')
     </body>
 </html>
