@@ -30,13 +30,13 @@ section.section-alert {
 }
 
 /* Navbar Discord Login Button*/
-.navigation .navbar .btn-discord {
+#btn-discord {
 	background-color: #7289da;
 	color: #ffffff;
 	padding: 5px 10px !important;
 	margin: 15px 5px !important;
 }
-.navigation .navbar .btn-discord:hover {
+#btn-discord:hover {
 	background-color: #3F56A7;
 	color: #cccccc;
 	padding: 5px 10px !important;

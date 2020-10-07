@@ -20,18 +20,23 @@
                             </li>
 
                             <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="https://discord.gg/kara">Join Our Discord</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a class="nav-link" target="_blank" href="{{ route('merch') }}">Merch</a>
                             </li>
 
-                            {{-- Blog --}}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('blog.index') }}">Blog & Events</a>
+                            {{-- Learn More Links --}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Connect
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('blog.index') }}">Blog & Events</a>
+                                    <a class="dropdown-item" href="{{ route('pages.about') }}">About Us</a>
+                                </div>
                             </li>
-
-                            {{-- Temporary Server Rules Link --}}
-                            {{-- <li class="nav-item">
-                                <a class="nav-link" href="{{ route('servers.rules.index') }}">Server Rules</a>
-                            </li> --}}
 
                             {{-- Servers Links --}}
                             <li class="nav-item dropdown">
@@ -50,15 +55,10 @@
                                 <a class="nav-link" href="{{ route('pages.resources') }}">Resources</a>
                             </li> --}}
 
-                            {{-- About Us Page --}}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('pages.about') }}">About Us</a>
-                            </li>
-
                             {{-- Discord Login Button --}}
                             @guest
                                 <li class="nav-item">
-                                    <a href="{{ route('login.discord') }}" class="btn btn-discord"><i class="fab fa-discord"></i> Login</a>
+                                    <a href="{{ route('login.discord') }}" class="btn" id="btn-discord"><i class="fab fa-discord"></i> Login</a>
                                 </li>
                             @endguest
 
