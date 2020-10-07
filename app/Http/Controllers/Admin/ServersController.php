@@ -14,7 +14,7 @@ class ServersController extends Controller
 {
     // Admin List Servers
     public function listServers() {
-        $servers = Server::orderBy('computedCluster', 'asc')->orderBy('name', 'asc')->paginate(10);
+        $servers = Server::orderBy('updated_at', 'asc')->orderBy('name', 'asc')->paginate(10);
 
         if($servers->count() == 0) {
             Session::flash('warning', 'No Servers Are In The Database. You need to create one first!');

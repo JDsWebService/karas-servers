@@ -10,6 +10,22 @@ use Mews\Purifier\Facades\Purifier;
 
 class ServersHandler {
 
+    // Updated the server in the database from the Battlemetrics API
+    // Note: Should ONLY be called in the UpdateServerFromAPI Aritsan Command
+    public static function serverUpdateCommand(Server $server) {
+        // Grab the server info from the database
+        $serverInfo = BattlemetricsHandler::getServerInfo($server->provider_id);
+        // Populate the server model instance with all data from Battlemetrics API
+        $result = self::populateServerInstance($server, $serverInfo);
+        // Save the Server Object
+        if($server->save()) {
+            // Return True If Successful
+            return true;
+        }
+        // Return false if not
+        return false;
+    }
+
     // Handle Server Database & Request Logic
     public static function handleServerRequest(Request $request) {
         // Get the server from the database
