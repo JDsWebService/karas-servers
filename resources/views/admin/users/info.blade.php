@@ -9,17 +9,29 @@
             @include('components.user-profile-card')
             @superAdmin
                 @if(!$user->isAdmin)
-                    <h5 class="mt-3">Make User Admin?</h5>
                     {{ Form::open(['route' => ['admin.users.makeAdmin', $user->provider_id], 'method' => 'POST']) }}
-                    <button type="submit" class="btn btn-success btn-block">
+                    <button type="submit" class="btn btn-success btn-block mt-3">
                         <i class="fas fa-user-shield"></i> Make Admin
                     </button>
                     {{ Form::close() }}
-                @else
-                    <h5 class="mt-3">Demote User</h5>
+                @elseif($user->isAdmin && !$user->superAdmin)
                     {{ Form::open(['route' => ['admin.users.revokeAdmin', $user->provider_id], 'method' => 'POST']) }}
-                    <button type="submit" class="btn btn-danger btn-block">
+                    <button type="submit" class="btn btn-danger btn-block mt-3">
                         <i class="fas fa-user-times"></i> Demote User
+                    </button>
+                    {{ Form::close() }}
+                @endif
+
+                @if(!$user->superAdmin && $user->isAdmin)
+                    {{ Form::open(['route' => ['admin.users.makeSuperAdmin', $user->provider_id], 'method' => 'POST']) }}
+                    <button type="submit" class="btn btn-success btn-block mt-3">
+                        <i class="fas fa-user-shield"></i> Make Super Admin
+                    </button>
+                    {{ Form::close() }}
+                @elseif($user->superAdmin && $user->isAdmin)
+                    {{ Form::open(['route' => ['admin.users.revokeSuperAdmin', $user->provider_id], 'method' => 'POST']) }}
+                    <button type="submit" class="btn btn-danger btn-block mt-3">
+                        <i class="fas fa-user-times"></i> Revoke Super Admin
                     </button>
                     {{ Form::close() }}
                 @endif

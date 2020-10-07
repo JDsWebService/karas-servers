@@ -92,6 +92,8 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
             Route::get('admins', 'Admin\AdminsController@index')->name('adminIndex');
             Route::post('makeAdmin/{providerId}', 'Admin\UsersController@makeAdmin')->name('makeAdmin');
             Route::post('revokeAdmin/{providerId}', 'Admin\UsersController@revokeAdmin')->name('revokeAdmin');
+            Route::post('makeSuperAdmin/{providerId}', 'Admin\AdminsController@makeSuperAdmin')->name('makeSuperAdmin');
+            Route::post('revokeSuperAdmin/{providerId}', 'Admin\AdminsController@revokeSuperAdmin')->name('revokeSuperAdmin');
         });
     });
 
