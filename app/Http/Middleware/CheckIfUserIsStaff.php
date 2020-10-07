@@ -19,7 +19,7 @@ class CheckIfUserIsStaff
     public function handle($request, Closure $next)
     {
         $user = Auth::user();
-        dd($user);
+
         // If user is not staff
         if($user->isAdmin == false) {
             // Return To Index if not staff
