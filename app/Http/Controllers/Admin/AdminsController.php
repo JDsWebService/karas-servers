@@ -18,7 +18,7 @@ class AdminsController extends Controller
         $user = User::where('provider_id', $providerId)->first();
         $user->superAdmin = true;
         $user->save();
-        Session::flash('success', "User has been given <strong>SUPER</strong> Admin powers!");
+        Session::flash('success', "User has been given SUPER Admin powers!");
         return redirect()->route('admin.users.info', $user->provider_id);
     }
 
