@@ -48,7 +48,7 @@ class UsersController extends Controller
 
     public function search(Request $request) {
         $search = Purifier::clean($request->search);
-
+        $user = null;
         $emailValidator = Validator::make(['email' => $search],['email' => 'email']);
         if($emailValidator->passes()) {
             $email = $search;
