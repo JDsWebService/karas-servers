@@ -74,64 +74,29 @@ class LoginController extends Controller
         if($user === null) {
             // Add User To Database
             $user = new User;
-            $user->provider = 'discord';
-            $user->provider_id = $discordUser->user['id'];
-            $user->username = $discordUser->user['username'];
-            $user->discriminator = $discordUser->user['discriminator'];
-            $user->fullusername = $discordUser->nickname;
-            $user->avatar = $discordUser->avatar;
-            $user->email = $discordUser->user['email'];
-            $user->email_verified = $discordUser->user['verified'];
-            $user->locale = $discordUser->user['locale'];
-            $user->twofactor = $discordUser->user['mfa_enabled'];
-            $user->save();
-        } else {
-            // Update the Users Information
-            $user->username = $discordUser->user['username'];
-            $user->discriminator = $discordUser->user['discriminator'];
-            $user->fullusername = $discordUser->nickname;
-            $user->avatar = $discordUser->avatar;
-            $user->email = $discordUser->user['email'];
-            $user->email_verified = $discordUser->user['verified'];
-            $user->locale = $discordUser->user['locale'];
-            $user->twofactor = $discordUser->user['mfa_enabled'];
-            $user->save();
         }
 
+        // Save the Users Information
+        $user->provider = 'discord';
+        $user->provider_id = $discordUser->user['id'];
+        $user->username = $discordUser->user['username'];
+        $user->discriminator = $discordUser->user['discriminator'];
+        $user->fullusername = $discordUser->nickname;
+        $user->avatar = $discordUser->avatar;
+        $user->email = $discordUser->user['email'];
+        $user->email_verified = $discordUser->user['verified'];
+        $user->locale = $discordUser->user['locale'];
+        $user->twofactor = $discordUser->user['mfa_enabled'];
+        $user->save();
+
         Auth::login($user, true);
-
-        $this->isUserStaff($user);
-
-        // dd(Auth::user());
 
         return redirect()->route('index');
 
     }
 
-    // Check to see if user is Staff
-    protected function isUserStaff($user) {
-
-        // Define List of Staff
-        $staff = [
-            'DJRedNight#3428',
-            'AshleyLee#1988',
-            'gucci#8387'
-        ];
-        // Check if logged in user is in staff array
-        if(in_array($user->fullusername, $staff)) {
-            // Create a session variable to be used by Blade Directive
-            // Ref: AppServiceProvider.php
-            Session::put('isStaff', true);
-            return true;
-        }
-
-        return false;
-
-    }
-
     public function logout() {
         Auth::logout();
-        Session::forget('isStaff');
         Session::flush();
         return redirect()->route('index');
     }

