@@ -68,11 +68,13 @@
                                     <i class="fas fa-users"></i> User Management
                                 </a>
                             </li>
-                            <li>
-                                <a href="{{ route('admin.users.adminIndex') }}">
-                                    <i class="fas fa-user-shield"></i> Admin Management
-                                </a>
-                            </li>
+                            @superAdmin
+                                <li>
+                                    <a href="{{ route('admin.users.adminIndex') }}">
+                                        <i class="fas fa-user-shield"></i> Admin Management
+                                    </a>
+                                </li>
+                            @endsuperAdmin
                         </ul>
                     </div>
                 </li>

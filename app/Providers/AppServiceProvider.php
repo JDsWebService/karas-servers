@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
@@ -38,6 +39,15 @@ class AppServiceProvider extends ServiceProvider
             }
             // Return false if not staff
             return false;
+        });
+
+        // Super User Blade Directive
+        Blade::if('superAdmin', function() {
+           $user = Auth::user();
+           if($user->superAdmin == true) {
+               return true;
+           }
+           return false;
         });
 
     }

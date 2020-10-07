@@ -7,21 +7,23 @@
     <div class="row justify-content-center">
         <div class="col-sm-3">
             @include('components.user-profile-card')
-            @if(!$user->isAdmin)
-                <h5 class="mt-3">Make User Admin?</h5>
-                {{ Form::open(['route' => ['admin.users.makeAdmin', $user->provider_id], 'method' => 'POST']) }}
-                <button type="submit" class="btn btn-success btn-block">
-                    <i class="fas fa-user-shield"></i> Make Admin
-                </button>
-                {{ Form::close() }}
-            @else
-                <h5 class="mt-3">Demote User</h5>
-                {{ Form::open(['route' => ['admin.users.revokeAdmin', $user->provider_id], 'method' => 'POST']) }}
-                <button type="submit" class="btn btn-danger btn-block">
-                    <i class="fas fa-user-times"></i> Demote User
-                </button>
-                {{ Form::close() }}
-            @endif
+            @superAdmin
+                @if(!$user->isAdmin)
+                    <h5 class="mt-3">Make User Admin?</h5>
+                    {{ Form::open(['route' => ['admin.users.makeAdmin', $user->provider_id], 'method' => 'POST']) }}
+                    <button type="submit" class="btn btn-success btn-block">
+                        <i class="fas fa-user-shield"></i> Make Admin
+                    </button>
+                    {{ Form::close() }}
+                @else
+                    <h5 class="mt-3">Demote User</h5>
+                    {{ Form::open(['route' => ['admin.users.revokeAdmin', $user->provider_id], 'method' => 'POST']) }}
+                    <button type="submit" class="btn btn-danger btn-block">
+                        <i class="fas fa-user-times"></i> Demote User
+                    </button>
+                    {{ Form::close() }}
+                @endif
+            @endsuperAdmin
         </div>
         <div class="col-sm-9">
             <h4>Technical Information</h4>

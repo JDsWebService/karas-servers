@@ -5,9 +5,8 @@ namespace App\Http\Middleware;
 use App\Handlers\UsersHandler;
 use Closure;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 
-class CheckIfUserIsStaff
+class CheckIfUserIsSuperAdmin
 {
     /**
      * Handle an incoming request.
@@ -20,10 +19,10 @@ class CheckIfUserIsStaff
     {
         $user = Auth::user();
 
-        // If user is not staff
-        if($user->isAdmin == false) {
-            // Return To Index if not staff
-            return redirect()->route('index');
+        // If user is not superAdmin
+        if($user->superAdmin == false) {
+            // Return To Index
+            return redirect()->route('admin.dashboard');
         }
 
         // Check to see if user is DJRedNight
