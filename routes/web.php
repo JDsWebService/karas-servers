@@ -84,6 +84,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	// Admin User Management Routes
     Route::prefix('users')->name('users.')->group(function () {
         Route::get('/', 'Admin\UsersController@index')->name('index');
+        Route::get('admins', 'Admin\AdminsController@index')->name('adminIndex');
         Route::post('search', 'Admin\UsersController@search')->name('search');
         Route::get('info/{providerId}', 'Admin\UsersController@info')->name('info');
         Route::get('info/bio/{providerId}', 'Admin\UsersController@getBio')->name('bio');

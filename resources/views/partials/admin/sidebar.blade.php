@@ -54,11 +54,27 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="{{ route('admin.users.index') }}">
+                {{-- Dropdown --}}
+                <li class="sidebar-dropdown">
+                    <a href="#">
                         <i class="fas fa-users"></i>
-                        <span>User Management</span>
+                        <span>Users</span>
+                        {{-- <span class="badge badge-pill badge-primary">3</span> --}}
                     </a>
+                    <div class="sidebar-submenu">
+                        <ul>
+                            <li>
+                                <a href="{{ route('admin.users.index') }}">
+                                    <i class="fas fa-users"></i> User Management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.users.adminIndex') }}">
+                                    <i class="fas fa-user-shield"></i> Admin Management
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
 
                 {{-- Dropdown --}}
