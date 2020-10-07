@@ -8,7 +8,7 @@
         <div class="col-sm-3">
             <h3>Search For User</h3>
             {{ Form::open(['route' => 'admin.users.search', 'method' => 'POST']) }}
-                <input type="text" name="user" class="form-control form-control-sm" placeholder="Username OR Email">
+                <input type="text" name="search" class="form-control form-control-sm" placeholder="Username#1234 OR Email">
                 <button type="submit" class="btn btn-block btn-sm btn-success mt-3">
                     <i class="fas fa-search"></i> Search For User
                 </button>

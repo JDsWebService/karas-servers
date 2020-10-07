@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
+use Mews\Purifier\Facades\Purifier;
 
 class UsersController extends Controller
 {
@@ -42,5 +44,28 @@ class UsersController extends Controller
         $user->save();
         Session::flash('success', 'User has been stripped of their admin powers!');
         return redirect()->route('admin.users.info', $user->provider_id);
+    }
+
+    public function search(Request $request) {
+        $search = Purifier::clean($request->search);
+
+        $emailValidator = Validator::make(['email' => $search],['email' => 'email']);
+        if($emailValidator->passes()) {
+            $email = $search;
+            $user = User::where('email', $email)->first();
+        }
+
+        $fullusername = preg_match('/(.*)#(\d{4})/', $search);
+        if($fullusername) {
+            $fullusername = $search;
+            $user = User::where('fullusername', $fullusername)->first();
+        }
+
+        if($user != null) {
+            return redirect()->route('admin.users.info', $user->provider_id);
+        } else {
+            Session::flash('danger', 'Could not find the user in the database.');
+            return redirect()->route('admin.users.index');
+        }
     }
 }
