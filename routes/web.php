@@ -81,6 +81,16 @@ Route::prefix('admin')->name('admin.')->middleware(['auth.staff', 'auth'])->grou
 	// Ping Test
 	Route::get('ping-test', 'AdminsController@pingtest')->name('ping-test');
 
+	// Admin User Management Routes
+    Route::prefix('users')->name('users.')->group(function () {
+        Route::get('/', 'Admin\UsersController@index')->name('index');
+        Route::post('search', 'Admin\UsersController@search')->name('search');
+        Route::get('info/{providerId}', 'Admin\UsersController@info')->name('info');
+        Route::get('info/bio/{providerId}', 'Admin\UsersController@getBio')->name('bio');
+        Route::post('makeAdmin/{providerId}', 'Admin\UsersController@makeAdmin')->name('makeAdmin');
+        Route::post('revokeAdmin/{providerId}', 'Admin\UsersController@revokeAdmin')->name('revokeAdmin');
+    });
+
 	// Server Management Routes
 	Route::prefix('servers')->name('servers.')->group(function () {
 		Route::get('add', 'Admin\ServersController@addServer')->name('add');

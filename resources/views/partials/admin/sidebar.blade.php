@@ -30,16 +30,16 @@
                 </span>
             </div>
         </div>
-        
+
         {{-- Sidebar Menu --}}
         <div class="sidebar-menu">
             <ul>
-                
+
                 {{-- Header --}}
                 <li class="header-menu">
                     <span>General</span>
                 </li>
-                
+
                 <li>
                     <a href="{{ route('admin.dashboard') }}">
                         <i class="fas fa-house-user"></i>
@@ -51,6 +51,13 @@
                     <a href="{{ route('index') }}">
                         <i class="fas fa-home"></i>
                         <span>Site Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('admin.users.index') }}">
+                        <i class="fas fa-users"></i>
+                        <span>User Management</span>
                     </a>
                 </li>
 
@@ -81,7 +88,7 @@
                         </ul>
                     </div>
                 </li>
-                
+
                 {{-- Blog Dropdown --}}
                 <li class="sidebar-dropdown">
                     <a href="#">
@@ -104,7 +111,7 @@
                         </ul>
                     </div>
                 </li>
-                
+
                 {{-- Recipes Dropdown --}}
                 <li class="sidebar-dropdown">
                     <a href="#">
@@ -127,7 +134,7 @@
                         </ul>
                     </div>
                 </li>
-                
+
                 {{-- Header --}}
                 <li class="header-menu">
                     <span>Sidebar Header</span>
@@ -139,17 +146,17 @@
                         <span>Link</span>
                     </a>
                 </li>
-                
+
             </ul>
         </div> <!-- ./sidebar-menu  -->
-        
+
     </div>
     <!-- sidebar-content  -->
     <div class="sidebar-footer">
-        
+
         {{--
         <div class="dropdown">
-            
+
             <a href="#" class="" id="test" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-envelope"></i>
                 <span class="badge badge-pill badge-success notification">7</span>
@@ -175,14 +182,14 @@
                     </div>
 
                 </a>
-                
+
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item text-center" href="#">View all messages</a>
 
             </div>
         </div>
         --}}
-        
+
         {{-- Admin Settings --}}
         {{-- <div class="dropdown">
             <a href="#" class="" id="adminUserSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -37,7 +37,7 @@ $factory->define(User::class, function (Faker $faker) {
     $fullusername = $username . "#" . $discriminator;
     return [
         'provider' => 'discord',
-        'provider_id' => 123456789012345678,
+        'provider_id' => $faker->unique()->numerify('##################'),
         'username' => $username,
         'discriminator' => $discriminator,
         'fullusername' => $fullusername,
