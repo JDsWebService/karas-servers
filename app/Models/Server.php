@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Server extends Model
@@ -73,6 +74,11 @@ class Server extends Model
         return "<span class=\"badge badge-pill {$css}\">{$text}</span>";
     }
 
+    /**
+     * Returns an array of Bootstrap 4 Pill Badges depending on the attributes of the server
+     *
+     * @return array
+     */
     public function getServerAttributesAttribute() {
         $html = [];
 
@@ -98,5 +104,9 @@ class Server extends Model
         }
 
         return $html;
+    }
+
+    public function getLastUpdatedAtAttribute() {
+        return Carbon::createFromTimeStamp(strtotime($this->updated_at))->diffForHumans();
     }
 }

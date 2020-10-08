@@ -48,11 +48,16 @@
                                                 <br>
                                                 <strong>In-Game Day: </strong> Day {{ $server->time }}
                                                 <br>
+                                                <strong>Last Updated: </strong> {{ $server->lastUpdatedAt }}
+                                                <br>
                                                 @foreach($server->serverAttributes as $attribute)
                                                     {!! $attribute !!}
                                                 @endforeach
                                             </p>
-                                            <a href="#" class="btn btn-steam btn-sm btn-block"><i class="fab fa-steam"></i> Direct Connect</a>
+                                            <a  href="steam://connect/{{ $server->ip }}:{{ $server->port }}"
+                                                class="btn btn-steam btn-sm btn-block">
+                                                <i class="fab fa-steam"></i> Direct Connect
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
