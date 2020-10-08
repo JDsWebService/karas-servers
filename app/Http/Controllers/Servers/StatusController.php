@@ -11,7 +11,7 @@ class StatusController extends Controller
 {
     // Public Facing Server Status Page
     public function status() {
-        $servers = Server::orderBy('computedCluster', 'desc')->get();
+        $servers = Server::orderBy('status', 'desc')->orderBy('computedCluster', 'desc')->orderBy('name')->get();
 
         // Error Handling
         if($servers->count() == 0) {

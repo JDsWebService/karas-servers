@@ -52,18 +52,39 @@ class ServersHandler {
         $server->name = $serverInfo->name;
         $server->ip = $serverInfo->ip;
         $server->port = $serverInfo->port;
-        $server->players = $serverInfo->players;
-        $server->maxPlayers = $serverInfo->maxPlayers;
-        $server->rank = $serverInfo->rank;
-        $server->status = $serverInfo->status;
-        $server->map = $serverInfo->details->map;
-        $server->time = $serverInfo->details->time;
-        $server->pve = $serverInfo->details->pve;
-        $server->modded = $serverInfo->details->modded;
-        $server->crossplay = $serverInfo->details->crossplay;
-        $server->private = $serverInfo->private;
+        // Handle Nullable Values
+        if(isset($serverInfo->players)) {
+            $server->players = $serverInfo->players;
+        }
+        if(isset($serverInfo->maxPlayers)) {
+            $server->maxPlayers = $serverInfo->maxPlayers;
+        }
+        if(isset($serverInfo->rank)) {
+            $server->rank = $serverInfo->rank;
+        }
+        if(isset($serverInfo->status)) {
+            $server->status = $serverInfo->status;
+        }
+        if(isset($serverInfo->details->map)) {
+            $server->map = $serverInfo->details->map;
+        }
+        if(isset($serverInfo->details->time)) {
+            $server->time = $serverInfo->details->time;
+        }
+        if(isset($serverInfo->details->pve)) {
+            $server->pve = $serverInfo->details->pve;
+        }
+        if(isset($serverInfo->details->modded)) {
+            $server->modded = $serverInfo->details->modded;
+        }
+        if(isset($serverInfo->details->crossplay)) {
+            $server->crossplay = $serverInfo->details->crossplay;
+        }
+        if(isset($serverInfo->private)) {
+            $server->private = $serverInfo->private;
+        }
         $server->computedCluster = self::getServerCluster($server);
-
+        // Handle if Modded is set or not
         return $server;
     }
 
@@ -82,7 +103,8 @@ class ServersHandler {
         }
 
         // If all else fails or it does not categorize correctly throw an error
-        throw new ServerException('ServersHandler@getServerCluster - Unable to determine server cluster.');
+        Session::flash('warning', 'ServersHandler@getServerCluster - Unable to determine server cluster. Adding default value.');
+        return 'PvE';
     }
 
     private static function checkIfServerExists(Request $request) {
