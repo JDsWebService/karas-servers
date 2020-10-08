@@ -33,7 +33,6 @@ class AppServiceProvider extends ServiceProvider
 
             // Check if general user is admin
             if($user->isAdmin == true) {
-                dd('something went wrong');
                 return true;
             }
 
