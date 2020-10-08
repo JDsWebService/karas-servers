@@ -5,6 +5,14 @@
 @section('content')
 
     <div class="row justify-content-center">
+        <div class="col-sm-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ route('admin.users.index') }}">User Management Index</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ $user->fullusername }}</li>
+                </ol>
+            </nav>
+        </div>
         <div class="col-sm-3">
             @include('components.user-profile-card')
             @superAdmin
