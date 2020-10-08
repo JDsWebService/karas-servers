@@ -33,8 +33,12 @@
                                     Connect
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('blog.index') }}">Blog & Events</a>
-                                    <a class="dropdown-item" href="{{ route('pages.about') }}">About Us</a>
+                                    <a class="dropdown-item" href="{{ route('blog.index') }}">
+                                        <i class="fab fa-blogger-b"></i> Blog & Events
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('pages.about') }}">
+                                        <i class="fas fa-info-circle"></i> About Us
+                                    </a>
                                 </div>
                             </li>
 
@@ -44,9 +48,15 @@
                                     Servers
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('servers.status') }}">Status</a>
-                                    <a class="dropdown-item" href="{{ route('servers.rules.index') }}">Server Rules</a>
-                                    <a class="dropdown-item" href="{{ route('pages.faq') }}">F.A.Q</a>
+                                    <a class="dropdown-item" href="{{ route('servers.status') }}">
+                                        <i class="fas fa-heartbeat"></i> Status
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('servers.rules.index') }}">
+                                        <i class="fas fa-list-ol"></i> Server Rules
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('pages.faq') }}">
+                                        <i class="fas fa-question"></i> F.A.Q
+                                    </a>
                                 </div>
                             </li>
 
