@@ -9,12 +9,12 @@
     <body id="body">
 
         {{-- Preloader --}}
-        {{-- @include('partials.preloader') --}}
+        @include('partials.preloader')
 
         {{-- Navigation Bar --}}
         @include('partials.navbar')
 
-        @include('partials.messages')
+        @include('modals.messages.show')
 
         @yield('content')
 

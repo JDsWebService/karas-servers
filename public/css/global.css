@@ -192,3 +192,36 @@ section.section-alert {
 .battlemetrics-color:hover {
 	color: #aaaaaa;
 }
+
+/* Custom Buttons */
+.btn-steam {
+    color: #fff;
+    background-color: #2a475e;
+    border-color: #2a475e;
+}
+
+.btn-steam:hover {
+    color: #fff;
+    background-color: #1b2838;
+    border-color: #1b2838;
+}
+
+/* Custom Badge Colors */
+.badge-pve, .badge-pvp, .badge-modded, .badge-private, .badge-crossplay {
+    color: #fff;
+}
+.badge-pve {
+    background-color: #60a917;
+}
+.badge-pvp {
+    background-color: #a20025;
+}
+.badge-modded {
+    background-color: #fa6800;
+}
+.badge-private {
+    background-color: #424242;
+}
+.badge-crossplay {
+    background-color: #8E24AA;
+}

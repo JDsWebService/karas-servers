@@ -5,11 +5,16 @@
 	/*	Page Preloader
 	/* ========================================================================= */
 
-	$(window).on('load', function () {
-		$('#preloader').fadeOut('slow', function () {
-			$(this).remove();
-		});
-	});
+    $(window).on('load', function () {
+        $('#preloader').fadeOut('slow', function () {
+            $(this).remove();
+            if( $("#messagesModal").length ) {
+                $(document).ready(function(){
+                    $("#messagesModal").modal('show');
+                });
+            }
+        });
+    });
 
 	/* ========================================================================= */
 	/*	Testimonial Carousel
