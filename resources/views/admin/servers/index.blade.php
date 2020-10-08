@@ -30,7 +30,7 @@
 					<th scope="row">{{ $server->provider_id }}</th>
 					<td>{{ \Illuminate\Support\Str::limit($server->name, 35, '...') }}</td>
                     <td>{{ $server->ip }}:{{ $server->port }}</td>
-                    <td>{{ $server->rank }}</td>
+                    <td>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($server->updated_at))->diffForHumans() }}</td>
                     <td>{{ $server->map }}</td>
 					<td class="text-uppercase">{{ $server->computedCluster }}</td>
 					<td>
