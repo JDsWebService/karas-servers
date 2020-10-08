@@ -43,6 +43,11 @@ class UpdateServerFromAPI extends Command
         // Grab the oldest server from the database
         $servers = Server::orderBy('updated_at', 'asc')->take(5)->get();
 
+        // Error Checking
+        if($servers->count() == 0) {
+            $this->error('No servers in the database!');
+            return;
+        }
         // Start a progress bar
         $bar = $this->output->createProgressBar(count($servers));
 
