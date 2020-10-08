@@ -86,7 +86,7 @@ class ServersHandler {
         }
         $server->computedCluster = self::getServerCluster($server);
         // Set the Updated At Column Manually
-        // $server->updated_at = Carbon::now();
+        $server->updated_at = Carbon::now();
         // Handle if Modded is set or not
         return $server;
     }
