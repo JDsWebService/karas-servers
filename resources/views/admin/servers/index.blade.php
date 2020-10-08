@@ -17,7 +17,7 @@
 				<th scope="col">BM ID #</th>
 				<th scope="col">Name</th>
                 <th scope="col">IP/Port</th>
-                <th scope="col">Global Rank</th>
+                <th scope="col">Last Updated</th>
                 <th scope="col">Map</th>
 				<th scope="col">Computed Cluster</th>
 				<th scope="col"></th>
