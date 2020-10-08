@@ -4,6 +4,7 @@ namespace App\Handlers;
 
 use App\Exceptions\ServerException;
 use App\Models\Server;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Mews\Purifier\Facades\Purifier;
@@ -18,7 +19,7 @@ class ServersHandler {
         // Populate the server model instance with all data from Battlemetrics API
         $result = self::populateServerInstance($server, $serverInfo);
         // Save the Server Object
-        if($server->save()) {
+        if($result->save()) {
             // Return True If Successful
             return true;
         }
@@ -84,6 +85,8 @@ class ServersHandler {
             $server->private = $serverInfo->private;
         }
         $server->computedCluster = self::getServerCluster($server);
+        // Set the Updated At Column Manually
+        // $server->updated_at = Carbon::now();
         // Handle if Modded is set or not
         return $server;
     }
