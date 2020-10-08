@@ -107,6 +107,6 @@ class Server extends Model
     }
 
     public function getLastUpdatedAtAttribute() {
-        return $this->updated_at;
+        return Carbon::createFromTimeStamp(strtotime($this->updated_at))->diffForHumans();
     }
 }
