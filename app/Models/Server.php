@@ -107,6 +107,6 @@ class Server extends Model
     }
 
     public function getLastUpdatedAtAttribute() {
-        return strtotime($this->updated_at);
+        return $this->updated_at;
     }
 }
