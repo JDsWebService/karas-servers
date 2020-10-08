@@ -41,7 +41,7 @@ class UpdateServerFromAPI extends Command
     public function handle()
     {
         // Grab the oldest server from the database
-        $servers = Server::orderBy('updated_at', 'asc')->take(5)->get();
+        $servers = Server::orderBy('updated_at', 'asc')->get()->take(5);
 
         // Error Checking
         if($servers->count() == 0) {
