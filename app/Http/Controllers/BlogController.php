@@ -15,14 +15,14 @@ class BlogController extends Controller
 		return view('blog.index')
 								->withPosts($posts);
 	}
-	
+
     // Single Blog Post
     public function show($slug) {
     	$post = Post::where('slug', $slug)->first();
 
     	if($post == null) {
     		Session::flash('warning', 'Post not found! Contact an administrator if this problem persists.');
-    		return redirect()->back();
+    		return redirect()->route('blog.index');
     	}
 
     	return view('blog.show')
