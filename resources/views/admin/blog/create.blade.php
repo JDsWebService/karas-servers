@@ -12,15 +12,13 @@
 
 				<label for="subtitle" class="mt-3">Subtitle</label>
 				<input type="text" class="form-control" name="subtitle" id="subtitle" placeholder="You can entice more people to read by adding a subtitle!">
-				
+
 				<div class="row mt-3">
 					<div class="col-sm-12">
-						<textarea name="body">
-							Start writing the next great story...
-						</textarea>
+						<textarea name="body" placeholder="Start writing the next great story..."></textarea>
 					</div>
 				</div>
-				
+
 				<button class="btn btn-success btn-block btn-sm mt-3">Submit Post</button>
 			{{ Form::close() }}
 		</div>
@@ -29,7 +27,7 @@
 @endsection
 
 @section('scripts')
-	
+
 	<x-tiny-m-c-e/>
 
 @endsection
