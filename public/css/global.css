@@ -225,3 +225,8 @@ section.section-alert {
 .badge-crossplay {
     background-color: #8E24AA;
 }
+
+/* Blog Post Content */
+.post-content {
+    word-wrap: break-word;
+}
