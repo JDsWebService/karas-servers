@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
 {
@@ -42,5 +44,15 @@ class PagesController extends Controller
 
     public function whoops() {
         return view('pages.404');
+    }
+
+    public function xplay() {
+        $fileName = "xplay.ini";
+        $fileContents = Storage::disk('public')->get('server-config/xplay.ini');
+        $headers = [
+            'Content-type'=>'text/plain',
+            'Content-Disposition' => sprintf('inline; filename="%s"', $fileName),
+        ];
+        return Response::make($fileContents, 200, $headers);
     }
 }

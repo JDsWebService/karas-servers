@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Server Config
+Route::get('config/xplay', 'PagesController@xplay')->name('server.xplay');
+
 // Homepage
 Route::get('/', 'PagesController@index')->name('index');
 
