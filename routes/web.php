@@ -14,13 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Server Config
-Route::get('config/xplay', 'PagesController@xplay')->name('server.xplay');
+//Route::get('config/xplay', 'PagesController@xplay')->name('server.xplay');
 
 // Homepage
 Route::get('/', 'PagesController@index')->name('index');
 
 // Merch Page Redirect
-Route::get('/merch', 'PagesController@merch')->name('merch');
+Route::get('/merch', 'PagesController@whoops')->name('merch');
 
 // Public Facing Blog Routes
 Route::prefix('blog')->name('blog.')->group(function () {
