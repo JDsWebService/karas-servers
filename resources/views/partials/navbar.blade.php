@@ -23,9 +23,9 @@
                                 <a class="nav-link" target="_blank" href="https://discord.gg/kara">Join Our Discord</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="{{ route('merch') }}">Merch</a>
-                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" target="_blank" href="#">Merch</a>
+                            </li> -->
 
                             {{-- Learn More Links --}}
                             <li class="nav-item dropdown">

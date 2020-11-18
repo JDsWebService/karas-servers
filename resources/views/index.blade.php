@@ -9,7 +9,7 @@
     @include('content.hero')
 
     {{-- Merch Section --}}
-    @include('content.merch')
+    {{-- @include('content.merch') --}}
 
     {{-- Blog Section --}}
     @include('content.blog')
