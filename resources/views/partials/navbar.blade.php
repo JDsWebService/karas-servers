@@ -20,7 +20,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://discord.gg/kara">Join Our Discord</a>
+                                <a class="nav-link" target="_blank" href="https://discord.com/invite/jZZrFrdZzg">Join Our Discord</a>
                             </li>
 
                             <!-- <li class="nav-item">
