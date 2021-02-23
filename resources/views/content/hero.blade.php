@@ -6,7 +6,7 @@
                 <div class="text-center" id="title">
                     <h2>Check Out What Happened At Our Latest Event!</h2>
                 </div>
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/lvzAoyQj70E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/KBW1TQdcPes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
