@@ -56,14 +56,14 @@ class LoginController extends Controller
     /**
      * Obtain the user information from discord.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function handleProviderCallback()
     {
         $discordUser = Socialite::driver('discord')
-                            ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
-                            ->stateless()
-                            ->user();
+            ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
+            ->stateless()
+            ->user();
 
         // See if User already exists in database
         $user = User::where([
@@ -91,7 +91,7 @@ class LoginController extends Controller
 
         Auth::login($user, true);
 
-        return redirect()->route('index');
+        return redirect()->route('admin.dashboard');
 
     }
 

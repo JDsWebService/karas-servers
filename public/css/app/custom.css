@@ -1,0 +1,63 @@
+/*
+File Name: 		custom.css
+Description:  You can add your custom CSS here and it will overwrite template styles
+*/
+
+
+
+/* Index Page */
+.social-menu--landing li a i {
+    color: #37708c;
+}
+h1 .subtitle {
+    color: #37708c;
+}
+/* Index Chevrons */
+/* Top Color */
+.landing-detail-cover span {
+    border-color: #00699e;
+}
+/* Bottom Color */
+.landing-detail span {
+    border-color: #004466;
+}
+
+/* Index Page Navigation Bar */
+/* + Icons */
+.main-nav__toggle, .main-nav__toggle-2, .main-nav__toggle:before, .main-nav__toggle-2:before {
+    background-color: #00699e;
+}
+/* Hover Effect On Links */
+.main-nav ul li a:hover {
+    color: #00699e;
+}
+/* Active Link Color */
+.main-nav__list li.active > a {
+    color: #00699e;
+}
+
+/* Cursor */
+@media (hover: hover) and (pointer: fine) {
+    #df-custom-cursor::before {
+        background-color: #004466;
+        opacity: 1;
+    }
+    #df-custom-cursor::after {
+        border: 1px solid #37708c;
+        opacity: 0.5;
+    }
+}
+
+/* Primary Button */
+.btn--landing.btn-primary {
+    box-shadow: 0 0 40px 2px rgba(0.2,68,102,255);
+}
+.btn-primary {
+    color: white;
+    background-color: #004466;
+}
+.btn--landing.btn-primary:hover, .btn--landing.btn-primary::before, .btn--landing.btn-primary::after {
+    color: white;
+    background-color: #37708c !important;
+    border-color: #37708c !important;
+}
