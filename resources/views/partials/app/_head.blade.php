@@ -34,6 +34,10 @@
 <link href="vendor/app/slick/css/slick.css" rel="stylesheet">
 <link href="vendor/app/nanoscroller/css/nanoscroller.css" rel="stylesheet">
 <link href="vendor/app/fontawesome/css/brands.css" rel="stylesheet">
+<link href="css/global/toasty.min.css" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
 
 <!-- Template CSS-->
 <link href="css/app/style.css" rel="stylesheet">

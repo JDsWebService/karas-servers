@@ -46,7 +46,7 @@ class LoginController extends Controller
     /**
      * Redirect the user to the discord authentication page.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function redirectToProvider()
     {
@@ -64,6 +64,18 @@ class LoginController extends Controller
             ->setHttpClient(new \GuzzleHttp\Client(['verify' => false]))
             ->stateless()
             ->user();
+
+        // Check to see if the discord user logging in is on the authorized users list.
+        $user_check = false;
+        foreach(config('auth.authorized_users') as $user) {
+            if($discordUser->user['id'] == $user) {
+                $user_check = true;
+            }
+        }
+        if($user_check) {
+            Session::flash('danger', 'You are not authorized to log in. Please contact the system administrator for more information.');
+            return redirect()->route('index');
+        }
 
         // See if User already exists in database
         $user = User::where([

@@ -15,9 +15,7 @@
     <!-- Content
     ================================================== -->
     <main class="site-content text-center" id="wrapper">
-
         @yield('content')
-
     </main>
 
     @include('partials.app._footer-index')
@@ -48,7 +46,6 @@
 
 
     {{--@include('partials.app._navbar-index-mobile')--}}
-
 </div>
 
 @include('partials.app._preloader')
@@ -56,6 +53,8 @@
 @include('partials.app._cursor')
 
 @include('partials.app._scripts')
+
+@include('partials.global._toasts')
 
 </body>
 

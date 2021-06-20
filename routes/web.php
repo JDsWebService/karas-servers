@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\SingletonPagesController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('app.pages.index');
-})->name('index');
+Route::get('/', [SingletonPagesController::class, 'index'])->name('index');
+
+Route::get('/test', function () {
+    return view('layouts.test2');
+});
 
 // Socialite Login
 Route::get('login/discord', [LoginController::class, 'redirectToProvider'])
