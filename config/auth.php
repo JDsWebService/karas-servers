@@ -116,12 +116,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Confirmation Timeout
+    | Authorized Users
     |--------------------------------------------------------------------------
     |
-    | Here you may define the amount of seconds before a password confirmation
-    | times out and the user is prompted to re-enter their password via the
-    | confirmation screen. By default, the timeout lasts for three hours.
+    | Here you may define Discord User ID of an authorized user to allow them
+    | to log into the admin dashboard.
     |
     */
 

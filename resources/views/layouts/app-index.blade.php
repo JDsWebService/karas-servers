@@ -2,7 +2,7 @@
 <html lang="zxx">
 <head>
 
-    @include('partials.app._head')
+    @include('partials.app-index._head')
 
 </head>
 
@@ -10,7 +10,7 @@
 
 <div class="site-wrapper">
 
-    @include('partials.app._navbar-index')
+    @include('partials.app-index._navbar-index')
 
     <!-- Content
     ================================================== -->
@@ -18,7 +18,7 @@
         @yield('content')
     </main>
 
-    @include('partials.app._footer-index')
+    @include('partials.app-index._footer-index')
 
     <div class="landing-detail landing-detail--left">
         <span>&nbsp;</span>
@@ -48,11 +48,11 @@
     {{--@include('partials.app._navbar-index-mobile')--}}
 </div>
 
-@include('partials.app._preloader')
+@include('partials.app-index._preloader')
 
-@include('partials.app._cursor')
+@include('partials.app-index._cursor')
 
-@include('partials.app._scripts')
+@include('partials.app-index._scripts')
 
 @include('partials.global._toasts')
 
